@@ -1,0 +1,26 @@
+{
+  "name": "biblioteca-be-nodejs",
+  "version": "1.0.0",
+  "description": "Backend on Node, Bilioteca Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloSato/biblioteca-be-nodejs.git"
+  },
+  "author": "Pablo Sato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloSato/biblioteca-be-nodejs/issues"
+  },
+  "homepage": "https://github.com/PabloSato/biblioteca-be-nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.5",
+    "morgan": "^1.10.0"
+  }
+}
