@@ -1,0 +1,32 @@
+const express = require('express');
+const cors = require('cors');
+const morgan = require('morgan');
+const { application } = require('express');
+
+// Creamos la App
+const app = express();
+
+// --------------------------------------------- 2 - GLOBAL MIDDLEWARE ----------------------------------------
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'));
+}
+// --------------------------------------------- 4 - GLOBAL SECURITY ----------------------------------------
+const whitelist = ['http://localhost:4200'];
+const options = {
+  origin: (origin, callback) => {
+    if (whitelist.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Forbidden'));
+    }
+  },
+};
+app.use(cors(options));
+// --------------------------------------------- 5 - MIDDLEWARE ----------------------------------------
+// --------------------------------------------- 6 - GLOBAL ROUTES ----------------------------------------
+// --------------------------------------------- 7 - GLOBAL ERRORS ----------------------------------------
+app.all('*', (req, res, next) => {
+  next(new Error(`Can't find ${req.originalUrl} on this server`, 404));
+});
+// --------------------------------------------- EXPORT ----------------------------------------
+module.exports = app;
