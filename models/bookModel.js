@@ -23,6 +23,8 @@ const bookSchema = new mongoose.Schema(
     },
     autores: [String],
     tags: [String],
+    image: String,
+    pages: Number,
     universe: String,
     saga: String,
     number: Number,
