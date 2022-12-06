@@ -32,7 +32,7 @@ app.use(cors(options));
 apiRoutes(app);
 // --------------------------------------------- 7 - GLOBAL ERRORS ----------------------------------------
 app.all('*', (req, res, next) => {
-  next(new Error(`Can't find ${req.originalUrl} on this server`, 404));
+  next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
 });
 // --------------------------------------------- EXPORT ----------------------------------------
 module.exports = app;
