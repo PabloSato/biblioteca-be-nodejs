@@ -16,7 +16,7 @@ const bookSchema = new mongoose.Schema(
       trim: true,
     },
     slug: String,
-    sinopsis: {
+    argument: {
       type: String,
       default: this.slug,
       trim: true,
