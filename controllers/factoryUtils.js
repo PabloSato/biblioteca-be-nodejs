@@ -3,7 +3,7 @@ const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
 
 // ----------------------------------------------- GET ALL -------------------------------------------------------
-exports.getAll = (Model) => {
+exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
     let filter = {};
     // @TODO: Nested
@@ -23,9 +23,8 @@ exports.getAll = (Model) => {
       },
     });
   });
-};
 // ----------------------------------------------- GET ONE -------------------------------------------------------
-exports.getOne = (Model, popOptions) => {
+exports.getOne = (Model, popOptions) =>
   catchAsync(async (req, res, next) => {
     let query = Model.findById(req.params.id);
 
@@ -44,9 +43,8 @@ exports.getOne = (Model, popOptions) => {
       },
     });
   });
-};
 // ----------------------------------------------- CREATE --------------------------------------------------------
-exports.createOne = (Model) => {
+exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
     if (req.file) req.body.img = req.file.filename;
 
@@ -59,9 +57,8 @@ exports.createOne = (Model) => {
       },
     });
   });
-};
 // ----------------------------------------------- UPDATE --------------------------------------------------------
-exports.updateOne = (Model) => {
+exports.updateOne = (Model) =>
   catchAsync(async (req, res, next) => {
     if (req.file) req.body.img = req.file.filename;
     const data = await Model.findByIdAndUpdate(req.params.id, req.body, {
@@ -80,9 +77,8 @@ exports.updateOne = (Model) => {
       },
     });
   });
-};
 // ----------------------------------------------- DELETE --------------------------------------------------------
-exports.deleteOne = (Model) => {
+exports.deleteOne = (Model) =>
   catchAsync(async (req, res, next) => {
     const data = await Model.findByIdAndDelete(req.params.id);
 
@@ -95,4 +91,3 @@ exports.deleteOne = (Model) => {
       data: null,
     });
   });
-};
