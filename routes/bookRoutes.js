@@ -6,8 +6,9 @@ const router = express.Router();
 
 // @TODO: Add Nested Routes
 
+// ---------------------- SPECIALS ROUTES ----------------------------
 // @TODO: Add Specials Routes
-
+router.route('/search/:name').get(bookController.getBookByName);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
