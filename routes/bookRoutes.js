@@ -17,6 +17,10 @@ router
 router
   .route('/search/:name')
   .get(bookController.getByName, bookController.getAllBooks);
+// -- SEARCH BY SLUG --
+router
+  .route('/slug/:slug')
+  .get(bookController.getBySlug, bookController.getBook);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')

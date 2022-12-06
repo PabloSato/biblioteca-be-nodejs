@@ -51,6 +51,10 @@ exports.getOne = (Model, popOptions) =>
 
     if (popOptions) query = Model.findById(req.params.id).populate(popOptions);
 
+    if (req.query.filter) {
+      const filter = req.query.filter;
+      query = Model.findOne(filter);
+    }
     const data = await query;
 
     if (!data) {

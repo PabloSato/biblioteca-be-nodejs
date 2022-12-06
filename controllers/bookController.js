@@ -34,13 +34,18 @@ exports.stats = catchAsync(async (req, res, next) => {
 // -- BY NAME --
 exports.getByName = (req, res, next) => {
   const name = req.params.name;
-  filter = { name: { $regex: name, $options: 'i' } };
+  const filter = { name: { $regex: name, $options: 'i' } };
+  req.query.filter = filter;
+  next();
+};
+// -- BY SLUG --
+exports.getBySlug = (req, res, next) => {
+  const filter = { slug: req.params.slug };
   req.query.filter = filter;
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
-// exports.getBookByName = factory.getByName(Book);
 exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
