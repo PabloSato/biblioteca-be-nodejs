@@ -1,7 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-const { application } = require('express');
+
+// UTILIDADES
+const AppError = require('./utils/appError');
+
+// ROUTES
+const { apiRoutes } = require('./routes/router');
 
 // Creamos la App
 const app = express();
@@ -24,6 +29,7 @@ const options = {
 app.use(cors(options));
 // --------------------------------------------- 5 - MIDDLEWARE ----------------------------------------
 // --------------------------------------------- 6 - GLOBAL ROUTES ----------------------------------------
+apiRoutes(app);
 // --------------------------------------------- 7 - GLOBAL ERRORS ----------------------------------------
 app.all('*', (req, res, next) => {
   next(new Error(`Can't find ${req.originalUrl} on this server`, 404));
