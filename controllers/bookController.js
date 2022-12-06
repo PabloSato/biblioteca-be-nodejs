@@ -8,7 +8,7 @@ const Book = require('./../models/bookModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
 exports.getLastBooks = (req, res, next) => {
-  req.query.limit = '14';
+  req.query.limit = '10';
   req.query.sort = '-createdAt';
   next();
 };
