@@ -14,12 +14,22 @@ exports.getAll = (Model) =>
       .paginate();
 
     const data = await features.query;
+    const page = features.query.options.skip + 1;
+    const docsPage = features.query.options.limit;
+    const totalDocs = await Model.estimatedDocumentCount();
+    const totalPages = Math.ceil(totalDocs / docsPage);
 
     res.status(200).json({
       status: 'success',
       size: data.length,
       data: {
         data: data,
+        pagination: {
+          totalDocs: totalDocs, // => Count of ALL elements in the DB
+          totalPages: totalPages, // => Total pages available
+          page: page, // => Current page number
+          size: docsPage, // => size of elements per page
+        },
       },
     });
   });

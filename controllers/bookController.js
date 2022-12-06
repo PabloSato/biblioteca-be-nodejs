@@ -7,11 +7,30 @@ const catchAsync = require('./../utils/catchAsync');
 const Book = require('./../models/bookModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
+// -- LAST BOOKS --
 exports.getLastBooks = (req, res, next) => {
   req.query.limit = '10';
   req.query.sort = '-createdAt';
   next();
 };
+
+// -- STATS BOOKS --
+exports.stats = catchAsync(async (req, res, next) => {
+  const stats = await Book.aggregate([
+    {
+      $group: {
+        _id: null,
+        numBooks: { $sum: 1 },
+      },
+    },
+  ]);
+  res.status(201).json({
+    status: 'success',
+    data: {
+      numBooks: stats,
+    },
+  });
+});
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
 exports.getBookByName = factory.getByName(Book);
