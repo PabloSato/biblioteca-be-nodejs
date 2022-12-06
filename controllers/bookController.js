@@ -8,6 +8,7 @@ const Book = require('./../models/bookModel');
 
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
+exports.getBookByName = factory.getByName(Book);
 exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);

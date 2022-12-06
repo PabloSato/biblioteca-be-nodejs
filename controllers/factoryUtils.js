@@ -23,6 +23,20 @@ exports.getAll = (Model) =>
       },
     });
   });
+// ----------------------------------------------- GET BY NAME ---------------------------------------------------
+exports.getByName = (Model) =>
+  catchAsync(async (req, res, next) => {
+    const name = req.params.name;
+    const data = await Model.find({ name: { $regex: name, $options: 'i' } });
+
+    res.status(200).json({
+      status: 'success',
+      size: data.length,
+      data: {
+        data: data,
+      },
+    });
+  });
 // ----------------------------------------------- GET ONE -------------------------------------------------------
 exports.getOne = (Model, popOptions) =>
   catchAsync(async (req, res, next) => {
