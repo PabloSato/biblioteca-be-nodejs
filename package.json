@@ -4,7 +4,9 @@
   "description": "Backend on Node, Bilioteca Project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "import-db": "node data/script-import-delete.js --import",
+    "delete-db": "node data/script-import-delete.js --delete"
   },
   "repository": {
     "type": "git",

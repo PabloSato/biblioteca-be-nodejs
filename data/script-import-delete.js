@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 
 const Book = require('./../models/bookModel');
 
-dotenv.config({ path: './../config.env' });
+dotenv.config({ path: './config.env' });
 // --------------------------------------------- DB ----------------------------------------
 const DB = process.env.DATABASE_LOCAL;
 mongoose
