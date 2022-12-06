@@ -46,14 +46,14 @@ bookSchema.pre('save', function (next) {
   next();
 });
 // -- INCLUDE --
-bookSchema.post('save', async function () {
-  // @TODO: solo metemos libros sin saga a un universo
-  // @TODO: metemos en sagas sus libros
-});
+// bookSchema.post('save', async function () {
+//   // @TODO: solo metemos libros sin saga a un universo
+//   // @TODO: metemos en sagas sus libros
+// });
 // --------------------------------------------- 3 - POPULATE -------------------------------
-bookSchema.pre(/^find/, function (next) {
-  // @TODO: Populate
-});
+// bookSchema.pre(/^find/, function (next) {
+//   // @TODO: Populate
+// });
 // --------------------------------------------- 0 - EXPORTAMOS -----------------------------
 const Book = mongoose.model('Book', bookSchema);
 
