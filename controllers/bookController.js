@@ -6,6 +6,12 @@ const catchAsync = require('./../utils/catchAsync');
 
 const Book = require('./../models/bookModel');
 
+// ---------------------- SPECIAL METHODS ---------------------------
+exports.getLastBooks = (req, res, next) => {
+  req.query.limit = '14';
+  req.query.sort = '-createdAt';
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
 exports.getBookByName = factory.getByName(Book);
