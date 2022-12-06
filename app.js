@@ -15,6 +15,7 @@ const app = express();
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
+app.use(express.static(`${__dirname}/public`));
 // --------------------------------------------- 4 - GLOBAL SECURITY ----------------------------------------
 const whitelist = ['http://localhost:4200'];
 const options = {
@@ -28,6 +29,10 @@ const options = {
 };
 app.use(cors(options));
 // --------------------------------------------- 5 - MIDDLEWARE ----------------------------------------
+app.use('/images/:name', (req, res) => {
+  const { name } = req.params;
+  res.sendFile(`${__dirname}/public/images/${name}`);
+});
 // --------------------------------------------- 6 - GLOBAL ROUTES ----------------------------------------
 apiRoutes(app);
 // --------------------------------------------- 7 - GLOBAL ERRORS ----------------------------------------
