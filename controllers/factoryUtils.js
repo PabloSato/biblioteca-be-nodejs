@@ -5,8 +5,11 @@ const APIFeatures = require('../utils/apiFeatures');
 // ----------------------------------------------- GET ALL -------------------------------------------------------
 exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
-    let filter = {};
     // @TODO: Nested
+    let filter = null;
+    if (req.query.filter) {
+      filter = req.query.filter;
+    }
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
       .sort()
@@ -14,10 +17,18 @@ exports.getAll = (Model) =>
       .paginate();
 
     const data = await features.query;
-    const page = features.query.options.skip + 1;
-    const docsPage = features.query.options.limit;
-    const totalDocs = await Model.estimatedDocumentCount();
-    const totalPages = Math.ceil(totalDocs / docsPage);
+
+    let totalDocs = 0;
+    let actualPage = 0;
+    const limit = features.query.options.limit;
+    if (!filter) {
+      totalDocs = await Model.estimatedDocumentCount();
+    } else {
+      totalDocs = data.length;
+    }
+    const totalPages = Math.ceil(totalDocs / limit);
+    actualPage = totalPages > 1 ? features.query.options.skip + 1 : 1;
+    const docsPage = totalDocs > limit ? limit : totalDocs;
 
     res.status(200).json({
       status: 'success',
@@ -27,23 +38,9 @@ exports.getAll = (Model) =>
         pagination: {
           totalDocs: totalDocs, // => Count of ALL elements in the DB
           totalPages: totalPages, // => Total pages available
-          page: page, // => Current page number
+          page: actualPage, // => Current page number
           size: docsPage, // => size of elements per page
         },
-      },
-    });
-  });
-// ----------------------------------------------- GET BY NAME ---------------------------------------------------
-exports.getByName = (Model) =>
-  catchAsync(async (req, res, next) => {
-    const name = req.params.name;
-    const data = await Model.find({ name: { $regex: name, $options: 'i' } });
-
-    res.status(200).json({
-      status: 'success',
-      size: data.length,
-      data: {
-        data: data,
       },
     });
   });

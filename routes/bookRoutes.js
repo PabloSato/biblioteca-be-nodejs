@@ -14,7 +14,9 @@ router
   .route('/last-books')
   .get(bookController.getLastBooks, bookController.getAllBooks);
 // -- SEARCH BY NAME --
-router.route('/search/:name').get(bookController.getBookByName);
+router
+  .route('/search/:name')
+  .get(bookController.getByName, bookController.getAllBooks);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
