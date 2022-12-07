@@ -36,7 +36,7 @@ const bookSchema = new mongoose.Schema(
   { toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
 
-// --------------------------------------------- 1 - ORDER ------------------------------
+// --------------------------------------------- 1 - ORDER ---------------------------------
 bookSchema.index({ slug: 1 });
 bookSchema.index({ name: 1 });
 bookSchema.index({ tags: 1 });

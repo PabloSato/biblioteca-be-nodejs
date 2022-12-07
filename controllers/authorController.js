@@ -4,7 +4,7 @@ const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
 
-const Tag = require('./../models/tagModel');
+const Author = require('./../models/authorModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- ORDER --
@@ -19,8 +19,8 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
-exports.getAllTags = factory.getAll(Tag);
-exports.getTag = factory.getOne(Tag);
-exports.createTag = factory.createOne(Tag);
-exports.updateTag = factory.updateOne(Tag);
-exports.deleteTag = factory.deleteOne(Tag);
+exports.getAllAuthors = factory.getAll(Author);
+exports.getAuthor = factory.getOne(Author);
+exports.createAuthor = factory.createOne(Author);
+exports.updateAuthor = factory.updateOne(Author);
+exports.deleteAuthor = factory.deleteOne(Author);
