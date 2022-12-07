@@ -21,7 +21,7 @@ const bookSchema = new mongoose.Schema(
       trim: true,
     },
     authors: [String],
-    tags: [String],
+    tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
     image: String,
     pages: Number,
     universe: String,
@@ -52,9 +52,14 @@ bookSchema.pre('save', function (next) {
 //   // @TODO: metemos en sagas sus libros
 // });
 // --------------------------------------------- 3 - POPULATE -------------------------------
-// bookSchema.pre(/^find/, function (next) {
-//   // @TODO: Populate
-// });
+bookSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'tags',
+    select: 'name slug',
+  });
+  // @TODO: Populate
+  next();
+});
 // --------------------------------------------- 0 - EXPORTAMOS -----------------------------
 const Book = mongoose.model('Book', bookSchema);
 
