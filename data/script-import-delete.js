@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 
 const Book = require('./../models/bookModel');
+const Tag = require('./../models/tagModel');
 
 dotenv.config({ path: './config.env' });
 // --------------------------------------------- DB ----------------------------------------
@@ -16,10 +17,12 @@ mongoose
 const books = JSON.parse(
   fs.readFileSync(`${__dirname}/simple-booksv1.json`, 'utf-8') // => Simple Book (all string)
 );
+const tags = JSON.parse(fs.readFileSync(`${__dirname}/tags.json`, 'utf-8'));
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {
   try {
     await Book.create(books);
+    await Tag.create(tags);
     console.log('DATA LOADED!');
   } catch (err) {
     console.log(err);
@@ -30,6 +33,7 @@ const importData = async () => {
 const deleteData = async () => {
   try {
     await Book.deleteMany();
+    await Tag.deleteMany();
     console.log('DATA DELETED!');
   } catch (err) {
     console.log(err);

@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "639057b615bbd94d3ee4cd91",
+    "name": "adventure",
+    "image": "aventuras.png",
+    "slug": "adventure"
+  },
+  {
+    "_id": "639057c915bbd94d3ee4cd93",
+    "name": "comic",
+    "image": "comic.png",
+    "slug": "comic"
+  },
+  {
+    "_id": "6390584415bbd94d3ee4cd95",
+    "name": "novela",
+    "image": "novela.png",
+    "slug": "novela"
+  },
+  {
+    "_id": "6390586215bbd94d3ee4cd97",
+    "name": "novela negra",
+    "image": "negra.png",
+    "slug": "novela-negra"
+  },
+  {
+    "_id": "6390587f15bbd94d3ee4cd99",
+    "name": "ficción",
+    "image": "ficcion.png",
+    "slug": "ficcion"
+  },
+  {
+    "_id": "6390589515bbd94d3ee4cd9b",
+    "name": "contemporánea",
+    "image": "novela_contemporanea.png",
+    "slug": "contemporanea"
+  },
+  {
+    "_id": "639058bb15bbd94d3ee4cd9d",
+    "name": "fantasía épica",
+    "image": "fantasia.png",
+    "slug": "fantasia-epica"
+  },
+  {
+    "_id": "639058e315bbd94d3ee4cd9f",
+    "name": "clásicos",
+    "image": "clasicos2.png",
+    "slug": "clasicos"
+  },
+  {
+    "_id": "6390590215bbd94d3ee4cda1",
+    "name": "ciencia ficción",
+    "image": "sci-fi.png",
+    "slug": "ciencia-ficcion"
+  },
+  {
+    "_id": "6390592f15bbd94d3ee4cda5",
+    "name": "ensayo",
+    "image": "ensayo.png",
+    "slug": "ensayo"
+  },
+  {
+    "_id": "6390593e15bbd94d3ee4cda7",
+    "name": "social",
+    "image": "social.png",
+    "slug": "social"
+  },
+  {
+    "_id": "6390596c15bbd94d3ee4cda9",
+    "name": "actual",
+    "image": "actual.png",
+    "slug": "actual"
+  },
+  {
+    "_id": "6390599094849a6fee601389",
+    "name": "no-ficción",
+    "image": "no-fic.png",
+    "slug": "no-ficcion"
+  }
+]
