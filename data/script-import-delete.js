@@ -14,7 +14,7 @@ mongoose
   });
 // --------------------------------------------- 1 - READ JSON FILES ----------------------------------------
 const books = JSON.parse(
-  fs.readFileSync(`${__dirname}/simple-booksv1.json`, 'utf-8')
+  fs.readFileSync(`${__dirname}/simple-booksv1.json`, 'utf-8') // => Simple Book (all string)
 );
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {

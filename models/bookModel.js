@@ -21,7 +21,7 @@ const bookSchema = new mongoose.Schema(
       default: this.slug,
       trim: true,
     },
-    autores: [String],
+    authors: [String],
     tags: [String],
     image: String,
     pages: Number,
