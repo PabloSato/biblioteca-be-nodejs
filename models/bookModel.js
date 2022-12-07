@@ -7,7 +7,6 @@ const bookSchema = new mongoose.Schema(
       type: String,
       required: [true, 'Un libro debe de tener un Título'],
       trim: true,
-      unique: true,
       lowercase: true,
       minlength: [1, 'Un título debe de tener por lo menos 1 carácter'],
     },
@@ -37,7 +36,7 @@ const bookSchema = new mongoose.Schema(
   { toJSON: { virtuals: true }, toObject: { virtuals: true } }
 );
 
-// --------------------------------------------- 1 - ORDENAMOS ------------------------------
+// --------------------------------------------- 1 - ORDER ------------------------------
 bookSchema.index({ slug: 1 });
 bookSchema.index({ name: 1 });
 bookSchema.index({ tags: 1 });
