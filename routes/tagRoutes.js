@@ -2,7 +2,10 @@ const express = require('express');
 const tagController = require('./../controllers/tagController');
 const router = express.Router();
 // ---------------------- CRUD ROUTES --------------------------------
-router.route('/').get(tagController.getAllTags).post(tagController.createTag);
+router
+  .route('/')
+  .get(tagController.setOrder, tagController.getAllTags)
+  .post(tagController.createTag);
 
 router
   .route('/:id')

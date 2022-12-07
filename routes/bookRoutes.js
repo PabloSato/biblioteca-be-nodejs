@@ -21,6 +21,10 @@ router
 router
   .route('/slug/:slug')
   .get(bookController.getBySlug, bookController.getBook);
+// -- SEARCH BY TAG --
+router
+  .route('/tag/:tagId')
+  .get(bookController.getByTag, bookController.getAllBooks);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')

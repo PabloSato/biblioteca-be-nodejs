@@ -44,6 +44,12 @@ exports.getBySlug = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// -- BY TAG --
+exports.getByTag = (req, res, next) => {
+  const filter = { tags: req.params.tagId };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
