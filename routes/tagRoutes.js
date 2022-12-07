@@ -1,6 +1,8 @@
 const express = require('express');
 const tagController = require('./../controllers/tagController');
 const router = express.Router();
+// ---------------------- SPECIAL ROUTES -----------------------------
+router.route('/slug/:slug').get(tagController.getBySlug, tagController.getTag);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')

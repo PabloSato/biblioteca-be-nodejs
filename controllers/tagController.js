@@ -12,6 +12,12 @@ exports.setOrder = (req, res, next) => {
   req.query.sort = 'name';
   next();
 };
+// -- BY SLUG --
+exports.getBySlug = (req, res, next) => {
+  const filter = { slug: req.params.slug };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllTags = factory.getAll(Tag);
 exports.getTag = factory.getOne(Tag);
