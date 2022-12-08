@@ -20,7 +20,7 @@ const bookSchema = new mongoose.Schema(
       default: this.slug,
       trim: true,
     },
-    authors: [String],
+    authors: [{ type: mongoose.Schema.ObjectId, ref: 'Author' }],
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
     image: String,
     pages: Number,
@@ -55,6 +55,9 @@ bookSchema.pre('save', function (next) {
 bookSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'tags',
+    select: 'name slug',
+  }).populate({
+    path: 'authors',
     select: 'name slug',
   });
   // @TODO: Populate
