@@ -26,7 +26,7 @@ const bookSchema = new mongoose.Schema(
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
     image: String,
     pages: Number,
-    universe: [{ type: mongoose.Schema.ObjectId, ref: 'Universe' }],
+    universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     saga: String,
     number: Number,
     createdAt: {
