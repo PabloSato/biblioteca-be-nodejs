@@ -4,10 +4,10 @@ const bookController = require('./../controllers/bookController');
 
 const router = express.Router();
 
-// @TODO: Add Nested Routes
+// TODO: Add Nested Routes
 
 // ---------------------- SPECIALS ROUTES ----------------------------
-// @TODO: Add Specials Routes
+// TODO: Add Specials Routes
 // -- LAST BOOKS --
 router.route('/stats').get(bookController.stats);
 router

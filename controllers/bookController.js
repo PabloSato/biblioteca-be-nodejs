@@ -1,4 +1,4 @@
-//@TODO => add and config MULTER
+//TODO: => add and config MULTER
 
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');

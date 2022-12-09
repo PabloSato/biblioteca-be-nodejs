@@ -1,0 +1,24 @@
+const express = require('express');
+
+const universeController = require('./../controllers/universeController');
+
+const router = express.Router();
+
+// ---------------------- SPECIAL ROUTES ------------------------
+// -- SEARCH BY SLUG --
+router
+  .route('/slug/:slug')
+  .get(universeController.getBySlug, universeController.getUniverse);
+// ---------------------- CRUD ROUTES ---------------------------
+router
+  .route('/')
+  .get(universeController.getAllUniverses)
+  .post(universeController.createUniverse);
+
+router
+  .route('/:id')
+  .get(universeController.getUniverse)
+  .patch(universeController.updateUniverse)
+  .delete(universeController.deleteUniverse);
+
+module.exports = router;
