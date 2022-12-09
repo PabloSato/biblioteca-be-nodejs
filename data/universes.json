@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6393a1a432720a3fd8bfd3db"
+  },
+  "name": "legendarium",
+  "books": [],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670619415783"
+    }
+  },
+  "slug": "legendarium"
+}]
