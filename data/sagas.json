@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "6393a865e5fcb099cfec5573",
+    "name": "el poder del perro",
+    "books": [],
+    "slug": "el-poder-del-perro"
+  },
+  {
+    "_id": "6393a898e5fcb099cfec5575",
+    "name": "el señor de los anillos",
+    "universe": "6393a1a432720a3fd8bfd3db",
+    "books": [],
+    "slug": "el-senor-de-los-anillos"
+  },
+  {
+    "_id": "6393a8d0e5fcb099cfec557a",
+    "name": "trilogía del baztán",
+    "books": [],
+    "slug": "trilogia-del-baztan"
+  },
+  {
+    "_id": "6393a8d9e5fcb099cfec557c",
+    "name": "salvajes",
+    "books": [],
+    "slug": "salvajes"
+  }
+]

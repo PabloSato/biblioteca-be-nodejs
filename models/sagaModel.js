@@ -30,6 +30,7 @@ const sagaSchema = new mongoose.Schema(
 // -- SLUG --
 sagaSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
+  next();
 });
 // -- INCLUDE --
 sagaSchema.post('save', async function () {

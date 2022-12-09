@@ -11,7 +11,7 @@
     ],
     "pages": 942,
     "argument": "¿Qué haces cuando ya no hay fronteras? ¿Cuándo las líneas que creías que existían sencillamente se han esfumado? ¿Cómo te mantienes de pie cuando ya no sabes realmente de qué lado estás? La guerra ha llegado a casa. Hace cuarenta años que Art Keller está en primera línea de fuego del confl icto más largo de la historia de EE.UU.: la guerra contra la droga. Su obsesión por derrotar al capo más poderoso, rico y letal del mundo —el líder del cártel de Sinaloa, Adán Barrera— le ha costado cicatrices físicas y mentales, tener que despedir a personas a las que amaba e incluso se ha llevado parte de su alma. Ahora Keller se encuentra a los mandos de la DEA solo para ver como por destruir al monstruo han surgido otros treinta que están llevando incluso más caos y destrucción a su amado México. Pero eso no es todo.",
-    "saga": "El Poder del Perro",
+    "saga": "6393a865e5fcb099cfec5573",
     "number": 3,
     "image": "lafrontera.jpeg",
     "slug": "la-frontera"
@@ -28,7 +28,7 @@
     ],
     "pages": 704,
     "argument": "El cártel es una colosal narración que se mueve entre los áridos escenarios mexicanos y los despachos de los poderosos en Washington, y que se extiende hasta ciudades europeas como Berlín y Barcelona. El absorbente trabajo de documentación de Winslow (libros, prensa, fotos, vídeos, encuentros personales...) le ocupó cinco años, y marcó su vida personal por las implicaciones que acarrea adentrarse en un mundo tan increíblemente violento y corrupto.",
-    "saga": "El Poder del Perro",
+    "saga": "6393a865e5fcb099cfec5573",
     "number": 2,
     "image": "cartel.jpeg",
     "slug": "el-cartel"
@@ -45,7 +45,7 @@
     ],
     "pages": 347,
     "argument": "Ben y Chon son dos tíos que saben disfrutar de la vida: les encanta el sexo, el voleibol, la cerveza y las chicas. Ophelia, más conocida como O., tiene fama de alcanzar orgasmos muy escandalosos (por eso sus amigas a veces la llaman Multi O.) y está loca por Ben y Chon. En fin, que se acuesta con ambos. Pero lo que de verdad hace diferentes a Ben y Chon de los demás es que producen la mejor maría del mundo. ¿Algún problema? Ninguno. Bueno, sí, uno: el cartel de Baja.",
-    "saga": "Salvajes",
+    "saga": "6393a8d9e5fcb099cfec557c",
     "number": 2,
     "image": "icon6.jpeg",
     "slug": "salvajes"
@@ -111,7 +111,7 @@
     "pages": 563,
     "argument": "En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en las Grietas del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.",
     "universe": "6393a1a432720a3fd8bfd3db",
-    "saga": "el señor de los anillos",
+    "saga": "6393a898e5fcb099cfec5575",
     "number": 1,
     "image": "icon2.jpeg",
     "slug": "la-comunidad-del-anillo"
@@ -130,7 +130,7 @@
     "pages": 496,
     "argument": "La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam continúan solos su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.",
     "universe": "6393a1a432720a3fd8bfd3db",
-    "saga": "el señor de los anillos",
+    "saga": "6393a898e5fcb099cfec5575",
     "number": 2,
     "image": "torres.jpeg",
     "slug": "las-dos-torres"
@@ -149,14 +149,14 @@
     "pages": 417,
     "argument": "Para la historia misma de la novela -una historia que se remonta a la Odisea y antes de la Odisea- El senor de los Anillos no es un retorno, sino un paso adelante o una revolucion: la conquista de un territorio nuevo.",
     "universe": "6393a1a432720a3fd8bfd3db",
-    "saga": "el señor de los anillos",
+    "saga": "6393a898e5fcb099cfec5575",
     "number": 3,
     "image": "retorno.jpeg",
     "slug": "el-retorno-del-rey"
   },
   {
     "id": "6359372e59c543ea8603012b",
-    "name": "El Poder del Perro",
+    "name": "6393a865e5fcb099cfec5573",
     "authors": "6390969594845ad46c565c95",
     "tags": [
       "6390586215bbd94d3ee4cd97",
@@ -166,13 +166,12 @@
     ],
     "pages": 718,
     "argument": "Cuando su compañero aparece muerto con signos de haber sido torturado por la mafia de la droga, el agente de la DEA Art Keller, emprende una feroz venganza. Encadenados a la misma guerra, se encuentran una hermosa prostituta de alto standing; un cura católico confidente de esta y empeñado en ayudar al pueblo, y Billy «el Niño» Callan, un chico taciturno convertido por azar en asesino a sueldo. Narcovaqueros, campesinos, mafia al puro estilo italoamericano, policías corruptos, un soplón y un santo milagrero conforman el universo de esta historia de traiciones, frustración, amor, sexo y fe sobre la búsqueda de la redención.",
-    "saga": "El Poder del Perro",
+    "saga": "6393a865e5fcb099cfec5573",
     "number": 1,
     "image": "icon1.jpeg",
     "slug": "el-poder-del-perro"
   },
   {
-    "id": "6359372e59c543ea86030136",
     "name": "El Silmarillion",
     "authors": "639096f294845ad46c565c97",
     "tags": [
@@ -215,7 +214,7 @@
     ],
     "pages": 440,
     "argument": "En los márgenes del río Baztán, en el valle de Navarra, aparece el cuerpo desnudo de una adolescente en unas circunstancias que lo ponen en relación con un asesinato ocurrido en los alrededores un mes atrás. La inspectora de la sección de homicidios de la Policía Foral, Amaia Salazar, será la encargada de dirigir una investigación que la llevará devuelta a Elizondo, una pequeña población de donde es originaria y de la que ha tratado de huir toda su vida. Enfrentada con las cada vez más complicadas derivaciones del caso y con sus propios fantasmas familiares, la investigación de Amaia es una carrera contrarreloj para dar con un asesino que puede mostrar el rostro más aterrador de una realidad brutal al tiempo que convocar a los seres más inquietantes de las leyendas del Norte.",
-    "saga": "Trilogía del Baztán",
+    "saga": "6393a8d0e5fcb099cfec557a",
     "number": 1,
     "image": "icon5.jpeg",
     "slug": "el-guardian-invisible"
@@ -232,7 +231,7 @@
     ],
     "pages": 336,
     "argument": "En Los reyes de lo cool, la precuela de Salvajes , Don Winslow recupera los personajes de aquella novela para reconstruir su pasado, y nos transporta a una California casi mítica en la que somos testigos de los orígenes del tráfico de drogas y sus conexiones con los cárteles de la droga mexicanos.Estamos en 2005. Ben, Chon y O viven a tope en Laguna Beach, al sur de California. Aparte de disfrutar del sexo, las cervezas y el voleibol, no saben muy bien qué hacer con sus vidas. Hasta el día en que Chon vuelve de permiso de Afganistán con una semilla de Viuda Blanca y la clave de su futuro. La Viuda Blanca es una variedad de cannabis tan exquisita y cargada de THC que es solo cuestión de tiempo que su negocio de cultivo y venta de marihuana florezca. También es solo cuestión de tiempo que empiecen los problemas.",
-    "saga": "Salvajes",
+    "saga": "6393a8d9e5fcb099cfec557c",
     "number": 1,
     "image": "reyescool.jpeg",
     "slug": "los-reyes-de-lo-cool"
@@ -264,7 +263,7 @@
       "639058e315bbd94d3ee4cd9f"
     ],
     "universe": "6393a1a432720a3fd8bfd3db",
-    "saga": "el señor de los anillos",
+    "saga": "6393a898e5fcb099cfec5575",
     "pages": 178,
     "number": 4,
     "image": "icon11.jpeg",
