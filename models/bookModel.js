@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const Universe = require('./universeModel');
+const Saga = require('./sagaModel');
 
 const bookSchema = new mongoose.Schema(
   {
@@ -27,7 +28,7 @@ const bookSchema = new mongoose.Schema(
     image: String,
     pages: Number,
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
-    saga: String,
+    saga: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     number: Number,
     createdAt: {
       type: Date,
@@ -65,9 +66,15 @@ bookSchema.post('save', async function () {
         runValidators: true,
       }
     );
+    if (this.saga && has_saga) {
+      const saga = await Saga.findById(this.saga);
+      saga.books.push(this);
+      const updtd = await Saga.findByIdAndUpdate(this.saga, saga, {
+        new: true,
+        runValidators: true,
+      });
+    }
   }
-  // @TODO: solo metemos libros sin saga a un universo
-  // @TODO: metemos en sagas sus libros
 });
 // --------------------------------------------- 3 - POPULATE -------------------------------
 bookSchema.pre(/^find/, function (next) {
@@ -81,6 +88,10 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'universe',
+      select: 'name',
+    })
+    .populate({
+      path: 'saga',
       select: 'name',
     });
   // @TODO: Populate
