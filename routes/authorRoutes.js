@@ -4,7 +4,7 @@ const router = express.Router();
 // ---------------------- SPECIAL ROUTES -----------------------------
 router
   .route('/slug/:slug')
-  .get(authorController.getBySlug, authorController.getAllAuthors);
+  .get(authorController.getBySlug, authorController.getAuthor);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
