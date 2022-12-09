@@ -1,4 +1,4 @@
-const mongoose = erquire('mongoose');
+const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const universeSchema = new mongoose.Schema(

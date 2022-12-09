@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const Universe = require('./universeModel');
+
 const bookSchema = new mongoose.Schema(
   {
     name: {
@@ -24,7 +26,7 @@ const bookSchema = new mongoose.Schema(
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
     image: String,
     pages: Number,
-    universe: String,
+    universe: [{ type: mongoose.Schema.ObjectId, ref: 'Universe' }],
     saga: String,
     number: Number,
     createdAt: {
@@ -47,19 +49,40 @@ bookSchema.pre('save', function (next) {
   next();
 });
 // -- INCLUDE --
-// bookSchema.post('save', async function () {
-//   // @TODO: solo metemos libros sin saga a un universo
-//   // @TODO: metemos en sagas sus libros
-// });
+bookSchema.post('save', async function () {
+  let has_saga = false;
+  if (this.universe && this.saga) {
+    has_saga = true;
+  }
+  if (this.universe && !has_saga) {
+    const universe = await Universe.findById(this.universe);
+    universe.books.push(this);
+    const updated_universe = await Universe.findByIdAndUpdate(
+      this.universe,
+      universe,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+  }
+  // @TODO: solo metemos libros sin saga a un universo
+  // @TODO: metemos en sagas sus libros
+});
 // --------------------------------------------- 3 - POPULATE -------------------------------
 bookSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'tags',
     select: 'name slug',
-  }).populate({
-    path: 'authors',
-    select: 'name slug',
-  });
+  })
+    .populate({
+      path: 'authors',
+      select: 'name slug',
+    })
+    .populate({
+      path: 'universe',
+      select: 'name',
+    });
   // @TODO: Populate
   next();
 });
