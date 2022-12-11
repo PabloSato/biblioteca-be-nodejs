@@ -51,32 +51,7 @@ bookSchema.pre('save', function (next) {
   next();
 });
 // -- INCLUDE --
-bookSchema.post('save', async function () {
-  if (this.universe) {
-    const universe = await Universe.findById(this.universe);
-    universe.books.push(this);
-    const updated_universe = await Universe.findByIdAndUpdate(
-      this.universe,
-      universe,
-      {
-        new: true,
-        runValidators: true,
-      }
-    );
-    console.log('UNIV');
-    console.log(updated_universe);
-  }
-  if (this.saga) {
-    const saga = await Saga.findById(this.saga);
-    saga.books.push(this);
-    const updtd = await Saga.findByIdAndUpdate(this.saga, saga, {
-      new: true,
-      runValidators: true,
-    });
-    console.log('SAGA');
-    console.log(updtd);
-  }
-});
+
 // --------------------------------------------- 3 - POPULATE -------------------------------
 bookSchema.pre(/^find/, function (next) {
   this.populate({
@@ -93,7 +68,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'saga',
-      select: 'name',
+      select: 'name slug',
     });
   // @TODO: Populate
   next();
