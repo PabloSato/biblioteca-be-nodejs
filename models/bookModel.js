@@ -30,6 +30,7 @@ const bookSchema = new mongoose.Schema(
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     saga: { type: mongoose.Schema.ObjectId, ref: 'Saga' },
     number: Number,
+    editions: [{ type: mongoose.Schema.ObjectId, ref: 'Book' }],
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -51,11 +52,7 @@ bookSchema.pre('save', function (next) {
 });
 // -- INCLUDE --
 bookSchema.post('save', async function () {
-  let has_saga = false;
-  if (this.universe && this.saga) {
-    has_saga = true;
-  }
-  if (this.universe && !has_saga) {
+  if (this.universe) {
     const universe = await Universe.findById(this.universe);
     universe.books.push(this);
     const updated_universe = await Universe.findByIdAndUpdate(
@@ -66,14 +63,18 @@ bookSchema.post('save', async function () {
         runValidators: true,
       }
     );
+    console.log('UNIV');
+    console.log(updated_universe);
   }
-  if (this.saga && has_saga) {
+  if (this.saga) {
     const saga = await Saga.findById(this.saga);
     saga.books.push(this);
     const updtd = await Saga.findByIdAndUpdate(this.saga, saga, {
       new: true,
       runValidators: true,
     });
+    console.log('SAGA');
+    console.log(updtd);
   }
 });
 // --------------------------------------------- 3 - POPULATE -------------------------------
