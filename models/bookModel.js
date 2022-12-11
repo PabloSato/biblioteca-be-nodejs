@@ -64,7 +64,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'universe',
-      select: 'name',
+      select: 'name slug',
     })
     .populate({
       path: 'saga',

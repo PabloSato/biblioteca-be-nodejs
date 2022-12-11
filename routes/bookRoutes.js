@@ -33,6 +33,10 @@ router
 router
   .route('/saga/:sagaId')
   .get(bookController.getBySaga, bookController.getAllBooks);
+// -- SEARCH BY UNIVERSE --
+router
+  .route('/universe/:universeId')
+  .get(bookController.getByUniverse, bookController.getAllBooks);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')

@@ -63,6 +63,13 @@ exports.getBySaga = (req, res, next) => {
   req.query.sort = 'number';
   next();
 };
+// -- BY UNIVERSE --
+exports.getByUniverse = (req, res, next) => {
+  const filter = { universe: req.params.universeId };
+  req.query.filter = filter;
+  req.query.sort = 'name';
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
