@@ -9,7 +9,7 @@ const Book = require('./../models/bookModel');
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- LAST BOOKS --
 exports.getLastBooks = (req, res, next) => {
-  req.query.limit = '10';
+  req.query.limit = '16';
   req.query.sort = '-createdAt';
   next();
 };
@@ -47,6 +47,11 @@ exports.getBySlug = (req, res, next) => {
 // -- BY TAG --
 exports.getByTag = (req, res, next) => {
   const filter = { tags: req.params.tagId };
+  req.query.filter = filter;
+  next();
+};
+exports.getByAuthor = (req, res, next) => {
+  const filter = { authors: req.params.authorId };
   req.query.filter = filter;
   next();
 };
