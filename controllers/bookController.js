@@ -50,9 +50,17 @@ exports.getByTag = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// -- BY AUTHOR --
 exports.getByAuthor = (req, res, next) => {
   const filter = { authors: req.params.authorId };
   req.query.filter = filter;
+  next();
+};
+// -- BY SAGA --
+exports.getBySaga = (req, res, next) => {
+  const filter = { saga: req.params.sagaId };
+  req.query.filter = filter;
+  req.query.sort = 'number';
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------

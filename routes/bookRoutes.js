@@ -29,6 +29,10 @@ router
 router
   .route('/author/:authorId')
   .get(bookController.getByAuthor, bookController.getAllBooks);
+// -- SEARCH BY SAGA --
+router
+  .route('/saga/:sagaId')
+  .get(bookController.getBySaga, bookController.getAllBooks);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
