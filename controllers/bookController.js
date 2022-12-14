@@ -7,6 +7,9 @@ const catchAsync = require('./../utils/catchAsync');
 const Book = require('./../models/bookModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
+// -- MULTER --
+// TODO: => Mover esto a Edition
+
 // -- LAST BOOKS --
 exports.getLastBooks = (req, res, next) => {
   req.query.limit = '12';
