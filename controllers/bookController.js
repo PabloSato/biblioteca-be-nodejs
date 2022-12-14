@@ -1,4 +1,7 @@
 //TODO: => add and config MULTER
+const multer = require('multer');
+const sharp = require('sharp');
+const crypto = require('crypto');
 
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
@@ -9,6 +12,35 @@ const Book = require('./../models/bookModel');
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- MULTER --
 // TODO: => Mover esto a Edition
+const multerStorage = multer.memoryStorage(); // => Grabamos en el buffer
+// Filtramos, solo aceptamos una serie de archivos
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Not an image!', 400), false);
+  }
+};
+const upload = multer({
+  storage: multerStorage,
+  fileFilter: multerFilter,
+});
+exports.uploadImage = upload.single('image');
+
+exports.resizeImages = catchAsync(async (req, res, next) => {
+  if (!req.file) return next();
+
+  const ext = req.file.originalname.split('.')[1];
+  req.file.filename = `${crypto.randomUUID()}.${ext}`;
+
+  await sharp(req.file.bufer)
+    .resize(600, 900)
+    .toFormat('jpeg')
+    .jpeg({ quality: 90 })
+    .toFile(`public/images/${req.file.filename}`);
+
+  next();
+});
 
 // -- LAST BOOKS --
 exports.getLastBooks = (req, res, next) => {
