@@ -41,7 +41,11 @@ router
 router
   .route('/')
   .get(bookController.getAllBooks)
-  .post(bookController.createBook);
+  .post(
+    bookController.uploadImage,
+    bookController.resizeImages,
+    bookController.createBook
+  );
 
 router
   .route('/:id')
