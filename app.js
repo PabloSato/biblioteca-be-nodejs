@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 app.use(express.static(`${__dirname}/public`));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true })); //Para recibir data de un formulario, con extends es para recibir data compleja
 // --------------------------------------------- 4 - GLOBAL SECURITY ----------------------------------------
 const whitelist = ['http://localhost:4200'];
 const options = {
