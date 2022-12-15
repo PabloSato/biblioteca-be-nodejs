@@ -13,7 +13,6 @@ const sagaSchema = new mongoose.Schema(
     },
     slug: String,
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
-    books: [{ type: mongoose.Schema.ObjectId, ref: 'Book' }],
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -33,16 +32,7 @@ sagaSchema.pre('save', function (next) {
   next();
 });
 // -- INCLUDE --
-sagaSchema.post('save', async function () {
-  if (this.universe) {
-    const universe = await Universe.findById(this.universe);
-    universe.sagas.push(this);
-    const updated = await Universe.findByIdAndUpdate(this.universe, universe, {
-      new: true,
-      runValidators: true,
-    });
-  }
-});
+
 // --------------------------------------------- 3 - POPULATE ------------------------------
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Saga = mongoose.model('Saga', sagaSchema);

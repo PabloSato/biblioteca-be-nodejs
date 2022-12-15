@@ -10,9 +10,6 @@ const universeSchema = new mongoose.Schema(
       lowercase: true,
     },
     slug: String,
-    //TODO: sagas
-    sagas: [{ type: mongoose.Schema.ObjectId, ref: 'Saga' }],
-    books: [{ type: mongoose.Schema.ObjectId, ref: 'Book' }],
     createdAt: {
       type: Date,
       default: Date.now(),
