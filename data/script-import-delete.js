@@ -29,9 +29,14 @@ const tags = JSON.parse(fs.readFileSync(`${__dirname}/tags.json`, 'utf-8'));
 const authors = JSON.parse(
   fs.readFileSync(`${__dirname}/authors.json`, 'utf-8')
 );
-const universes = JSON.parse(fs.readFileSync(`${__dirname}/universes.json`));
-const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`));
-const editions = JSON.parse(fs.readFileSync(`${__dirname}/editions.json`));
+const universes = JSON.parse(
+  fs.readFileSync(`${__dirname}/universes.json`, 'utf-8')
+);
+const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`, 'utf-8'));
+const editions = JSON.parse(
+  fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
+);
+
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {
   try {
@@ -39,8 +44,8 @@ const importData = async () => {
     await Author.create(authors);
     await Universe.create(universes);
     await Saga.create(sagas);
-    await Book.create(books);
     await Edition.create(editions);
+    await Book.create(books);
     console.log('DATA LOADED!');
   } catch (err) {
     console.log(err);
