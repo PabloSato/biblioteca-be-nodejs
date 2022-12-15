@@ -12,9 +12,10 @@ const { apiRoutes } = require('./routes/router');
 const app = express();
 
 // --------------------------------------------- 2 - GLOBAL MIDDLEWARE ----------------------------------------
-if (process.env.NODE_ENV === 'development') {
-  app.use(morgan('dev'));
-}
+// if (process.env.NODE_ENV === 'development') {
+//   app.use(morgan('dev'));
+// }
+app.use(morgan('dev'));
 app.use(express.static(`${__dirname}/public`));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
