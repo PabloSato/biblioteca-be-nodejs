@@ -25,12 +25,12 @@ const bookSchema = new mongoose.Schema(
     },
     authors: [{ type: mongoose.Schema.ObjectId, ref: 'Author' }],
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
-    image: String,
-    pages: Number,
+    image: String, // TODO: Delete
+    pages: Number, // TODO: Delete
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     saga: { type: mongoose.Schema.ObjectId, ref: 'Saga' },
     number: Number,
-    editions: [{ type: mongoose.Schema.ObjectId, ref: 'Book' }],
+    editions: [{ type: mongoose.Schema.ObjectId, ref: 'Edition' }],
     createdAt: {
       type: Date,
       default: Date.now(),
