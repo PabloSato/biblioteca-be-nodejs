@@ -22,7 +22,7 @@ exports.getAll = (Model) =>
         },
       },
     ]);
-    const total_docs = count[0].total;
+    const total_docs = count[0] ? count[0].total : 0;
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
       .sort()
