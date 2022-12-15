@@ -7,6 +7,7 @@ const Tag = require('./../models/tagModel');
 const Author = require('./../models/authorModel');
 const Universe = require('./../models/universeModel');
 const Saga = require('./../models/sagaModel');
+const Edition = require('./../models/editionModel');
 
 dotenv.config({ path: './config.env' });
 // --------------------------------------------- DB ----------------------------------------
@@ -30,6 +31,7 @@ const authors = JSON.parse(
 );
 const universes = JSON.parse(fs.readFileSync(`${__dirname}/universes.json`));
 const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`));
+const editions = JSON.parse(fs.readFileSync(`${__dirname}/editions.json`));
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {
   try {
@@ -38,6 +40,7 @@ const importData = async () => {
     await Universe.create(universes);
     await Saga.create(sagas);
     await Book.create(books);
+    await Edition.create(editions);
     console.log('DATA LOADED!');
   } catch (err) {
     console.log(err);
@@ -47,6 +50,7 @@ const importData = async () => {
 
 const deleteData = async () => {
   try {
+    await Edition.deleteMany();
     await Book.deleteMany();
     await Saga.deleteMany();
     await Tag.deleteMany();
