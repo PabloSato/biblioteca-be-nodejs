@@ -1,3 +1,7 @@
+const multer = require('multer');
+const sharp = require('sharp');
+const crypto = require('crypto');
+
 const catchAsync = require('../utils/catchAsync');
 const AppError = require('../utils/appError');
 const APIFeatures = require('../utils/apiFeatures');
@@ -61,7 +65,7 @@ exports.getOne = (Model, popOptions) =>
 // ----------------------------------------------- CREATE --------------------------------------------------------
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    if (req.file) req.body.img = req.file.filename;
+    if (req.file) req.body.image = req.file.filename;
 
     const data = await Model.create(req.body);
 
@@ -105,4 +109,33 @@ exports.deleteOne = (Model) =>
       status: 'success',
       data: null,
     });
+  });
+// ----------------------------------------------- MULTER --------------------------------------------------------
+// -- CONFIGURATION --
+//Controlamos que lo que nos suban son IMAGENES y nada más
+const multerFilter = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Not an image! Please upload only images', 400), false);
+  }
+};
+
+const storage = multer.memoryStorage();
+const upload = multer({ storage, fileFilter: multerFilter });
+// --------------------- UPLOAD IMAGE --------------------------
+exports.uploadImage = () => upload.single('image');
+// --------------------- RESIZE IMAGE --------------------------
+exports.resizeImage = () =>
+  catchAsync(async (req, res, next) => {
+    if (!req.file) return next();
+
+    req.file.filename = `${crypto.randomUUID()}.jpeg`;
+    await sharp(req.file.buffer)
+      .resize(600, 900)
+      .toFormat('jpeg')
+      .jpeg({ quality: 90 })
+      .toFile(`public/images/${req.file.filename}`);
+
+    next();
   });
