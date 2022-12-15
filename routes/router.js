@@ -15,7 +15,7 @@ function apiRoutes(app) {
   router.use('/authors', authorRoutes);
   router.use('/universes', universeRoutes);
   router.use('/sagas', sagaRoutes);
-  router.use('/edition', editionRoutes);
+  router.use('/editions', editionRoutes);
 }
 
 module.exports = { apiRoutes };
