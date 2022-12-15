@@ -21,7 +21,8 @@ const books = JSON.parse(
   // fs.readFileSync(`${__dirname}/simple-booksv1.json`, 'utf-8') // => Simple Book (all string)
   // fs.readFileSync(`${__dirname}/simple-booksv2.json`, 'utf-8') // => Books with Tags IDs
   // fs.readFileSync(`${__dirname}/simple-booksv3.json`, 'utf-8') // => Books with Tags IDs and Authors IDs
-  fs.readFileSync(`${__dirname}/simple-booksv4.json`, 'utf-8') // => Books with Tags IDs and Authors IDs and Universe IDs
+  // fs.readFileSync(`${__dirname}/simple-booksv4.json`, 'utf-8') // => Books with Tags IDs and Authors IDs and Universe IDs
+  fs.readFileSync(`${__dirname}/simple-booksv5.json`, 'utf-8') // => Books with Tags IDs and Authors IDs and Universe IDs and Editions
 );
 const tags = JSON.parse(fs.readFileSync(`${__dirname}/tags.json`, 'utf-8'));
 const authors = JSON.parse(
