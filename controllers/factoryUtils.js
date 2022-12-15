@@ -10,6 +10,15 @@ exports.getAll = (Model) =>
     if (req.query.filter) {
       filter = req.query.filter;
     }
+    const count = await Model.aggregate([
+      {
+        $group: {
+          _id: null,
+          total: { $sum: 1 },
+        },
+      },
+    ]);
+    const total_docs = count[0].total;
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
       .sort()
@@ -17,30 +26,11 @@ exports.getAll = (Model) =>
       .paginate();
 
     const data = await features.query;
-
-    let totalDocs = 0;
-    let actualPage = 0;
-    const limit = features.query.options.limit;
-    if (!filter) {
-      totalDocs = await Model.estimatedDocumentCount();
-    } else {
-      totalDocs = data.length;
-    }
-    const totalPages = Math.ceil(totalDocs / limit);
-    actualPage = totalPages > 1 ? features.query.options.skip + 1 : 1;
-    const docsPage = totalDocs > limit ? limit : totalDocs;
-
     res.status(200).json({
       status: 'success',
-      size: data.length,
+      size: total_docs,
       data: {
         data: data,
-        pagination: {
-          totalDocs: totalDocs, // => Count of ALL elements in the DB
-          totalPages: totalPages, // => Total pages available
-          page: actualPage, // => Current page number
-          size: docsPage, // => size of elements per page
-        },
       },
     });
   });
