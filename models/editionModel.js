@@ -22,6 +22,16 @@ const editionSchema = new mongoose.Schema({
   },
   pages: Number,
   coleccion: String,
+  numberOnColeccion: Number,
+  isbn: {
+    type: Number,
+    validate: {
+      validator: function (val) {
+        return val.toString().length === 13;
+      },
+      message: (val) => `${val.value} debe ser de 13 dígitos`,
+    },
+  },
   createdAt: {
     type: Date,
     default: Date.now(),
