@@ -44,10 +44,11 @@ const editionSchema = new mongoose.Schema({
 editionSchema.pre('save', async function (next) {
   const book = await Book.findById(this.book);
   const editions = book.editions;
-
   editions.forEach((edit) => {
     if (edit.name === this.name) {
-      next(new AppError('Ya existe esta edición para este Libro', 409));
+      next(
+        new AppError('Ya existe este nombre de edición para este Libro', 409)
+      );
     }
   });
   next();
