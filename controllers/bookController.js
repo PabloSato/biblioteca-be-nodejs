@@ -1,8 +1,3 @@
-//TODO: => add and config MULTER
-const multer = require('multer');
-const sharp = require('sharp');
-const crypto = require('crypto');
-
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
