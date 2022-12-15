@@ -5,6 +5,7 @@ TODO:
 1 - Add editions/location-shelves-shelfs/colection models and controllers and routes required
 2 - Make universal images functions
 3 - Add nested functions where required
+4 - Check if editions array on Book model works, delete if not
 
 # ---- RELEASE v2 ----
 
