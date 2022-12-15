@@ -69,6 +69,10 @@ bookSchema.pre(/^find/, function (next) {
     .populate({
       path: 'saga',
       select: 'name slug',
+    })
+    .populate({
+      path: 'editions',
+      select: 'name pages',
     });
   // @TODO: Populate
   next();
