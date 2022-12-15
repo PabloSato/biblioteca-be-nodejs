@@ -8,6 +8,8 @@ TODO:
 
 # ---- RELEASE v2 ----
 
+4 - Add global error middleware
+
 # ---- RELEASE v3 ----
 
 1 - Add cors and beyond policy
