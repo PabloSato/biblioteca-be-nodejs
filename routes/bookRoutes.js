@@ -43,7 +43,7 @@ router
   .get(bookController.getAllBooks)
   .post(
     bookController.uploadImage,
-    bookController.resizeImages,
+    bookController.resizeImage,
     bookController.createBook
   );
 
