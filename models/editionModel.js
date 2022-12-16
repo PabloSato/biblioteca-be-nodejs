@@ -20,6 +20,7 @@ const editionSchema = new mongoose.Schema(
       ],
     },
     book: { type: mongoose.Schema.ObjectId, ref: 'Book' },
+    shelf: { type: mongoose.Schema.ObjectId, ref: 'Shef' },
     image: {
       type: String,
       default: 'default.jpeg',
