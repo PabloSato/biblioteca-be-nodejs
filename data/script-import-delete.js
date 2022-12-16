@@ -8,6 +8,9 @@ const Author = require('./../models/authorModel');
 const Universe = require('./../models/universeModel');
 const Saga = require('./../models/sagaModel');
 const Edition = require('./../models/editionModel');
+const Shelf = require('./../models/shelfModel');
+const Rack = require('./../models/rackModel');
+const Location = require('./../models/locationModel');
 
 dotenv.config({ path: './config.env' });
 // --------------------------------------------- DB ----------------------------------------
@@ -38,12 +41,23 @@ const universes = JSON.parse(
 );
 const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`, 'utf-8'));
 const editions = JSON.parse(
-  fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
+  // fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
+  fs.readFileSync(`${__dirname}/editionsv2.json`, 'utf-8') // => with shelf
+);
+const shelfs = JSON.parse(
+  fs.readFileSync(`${__dirname}/shelves.json`, 'utf-8')
+);
+const racks = JSON.parse(fs.readFileSync(`${__dirname}/racks.json`, 'utf-8'));
+const locations = JSON.parse(
+  fs.readFileSync(`${__dirname}/locations.json`, 'utf-8')
 );
 
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {
   try {
+    await Location.create(locations);
+    await Rack.create(racks);
+    await Shelf.create(shelfs);
     await Tag.create(tags);
     await Author.create(authors);
     await Universe.create(universes);
@@ -65,6 +79,9 @@ const deleteData = async () => {
     await Tag.deleteMany();
     await Author.deleteMany();
     await Universe.deleteMany();
+    await Location.deleteMany();
+    await Rack.deleteMany();
+    await Shelf.deleteMany();
     console.log('DATA DELETED!');
   } catch (err) {
     console.log(err);
