@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
-const Universe = require('./universeModel');
-const Saga = require('./sagaModel');
-
 const bookSchema = new mongoose.Schema(
   {
     name: {
@@ -70,7 +67,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'editions',
-      select: 'name pages image',
+      select: 'name pages image version',
     });
   // @TODO: Populate
   next();
