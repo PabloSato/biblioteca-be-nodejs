@@ -16,3 +16,4 @@ exports.getShelf = factory.getOne(Shelf);
 exports.createShelf = factory.createOne(Shelf);
 exports.updateShelf = factory.updateOne(Shelf);
 exports.deleteShelf = factory.deleteOne(Shelf);
+exports.formData = factory.formData();

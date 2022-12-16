@@ -7,7 +7,7 @@ router.route('/slug/:slug').get(tagController.getBySlug, tagController.getTag);
 router
   .route('/')
   .get(tagController.setOrder, tagController.getAllTags)
-  .post(tagController.createTag);
+  .post(tagController.formData, tagController.createTag);
 
 router
   .route('/:id')

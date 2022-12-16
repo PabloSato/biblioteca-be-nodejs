@@ -13,7 +13,7 @@ router
 router
   .route('/')
   .get(universeController.getAllUniverses)
-  .post(universeController.createUniverse);
+  .post(universeController.formData, universeController.createUniverse);
 
 router
   .route('/:id')

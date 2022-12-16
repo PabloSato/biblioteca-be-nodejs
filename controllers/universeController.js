@@ -16,3 +16,4 @@ exports.getUniverse = factory.getOne(Universe);
 exports.createUniverse = factory.createOne(Universe);
 exports.updateUniverse = factory.updateOne(Universe);
 exports.deleteUniverse = factory.deleteOne(Universe);
+exports.formData = factory.formData();

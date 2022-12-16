@@ -16,3 +16,4 @@ exports.getLocation = factory.getOne(Location);
 exports.createLocation = factory.createOne(Location);
 exports.updateLocation = factory.updateOne(Location);
 exports.deleteLocation = factory.deleteOne(Location);
+exports.formData = factory.formData();

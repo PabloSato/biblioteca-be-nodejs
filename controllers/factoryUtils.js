@@ -66,7 +66,6 @@ exports.getOne = (Model, popOptions) =>
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
     if (req.file) req.body.image = req.file.filename;
-
     const data = await Model.create(req.body);
 
     res.status(201).json({
@@ -123,6 +122,8 @@ const multerFilter = (req, file, cb) => {
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage, fileFilter: multerFilter });
+// --------------------- FORM DATA -----------------------------
+exports.formData = () => upload.none();
 // --------------------- UPLOAD IMAGE --------------------------
 exports.uploadImage = () => upload.single('image');
 // --------------------- RESIZE IMAGE --------------------------

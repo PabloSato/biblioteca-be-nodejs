@@ -11,3 +11,4 @@ exports.getEdition = factory.getOne(Edition);
 exports.createEdition = factory.createOne(Edition);
 exports.updateEdition = factory.updateOne(Edition);
 exports.deleteEdition = factory.deleteOne(Edition);
+exports.formData = factory.formData();

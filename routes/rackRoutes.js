@@ -12,7 +12,7 @@ router
 router
   .route('/')
   .get(rackController.getAllRacks)
-  .post(rackController.createRack);
+  .post(rackController.formData, rackController.createRack);
 
 router
   .route('/:id')

@@ -16,3 +16,4 @@ exports.getRack = factory.getOne(Rack);
 exports.createRack = factory.createOne(Rack);
 exports.updateRack = factory.updateOne(Rack);
 exports.deleteRack = factory.deleteOne(Rack);
+exports.formData = factory.formData();

@@ -9,7 +9,7 @@ router
 router
   .route('/')
   .get(authorController.getAllAuthors)
-  .post(authorController.createAuthor);
+  .post(authorController.formData, authorController.createAuthor);
 
 router
   .route('/:id')

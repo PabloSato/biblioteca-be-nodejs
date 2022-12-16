@@ -12,7 +12,11 @@ router
 router
   .route('/')
   .get(locationController.getAllLocations)
-  .post(locationController.createLocation);
+  .post(
+    locationController.formData,
+    locationController.formData,
+    locationController.createLocation
+  );
 
 router
   .route('/:id')

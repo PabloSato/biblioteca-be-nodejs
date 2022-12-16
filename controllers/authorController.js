@@ -24,3 +24,4 @@ exports.getAuthor = factory.getOne(Author);
 exports.createAuthor = factory.createOne(Author);
 exports.updateAuthor = factory.updateOne(Author);
 exports.deleteAuthor = factory.deleteOne(Author);
+exports.formData = factory.formData();

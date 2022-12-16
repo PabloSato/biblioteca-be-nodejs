@@ -14,7 +14,7 @@ router
 router
   .route('/')
   .get(sagaController.getAllSagas)
-  .post(sagaController.createSaga);
+  .post(sagaController.formData, sagaController.createSaga);
 
 router
   .route('/:id')

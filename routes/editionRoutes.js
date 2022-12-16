@@ -8,7 +8,7 @@ const router = express.Router();
 router
   .route('/')
   .get(editiionController.getAllEditions)
-  .post(editiionController.createEdition);
+  .post(editiionController.formData, editiionController.createEdition);
 
 router
   .route('/:id')

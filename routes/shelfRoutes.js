@@ -12,7 +12,7 @@ router
 router
   .route('/')
   .get(shelfController.getAllShelfs)
-  .post(shelfController.createShelf);
+  .post(shelfController.formData, shelfController.createShelf);
 
 router
   .route('/:id')

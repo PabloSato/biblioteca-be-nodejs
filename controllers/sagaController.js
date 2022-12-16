@@ -16,3 +16,4 @@ exports.getSaga = factory.getOne(Saga);
 exports.createSaga = factory.createOne(Saga);
 exports.updateSaga = factory.updateOne(Saga);
 exports.deleteSaga = factory.deleteOne(Saga);
+exports.formData = factory.formData();

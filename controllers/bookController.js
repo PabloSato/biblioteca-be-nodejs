@@ -74,6 +74,7 @@ exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
 exports.deleteBook = factory.deleteOne(Book);
+exports.formData = factory.formData();
 // ---------------------- IMAGES METHODS ----------------------------
 exports.uploadImage = factory.uploadImage();
 exports.resizeImages = factory.resizeImage();
