@@ -3,7 +3,11 @@ const express = require('express');
 const rackController = require('./../controllers/rackController');
 
 const router = express.Router();
-
+// ---------------------- SPECIALS ROUTES -----------------------
+// -- SEARCH BY SLUG --
+router
+  .route('/slug/:slug')
+  .get(rackController.getBySlug, rackController.getRack);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

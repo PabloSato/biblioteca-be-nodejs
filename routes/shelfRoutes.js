@@ -3,7 +3,11 @@ const express = require('express');
 const shelfController = require('./../controllers/shelfController');
 
 const router = express.Router();
-
+// ---------------------- SPECIALS ROUTES -----------------------
+// -- SEARCH BY SLUG --
+router
+  .route('/slug/:slug')
+  .get(shelfController.getBySlug, shelfController.getShelf);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

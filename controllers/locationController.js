@@ -5,6 +5,11 @@ const catchAsync = require('./../utils/catchAsync');
 const Location = require('./../models/locationModel');
 
 // ---------------------- SPECIAL METHODS ----------------------
+exports.getBySlug = (req, res, next) => {
+  const filter = { slug: req.params.slug };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD ---------------------------
 exports.getAllLocations = factory.getAll(Location);
 exports.getLocation = factory.getOne(Location);
