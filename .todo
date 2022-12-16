@@ -2,10 +2,9 @@ TODO:
 
 # ---- RELEASE v1
 
-1 - Add editions/location-bookshelves-bookshelfs/colection models and controllers and routes required
+1 - Add location-bookshelves-bookshelfs/colection models and controllers and routes required
 2 - Add nested functions where required
 3 - Check if editions array on Book model works, delete if not
-4 - Delete numbers and image from book model
 
 # ---- RELEASE v2 ----
 
