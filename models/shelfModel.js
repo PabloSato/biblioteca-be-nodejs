@@ -30,15 +30,24 @@ shelfSchema = new mongoose.Schema(
 shelfSchema.pre('save', async function (next) {
   const rack = await Rack.findById(this.rack);
   const already_shelfs = rack.shelfs;
-
-  if (already_shelfs.include(this.name)) {
-    next(new AppError("This shelf's name is already in rack", 409));
-  }
+  already_shelfs.forEach((shelf) => {
+    if (shelf.name === this.name) {
+      next(new AppError("This shelf's name is already in rack", 409));
+    }
+  });
   next();
 });
 // ---- SLUG ----
 shelfSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
+  next();
+});
+// --- ADD RACK TO LOCATIONS.racks ----
+shelfSchema.post('save', async function (doc, next) {
+  const rack = await Rack.findById(doc.rack);
+  const already_shelfs = rack.shelfs;
+  already_shelfs.push(doc);
+  const upt = await Rack.findByIdAndUpdate(doc.rack, rack);
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------

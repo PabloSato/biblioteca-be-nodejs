@@ -31,15 +31,25 @@ rackSchema = new mongoose.Schema(
 rackSchema.pre('save', async function (next) {
   const location = await Location.findById(this.location);
   const already_racks = location.racks;
-
-  if (already_racks.includes(this.name)) {
-    next(new AppError("This rack's name is alredy on location", 409));
-  }
+  already_racks.forEach((rack) => {
+    if (rack.name === this.name) {
+      next(new AppError("This rack's name is alredy on location", 409));
+    }
+  });
   next();
 });
 // ---- SLUG ----
 rackSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
+  next();
+});
+
+// --- ADD RACK TO LOCATIONS.racks ----
+rackSchema.post('save', async function (doc, next) {
+  const location = await Location.findById(doc.location);
+  const already_racks = location.racks;
+  already_racks.push(doc);
+  const updt = await Location.findByIdAndUpdate(doc.location, location);
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
