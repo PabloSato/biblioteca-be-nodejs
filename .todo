@@ -3,7 +3,6 @@ TODO:
 # ---- RELEASE v1
 
 1 - Add nested functions where required
-2 - Check if editions array on Book model works, delete if not
 
 # ---- RELEASE v2 ----
 
