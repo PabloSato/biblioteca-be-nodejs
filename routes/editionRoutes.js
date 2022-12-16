@@ -4,6 +4,11 @@ const editiionController = require('./../controllers/editionController');
 
 const router = express.Router();
 
+// ---------------------- SPECIALS ROUTES -----------------------
+// -- BY SHELF --
+router
+  .route('/shelf/:shelfId')
+  .get(editiionController.getByShelf, editiionController.getAllEditions);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')
