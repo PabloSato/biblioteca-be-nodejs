@@ -20,7 +20,7 @@ const editionSchema = new mongoose.Schema(
       ],
     },
     book: { type: mongoose.Schema.ObjectId, ref: 'Book' },
-    shelf: { type: mongoose.Schema.ObjectId, ref: 'Shef' },
+    shelf: { type: mongoose.Schema.ObjectId, ref: 'Shelf' },
     image: {
       type: String,
       default: 'default.jpeg',
@@ -62,6 +62,13 @@ const editionSchema = new mongoose.Schema(
 // });
 
 // --------------------------------------------- 3 - POPULATE ------------------------------
+editionSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'shelf',
+    select: 'name',
+  });
+  next();
+});
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Edition = new mongoose.model('Edition', editionSchema);
 

@@ -30,13 +30,7 @@ locationSchema.pre('save', function (next) {
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
-locationSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'racks',
-    select: 'name',
-  });
-  next();
-});
+
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Location = mongoose.model('Location', locationSchema);
 
