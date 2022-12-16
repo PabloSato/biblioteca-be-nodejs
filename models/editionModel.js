@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
-const AppError = require('./../utils/appError');
+const slugify = require('slugify');
 
+const AppError = require('./../utils/appError');
 const Book = require('./bookModel');
 
 const editionSchema = new mongoose.Schema(
@@ -19,6 +20,7 @@ const editionSchema = new mongoose.Schema(
         'El nombre de la edición debe de tener al menos 1 caracter',
       ],
     },
+    slug: String,
     book: { type: mongoose.Schema.ObjectId, ref: 'Book' },
     shelf: { type: mongoose.Schema.ObjectId, ref: 'Shelf' },
     image: {
@@ -48,18 +50,10 @@ const editionSchema = new mongoose.Schema(
 
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
-// editionSchema.pre('save', async function (next) {
-//   const book = await Book.findById(this.book);
-//   const editions = book.editions;
-//   editions.forEach((edit) => {
-//     if (edit.name === this.name) {
-//       next(
-//         new AppError('Ya existe este nombre de edición para este Libro', 409)
-//       );
-//     }
-//   });
-//   next();
-// });
+editionSchema.pre('save', function (next) {
+  this.slug = slugify(this.name, { lower: true });
+  next();
+});
 
 // --------------------------------------------- 3 - POPULATE ------------------------------
 editionSchema.pre(/^find/, function (next) {
