@@ -42,7 +42,8 @@ const universes = JSON.parse(
 const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`, 'utf-8'));
 const editions = JSON.parse(
   // fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
-  fs.readFileSync(`${__dirname}/editionsv2.json`, 'utf-8') // => with shelf
+  // fs.readFileSync(`${__dirname}/editionsv2.json`, 'utf-8') // => with shelf
+  fs.readFileSync(`${__dirname}/editionsv3.json`, 'utf-8') // => playing
 );
 const shelfs = JSON.parse(
   fs.readFileSync(`${__dirname}/shelves.json`, 'utf-8')
@@ -62,8 +63,8 @@ const importData = async () => {
     await Author.create(authors);
     await Universe.create(universes);
     await Saga.create(sagas);
-    await Edition.create(editions);
     await Book.create(books);
+    await Edition.create(editions);
     console.log('DATA LOADED!');
   } catch (err) {
     console.log(err);
