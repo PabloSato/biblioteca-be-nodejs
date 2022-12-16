@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "639c7c42e276a1f05240faa6"
+  },
+  "name": "balda 1",
+  "rack": {
+    "$oid": "639c7b238f2da30aea3c1d80"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-1"
+},{
+  "_id": {
+    "$oid": "639c7c45e276a1f05240faaf"
+  },
+  "name": "balda 2",
+  "rack": {
+    "$oid": "639c7b238f2da30aea3c1d80"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-2"
+},{
+  "_id": {
+    "$oid": "639c7c49e276a1f05240fab8"
+  },
+  "name": "balda 3",
+  "rack": {
+    "$oid": "639c7b238f2da30aea3c1d80"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-3"
+},{
+  "_id": {
+    "$oid": "639c7c60e276a1f05240fad0"
+  },
+  "name": "balda 1",
+  "rack": {
+    "$oid": "639c7c55e276a1f05240fac4"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-1"
+},{
+  "_id": {
+    "$oid": "639c7c65e276a1f05240fad9"
+  },
+  "name": "balda 2",
+  "rack": {
+    "$oid": "639c7c55e276a1f05240fac4"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-2"
+},{
+  "_id": {
+    "$oid": "639c7c68e276a1f05240fae2"
+  },
+  "name": "balda 6",
+  "rack": {
+    "$oid": "639c7c55e276a1f05240fac4"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671199674042"
+    }
+  },
+  "slug": "balda-6"
+}]

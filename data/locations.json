@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "639c669753def0115eb42e05"
+  },
+  "name": "habitación pablo",
+  "racks": [
+    {
+      "$oid": "639c7b238f2da30aea3c1d80"
+    },
+    {
+      "$oid": "639c7c55e276a1f05240fac4"
+    }
+  ],
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671194260879"
+    }
+  },
+  "slug": "habitacion-pablo"
+}]
