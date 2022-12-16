@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const Rack = require('./rackModel');
+const AppError = require('./../utils/appError');
+
 shelfSchema = new mongoose.Schema(
   {
     name: {
@@ -23,6 +26,17 @@ shelfSchema = new mongoose.Schema(
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
+// ---- CONTROL ----
+shelfSchema.pre('save', async function (next) {
+  const rack = await Rack.findById(this.rack);
+  const already_shelfs = rack.shelfs;
+
+  if (already_shelfs.include(this.name)) {
+    next(new AppError("This shelf's name is already in rack", 409));
+  }
+  next();
+});
+// ---- SLUG ----
 shelfSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();

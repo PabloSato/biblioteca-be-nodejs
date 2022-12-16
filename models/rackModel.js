@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const AppError = require('./../utils/appError');
+const Location = require('./locationModel');
+
 rackSchema = new mongoose.Schema(
   {
     name: {
@@ -24,11 +27,29 @@ rackSchema = new mongoose.Schema(
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
+// --- CONTROL ---
+rackSchema.pre('save', async function (next) {
+  const location = await Location.findById(this.location);
+  const already_racks = location.racks;
+
+  if (already_racks.includes(this.name)) {
+    next(new AppError("This rack's name is alredy on location", 409));
+  }
+  next();
+});
+// ---- SLUG ----
 rackSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
+rackSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'shelfs',
+    select: 'name',
+  });
+  next();
+});
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Rack = mongoose.model('Rack', rackSchema);
 
