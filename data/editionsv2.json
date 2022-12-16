@@ -132,7 +132,7 @@
     "name": "tapa dura2",
     "book": "6359372e59c543ea8603012c",
     "image": "icon1.jpeg",
-    "pages": 891,
+    "pages": 591,
     "shelf": "639c7c49e276a1f05240fab8"
   },
   {
@@ -140,15 +140,15 @@
     "name": "tapa dura3",
     "book": "6359372e59c543ea8603012c",
     "image": "cartel.jpeg",
-    "pages": 891,
-    "shelf": "639c7c45e276a1f05240faaf"
+    "pages": 691,
+    "shelf": "639c7c68e276a1f05240fae2"
   },
   {
     "_id": "636666218d3643e66d91b8e8",
     "name": "tapa dura4",
     "book": "6359372e59c543ea8603012c",
     "image": "corrupcion.jpeg",
-    "pages": 891,
+    "pages": 791,
     "shelf": "639c7c45e276a1f05240faaf"
   }
 ]

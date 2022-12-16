@@ -15,7 +15,7 @@ shelfSchema = new mongoose.Schema(
       minlength: [1, 'Una balda debe de tener al menos 1 caracter'],
     },
     slug: String,
-    rack: { type: mongoose.Schema.ObjectId, ref: 'Shelf' },
+    rack: { type: mongoose.Schema.ObjectId, ref: 'Rack' },
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -51,6 +51,13 @@ shelfSchema.post('save', async function (doc, next) {
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
+shelfSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'rack',
+    select: 'name',
+  });
+  next();
+});
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Shelf = mongoose.model('Shelf', shelfSchema);
 

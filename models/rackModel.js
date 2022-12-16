@@ -55,7 +55,7 @@ rackSchema.post('save', async function (doc, next) {
 // --------------------------------------------- 3 - POPULATE ------------------------------
 rackSchema.pre(/^find/, function (next) {
   this.populate({
-    path: 'shelfs',
+    path: 'location',
     select: 'name',
   });
   next();
