@@ -50,7 +50,6 @@ rackSchema.post('save', async function (doc, next) {
   const already_racks = location.racks;
   already_racks.push(doc);
   const updt = await Location.findByIdAndUpdate(doc.location, location);
-  next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
 rackSchema.pre(/^find/, function (next) {
