@@ -3,6 +3,7 @@ TODO:
 # ---- RELEASE v1
 
 1 - Add nested functions where required
+2 - Fix size on getAll with filters
 
 # ---- RELEASE v2 ----
 
