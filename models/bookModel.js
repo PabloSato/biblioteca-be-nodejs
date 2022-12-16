@@ -72,7 +72,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'editions',
-      select: 'name pages',
+      select: 'name pages image',
     });
   // @TODO: Populate
   next();
