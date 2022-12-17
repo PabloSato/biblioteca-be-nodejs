@@ -2,9 +2,9 @@ const multer = require('multer');
 const sharp = require('sharp');
 const crypto = require('crypto');
 
-const catchAsync = require('../utils/catchAsync');
-const AppError = require('../utils/appError');
-const APIFeatures = require('../utils/apiFeatures');
+const catchAsync = require('./../utils/catchAsync');
+const AppError = require('./../utils/appError');
+const APIFeatures = require('./../utils/apiFeatures');
 
 // ----------------------------------------------- GET ALL -------------------------------------------------------
 exports.getAll = (Model) =>
@@ -14,15 +14,20 @@ exports.getAll = (Model) =>
     if (req.query.filter) {
       filter = req.query.filter;
     }
-    const count = await Model.aggregate([
-      {
-        $group: {
-          _id: null,
-          total: { $sum: 1 },
+    let total_docs = 0;
+    if (!filter) {
+      const count = await Model.aggregate([
+        {
+          $group: {
+            _id: null,
+            total: { $sum: 1 },
+          },
         },
-      },
-    ]);
-    const total_docs = count[0] ? count[0].total : 0;
+      ]);
+      total_docs = count[0] ? count[0].total : 0;
+    } else {
+      total_docs = await Model.countDocuments(filter);
+    }
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
       .sort()
