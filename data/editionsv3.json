@@ -10,7 +10,7 @@
     "shelf": "639c7c42e276a1f05240faa6"
   },
   {
-    "_id": "63650c6b5b839c840dcf60b4",
+    "_id": "63650c6b5b839c840dcf60b8",
     "version": "tapa dura",
     "slug": "tapa-dura",
     "name": "el silmarillion",
@@ -25,7 +25,7 @@
     "slug": "tapa-dura",
     "name": "el cartel",
     "book": "639db33929065a1a37f016f7",
-    "image": "carteljpeg",
+    "image": "cartel.jpeg",
     "pages": 891,
     "shelf": "639c7c45e276a1f05240faaf"
   },
