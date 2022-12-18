@@ -9,6 +9,7 @@ const editionRoutes = require('./editionRoutes');
 const locationRoutes = require('./locationRoutes');
 const rackRoutes = require('./rackRoutes');
 const shelfRoutes = require('./shelfRoutes');
+const colectRoutes = require('./colectionRoutes');
 
 function apiRoutes(app) {
   const router = express.Router();
@@ -22,6 +23,7 @@ function apiRoutes(app) {
   router.use('/locations', locationRoutes);
   router.use('/racks', rackRoutes);
   router.use('/shelfs', shelfRoutes);
+  router.use('/colections', colectRoutes);
 }
 
 module.exports = { apiRoutes };

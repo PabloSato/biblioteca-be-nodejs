@@ -29,8 +29,8 @@ const editionSchema = new mongoose.Schema(
       default: 'default.jpeg',
     },
     pages: Number,
-    coleccion: String,
-    numberOnColeccion: Number,
+    colection: { type: mongoose.Schema.ObjectId, ref: 'Colection' },
+    numberOnColection: Number,
     isbn: {
       type: Number,
       validate: {
@@ -83,6 +83,6 @@ editionSchema.pre(/^find/, function (next) {
   next();
 });
 // --------------------------------------------- 0 - EXPORT --------------------------------
-const Edition = new mongoose.model('Edition', editionSchema);
+const Edition = mongoose.model('Edition', editionSchema);
 
 module.exports = Edition;
