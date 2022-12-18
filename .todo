@@ -4,6 +4,7 @@ TODO:
 
 1 - Add nested functions where required
 2 - Fix search with accents
+3 - Refactor getBySlug methods
 
 # ---- RELEASE v2 ----
 
