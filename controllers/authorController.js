@@ -25,3 +25,5 @@ exports.createAuthor = factory.createOne(Author);
 exports.updateAuthor = factory.updateOne(Author);
 exports.deleteAuthor = factory.deleteOne(Author);
 exports.formData = factory.formData();
+exports.uploadImage = factory.uploadImage();
+exports.resizeImage = factory.resizeImage();
