@@ -19,6 +19,7 @@ const bookSchema = new mongoose.Schema(
       type: String,
       default: this.slug,
       trim: true,
+      maxLength: [950, 'Un argumento no debe ser mayor a 950 caracteres'],
     },
     authors: [{ type: mongoose.Schema.ObjectId, ref: 'Author' }],
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
