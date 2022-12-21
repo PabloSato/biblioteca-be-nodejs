@@ -18,6 +18,13 @@ exports.getBySlug = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// -- BY NAME --
+exports.getByName = (req, res, next) => {
+  const name = req.params.name;
+  const filter = { name: { $regex: name, $options: 'i' } };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAllAuthors = factory.getAll(Author);
 exports.getAuthor = factory.getOne(Author);
