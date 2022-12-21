@@ -52,28 +52,28 @@ const editionSchema = new mongoose.Schema(
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 editionSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  this.slug = slugify(this.version, { lower: true });
   next();
 });
 // --- CONTROL ---
-// editionSchema.pre('save', async function (next) {
-//   const book = await Book.findById(this.book);
-//   const already_editions = book.editions;
-//   already_editions.forEach((edit) => {
-//     if (edit.name === this.name) {
-//       next(new AppError("This edition's name is already on books", 409));
-//     }
-//   });
-//   this.book_name = book.name;
-//   next();
-// });
-// // --- INCLUDE ---
-// editionSchema.post('save', async function (doc, next) {
-//   const book = await Book.findById(doc.book);
-//   const already_editions = book.editions;
-//   already_editions.push(doc);
-//   const updt = await Book.findByIdAndUpdate(doc.book, book);
-// });
+editionSchema.pre('save', async function (next) {
+  const book = await Book.findById(this.book);
+  const already_editions = book.editions;
+  already_editions.forEach((edit) => {
+    if (edit.name === this.name) {
+      next(new AppError("This edition's name is already on books", 409));
+    }
+  });
+  this.book_name = book.name;
+  next();
+});
+// --- INCLUDE ---
+editionSchema.post('save', async function (doc, next) {
+  const book = await Book.findById(doc.book);
+  const already_editions = book.editions;
+  already_editions.push(doc);
+  const updt = await Book.findByIdAndUpdate(doc.book, book);
+});
 // --------------------------------------------- 3 - POPULATE ------------------------------
 editionSchema.pre(/^find/, function (next) {
   this.populate({
