@@ -8,6 +8,10 @@ const router = express.Router();
 router
   .route('/slug/:slug')
   .get(shelfController.getBySlug, shelfController.getShelf);
+// -- SEARCH BY RACK --
+router
+  .route('/rack/:rackId')
+  .get(shelfController.getByRack, shelfController.getAllShelfs);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

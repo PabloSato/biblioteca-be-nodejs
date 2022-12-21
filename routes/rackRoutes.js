@@ -8,6 +8,10 @@ const router = express.Router();
 router
   .route('/slug/:slug')
   .get(rackController.getBySlug, rackController.getRack);
+// -- SEARCH BY LOCATION
+router
+  .route('/location/:locationId')
+  .get(rackController.getByLocation, rackController.getAllRacks);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

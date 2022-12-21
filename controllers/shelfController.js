@@ -5,8 +5,15 @@ const catchAsync = require('../utils/catchAsync');
 const Shelf = require('../models/shelfModel');
 
 // ---------------------- SPECIAL METHODS ----------------------
+// -- BY SLUG --
 exports.getBySlug = (req, res, next) => {
   const filter = { slug: req.params.slug };
+  req.query.filter = filter;
+  next();
+};
+// -- BY RACK --
+exports.getByRack = (req, res, next) => {
+  const filter = { rack: req.params.rackId };
   req.query.filter = filter;
   next();
 };
