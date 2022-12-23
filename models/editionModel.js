@@ -60,7 +60,7 @@ editionSchema.pre('save', async function (next) {
   const book = await Book.findById(this.book);
   const already_editions = book.editions;
   already_editions.forEach((edit) => {
-    if (edit.name === this.name) {
+    if (edit.version === this.version) {
       next(new AppError("This edition's name is already on books", 409));
     }
   });
