@@ -19,7 +19,8 @@ exports.uploadImage = async (req, res) => {
       .toFile(`public/images/${req.file.filename}`);
 
     res.status(200).send({
-      message: `Uploaded the image successfully: ${req.file.originalname}`,
+      image: req.file.filename,
+      message: `Uploaded the image successfully: ${req.file.filename}`,
     });
   } catch (err) {
     if (err.code == 'LIMIT_FILE_SIZE') {
