@@ -1,8 +1,7 @@
 //TODO: add and config MULTER
 
 const factory = require('./factoryUtils');
-const AppError = require('./../utils/appError');
-const catchAsync = require('./../utils/catchAsync');
+const { formData } = require('./../middleware/upload');
 
 const Author = require('./../models/authorModel');
 
@@ -31,6 +30,4 @@ exports.getAuthor = factory.getOne(Author);
 exports.createAuthor = factory.createOne(Author);
 exports.updateAuthor = factory.updateOne(Author);
 exports.deleteAuthor = factory.deleteOne(Author);
-exports.formData = factory.formData();
-exports.uploadImage = factory.uploadImage();
-exports.resizeImage = factory.resizeImage();
+exports.formData = formData();

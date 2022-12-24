@@ -1,24 +1,31 @@
 const util = require('util');
 const multer = require('multer');
+
+const AppError = require('./../utils/appError');
+const catchAsync = require('./../utils/catchAsync');
+
 const maxSize = 2 * 1024 * 1024;
 
 // TODO: If works, change to memory
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, __basedir + '/public/images/');
-  },
-  filename: (req, file, cb) => {
-    console.log(file.originalname);
-    cb(null, file.originalname);
-  },
+const storage = multer.memoryStorage();
+
+const config = (req, file, cb) => {
+  if (file.mimetype.startsWith('image')) {
+    cb(null, true);
+  } else {
+    cb(new AppError('Not an image! Please upload only images', 400), false);
+  }
+};
+
+const upload = multer({
+  storage,
+  fileFilter: config,
+  limits: { fileSize: maxSize },
 });
 
-const uploadFile = multer({
-  storage,
-  limits: { fileSize: maxSize },
-}).single('image');
-
 // util.promisify permite usar el middleware con async/await
-const uploadMiddleware = util.promisify(uploadFile);
+const uploadImage = util.promisify(upload.single('image'));
 
-module.exports = uploadMiddleware;
+const formData = () => upload.none();
+
+module.exports = { uploadImage, formData };

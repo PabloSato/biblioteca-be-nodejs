@@ -1,6 +1,7 @@
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
+const { formData } = require('./../middleware/upload');
 
 const Edition = require('./../models/editionModel');
 
@@ -17,4 +18,4 @@ exports.getEdition = factory.getOne(Edition);
 exports.createEdition = factory.createOne(Edition);
 exports.updateEdition = factory.updateOne(Edition);
 exports.deleteEdition = factory.deleteOne(Edition);
-exports.formData = factory.formData();
+exports.formData = formData();

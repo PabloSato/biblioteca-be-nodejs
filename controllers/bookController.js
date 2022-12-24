@@ -1,6 +1,7 @@
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
+const { formData } = require('./../middleware/upload');
 
 const Book = require('./../models/bookModel');
 
@@ -74,7 +75,4 @@ exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
 exports.deleteBook = factory.deleteOne(Book);
-exports.formData = factory.formData();
-// ---------------------- IMAGES METHODS ----------------------------
-exports.uploadImage = factory.uploadImage();
-exports.resizeImages = factory.resizeImage();
+exports.formData = formData();

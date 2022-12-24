@@ -1,6 +1,7 @@
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
+const { formData } = require('./../middleware/upload');
 
 const Location = require('./../models/locationModel');
 
@@ -16,4 +17,4 @@ exports.getLocation = factory.getOne(Location);
 exports.createLocation = factory.createOne(Location);
 exports.updateLocation = factory.updateOne(Location);
 exports.deleteLocation = factory.deleteOne(Location);
-exports.formData = factory.formData();
+exports.formData = formData();
