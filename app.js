@@ -8,6 +8,9 @@ const AppError = require('./utils/appError');
 // ROUTES
 const { apiRoutes } = require('./routes/router');
 
+// dirname
+global.__basedir = __dirname; // => Apunta a la carpeta root del proyecto
+
 // Creamos la App
 const app = express();
 
@@ -31,10 +34,10 @@ const options = {
 };
 app.use(cors(options));
 // --------------------------------------------- 5 - MIDDLEWARE ----------------------------------------
-app.use('/images/:name', (req, res) => {
-  const { name } = req.params;
-  res.sendFile(`${__dirname}/public/images/${name}`);
-});
+// app.use('/images/:name', (req, res) => {
+//   const { name } = req.params;
+//   res.sendFile(`${__dirname}/public/images/${name}`);
+// });
 // --------------------------------------------- 6 - GLOBAL ROUTES ----------------------------------------
 apiRoutes(app);
 // --------------------------------------------- 7 - GLOBAL ERRORS ----------------------------------------
