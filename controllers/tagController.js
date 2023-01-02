@@ -1,8 +1,4 @@
-//TODO: add and config MULTER
-
 const factory = require('./factoryUtils');
-const AppError = require('./../utils/appError');
-const catchAsync = require('./../utils/catchAsync');
 const { formData } = require('./../middleware/upload');
 
 const Tag = require('./../models/tagModel');
