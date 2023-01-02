@@ -11,7 +11,7 @@ shelfSchema = new mongoose.Schema(
       required: [true, 'Una balda debe de tener un nombre'],
       trim: true,
       lowercase: true,
-      maxlength: [20, 'Una balda debe de tener menos de 100 caracteres'],
+      maxlength: [20, 'Una balda debe de tener menos de 20 caracteres'],
       minlength: [1, 'Una balda debe de tener al menos 1 caracter'],
     },
     slug: String,
