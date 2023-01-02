@@ -43,7 +43,8 @@ const sagas = JSON.parse(fs.readFileSync(`${__dirname}/sagas.json`, 'utf-8'));
 const editions = JSON.parse(
   // fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
   // fs.readFileSync(`${__dirname}/editionsv2.json`, 'utf-8') // => with shelf
-  fs.readFileSync(`${__dirname}/editionsv3.json`, 'utf-8') // => playing
+  // fs.readFileSync(`${__dirname}/editionsv3.json`, 'utf-8') // => playing
+  fs.readFileSync(`${__dirname}/editionsv4.json`, 'utf-8') // => playing with languages
 );
 const shelfs = JSON.parse(
   fs.readFileSync(`${__dirname}/shelves.json`, 'utf-8')

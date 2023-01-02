@@ -87,6 +87,9 @@ editionSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'shelf',
     select: 'name',
+  }).populate({
+    path: 'language',
+    select: 'name',
   });
   next();
 });
