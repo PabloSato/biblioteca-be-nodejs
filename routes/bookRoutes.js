@@ -41,7 +41,7 @@ router
 router
   .route('/')
   .get(bookController.getAllBooks)
-  .post(bookController.createBook);
+  .post(bookController.formData, bookController.createBook);
 
 router
   .route('/:id')

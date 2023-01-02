@@ -21,6 +21,15 @@ const bookSchema = new mongoose.Schema(
       trim: true,
       maxLength: [950, 'Un argumento no debe ser mayor a 950 caracteres'],
     },
+    compilation: {
+      type: Boolean,
+      default: false,
+    },
+    booksInside: {
+      type: [String],
+      trim: true,
+      lowercase: true,
+    },
     authors: [{ type: mongoose.Schema.ObjectId, ref: 'Author' }],
     tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
@@ -44,6 +53,9 @@ bookSchema.index({ tags: 1 });
 // -- SLUG --
 bookSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
+  if (!this.compilation) {
+    this.booksInside = [];
+  }
   next();
 });
 // -- INCLUDE --
