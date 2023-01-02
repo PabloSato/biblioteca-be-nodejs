@@ -10,7 +10,7 @@ router
 router
   .route('/')
   .get(languageController.getAllLanguages)
-  .post(languageController.createLanguage);
+  .post(languageController.formData, languageController.createLanguage);
 
 router
   .route('/:id')
