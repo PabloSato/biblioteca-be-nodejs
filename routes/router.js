@@ -27,7 +27,7 @@ function apiRoutes(app) {
   router.use('/shelfs', shelfRoutes);
   router.use('/colections', colectRoutes);
   router.use('/images', imageRoutes);
-  router.use('/language', languageRoutes);
+  router.use('/languages', languageRoutes);
 }
 
 module.exports = { apiRoutes };
