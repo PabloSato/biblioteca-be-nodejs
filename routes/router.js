@@ -11,6 +11,7 @@ const rackRoutes = require('./rackRoutes');
 const shelfRoutes = require('./shelfRoutes');
 const colectRoutes = require('./colectionRoutes');
 const imageRoutes = require('./imageRoutes');
+const languageRoutes = require('./languageRoutes');
 
 function apiRoutes(app) {
   const router = express.Router();
@@ -26,6 +27,7 @@ function apiRoutes(app) {
   router.use('/shelfs', shelfRoutes);
   router.use('/colections', colectRoutes);
   router.use('/images', imageRoutes);
+  router.use('/language', languageRoutes);
 }
 
 module.exports = { apiRoutes };

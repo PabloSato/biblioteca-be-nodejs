@@ -40,6 +40,7 @@ const editionSchema = new mongoose.Schema(
         message: (val) => `${val.value} debe ser de 13 dígitos`,
       },
     },
+    language: [{ type: mongoose.Schema.ObjectId, ref: 'Language' }],
     createdAt: {
       type: Date,
       default: Date.now(),
