@@ -9,6 +9,10 @@ const router = express.Router();
 router
   .route('/shelf/:shelfId')
   .get(editiionController.getByShelf, editiionController.getAllEditions);
+// -- BY LANGUAGE --
+router
+  .route('/language/:languageId')
+  .get(editiionController.getByLanguage, editiionController.getAllEditions);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

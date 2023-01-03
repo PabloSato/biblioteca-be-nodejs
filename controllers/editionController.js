@@ -12,6 +12,12 @@ exports.getByShelf = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// --- BY LANGUAGE ---
+exports.getByLanguage = (req, res, next) => {
+  const filter = { language: req.params.languageId };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD ---------------------------
 exports.getAllEditions = factory.getAll(Edition);
 exports.getEdition = factory.getOne(Edition);
