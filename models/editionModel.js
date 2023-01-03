@@ -89,7 +89,7 @@ editionSchema.pre(/^find/, function (next) {
     select: 'name',
   }).populate({
     path: 'language',
-    select: 'name',
+    select: 'name slug',
   });
   next();
 });
