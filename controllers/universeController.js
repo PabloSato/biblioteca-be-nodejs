@@ -12,6 +12,7 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- CRUD METHODS ---------------------------
+exports.getAbsUniverses = factory.getAbsolute(Universe);
 exports.getAllUniverses = factory.getAll(Universe);
 exports.getUniverse = factory.getOne(Universe);
 exports.createUniverse = factory.createOne(Universe);

@@ -4,6 +4,8 @@ const locationController = require('./../controllers/locationController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(locationController.getAbsLocations);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

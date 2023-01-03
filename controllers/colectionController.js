@@ -10,6 +10,7 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- CRUD METHODS ------------------------
+exports.getAbsColections = factory.getAbsolute(Colection);
 exports.getAllColections = factory.getAll(Colection);
 exports.getColection = factory.getOne(Colection);
 exports.createColection = factory.createOne(Colection);

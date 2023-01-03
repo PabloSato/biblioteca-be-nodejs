@@ -20,6 +20,7 @@ exports.getByLocation = (req, res, next) => {
 };
 
 // ---------------------- BASIC CRUD ---------------------------
+exports.getAbsRacks = factory.getAbsolute(Rack);
 exports.getAllRacks = factory.getAll(Rack);
 exports.getRack = factory.getOne(Rack);
 exports.createRack = factory.createOne(Rack);

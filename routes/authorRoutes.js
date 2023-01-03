@@ -2,6 +2,8 @@ const express = require('express');
 const authorController = require('./../controllers/authorController');
 const router = express.Router();
 // ---------------------- SPECIAL ROUTES -----------------------------
+// -- ABSOLUTE ALL AUTHORS --
+router.route('/abs').get(authorController.getAbsAuthors);
 // -- BY SLUG --
 router
   .route('/slug/:slug')

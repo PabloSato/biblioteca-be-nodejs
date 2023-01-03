@@ -5,6 +5,8 @@ const sagaController = require('./../controllers/sagaController');
 const router = express.Router();
 
 // ---------------------- SPECIAL ROUTES ------------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(sagaController.getAbsSagas);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

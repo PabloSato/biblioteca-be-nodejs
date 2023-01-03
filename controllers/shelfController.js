@@ -19,6 +19,7 @@ exports.getByRack = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD ---------------------------
+exports.getAbsShelfs = factory.getAbsolute(Shelf);
 exports.getAllShelfs = factory.getAll(Shelf);
 exports.getShelf = factory.getOne(Shelf);
 exports.createShelf = factory.createOne(Shelf);

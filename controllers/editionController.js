@@ -19,6 +19,7 @@ exports.getByLanguage = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD ---------------------------
+exports.getAbsEditions = factory.getAbsolute(Edition);
 exports.getAllEditions = factory.getAll(Edition);
 exports.getEdition = factory.getOne(Edition);
 exports.createEdition = factory.createOne(Edition);

@@ -4,6 +4,8 @@ const rackController = require('./../controllers/rackController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(rackController.getAbsRacks);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

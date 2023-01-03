@@ -8,6 +8,8 @@ const router = express.Router();
 
 // ---------------------- SPECIALS ROUTES ----------------------------
 // TODO: Add Specials Routes
+// -- ABSOLUTE ALL BOOKS --
+router.route('/abs').get(bookController.getAbsBooks);
 // -- LAST BOOKS --
 router.route('/stats').get(bookController.stats);
 router

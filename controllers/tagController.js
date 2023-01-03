@@ -16,6 +16,7 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
+exports.getAbsTags = factory.getAbsolute(Tag);
 exports.getAllTags = factory.getAll(Tag);
 exports.getTag = factory.getOne(Tag);
 exports.createTag = factory.createOne(Tag);

@@ -9,6 +9,7 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD ---------------------------
+exports.getAbsLanguages = factory.getAbsolute(Language);
 exports.getAllLanguages = factory.getAll(Language);
 exports.getLanguage = factory.getOne(Language);
 exports.createLanguage = factory.createOne(Language);

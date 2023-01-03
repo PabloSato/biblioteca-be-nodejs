@@ -3,6 +3,9 @@ const languageController = require('./../controllers/languageController');
 const router = express.Router();
 
 // ---------------------- SPECIAL ROUTES -----------------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(languageController.getAbsLanguages);
+// -- BY SLUG --
 router
   .route('/slug/:slug')
   .get(languageController.getBySlug, languageController.getLanguage);

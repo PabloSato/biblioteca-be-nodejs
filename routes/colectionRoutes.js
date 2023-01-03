@@ -5,6 +5,8 @@ const colectionController = require('./../controllers/colectionController');
 const router = express.Router();
 
 // ---------------------- SPECIAL ROUTES ------------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(colectionController.getAbsColections);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

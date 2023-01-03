@@ -10,6 +10,7 @@ exports.getBySlug = (req, res, next) => {
   next();
 };
 // ---------------------- CRUD METHODS ------------------------
+exports.getAbsSagas = factory.getAbsolute(Saga);
 exports.getAllSagas = factory.getAll(Saga);
 exports.getSaga = factory.getOne(Saga);
 exports.createSaga = factory.createOne(Saga);

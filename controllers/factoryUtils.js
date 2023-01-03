@@ -1,7 +1,22 @@
 const catchAsync = require('./../utils/catchAsync');
 const AppError = require('./../utils/appError');
 const APIFeatures = require('./../utils/apiFeatures');
+const { Model } = require('mongoose');
 
+// ----------------------------------------------- GET ABSOLUTE --------------------------------------------------
+exports.getAbsolute = (Model) =>
+  catchAsync(async (req, res, next) => {
+    // const data = await Model.find(); // => All Data
+
+    const data = await Model.aggregate([{ $project: { name: 1 } }]); // => Only names
+
+    res.status(200).json({
+      status: 'success',
+      data: {
+        data: data,
+      },
+    });
+  });
 // ----------------------------------------------- GET ALL -------------------------------------------------------
 exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {

@@ -5,6 +5,8 @@ const editionController = require('./../controllers/editionController');
 const router = express.Router();
 
 // ---------------------- SPECIALS ROUTES -----------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(editionController.getAbsEditions);
 // -- BY SHELF --
 router
   .route('/shelf/:shelfId')

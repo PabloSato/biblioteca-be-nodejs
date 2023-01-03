@@ -4,6 +4,8 @@ const shelfController = require('./../controllers/shelfController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(shelfController.getAbsShelfs);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

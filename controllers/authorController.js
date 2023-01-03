@@ -25,6 +25,7 @@ exports.getByName = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
+exports.getAbsAuthors = factory.getAbsolute(Author);
 exports.getAllAuthors = factory.getAll(Author);
 exports.getAuthor = factory.getOne(Author);
 exports.createAuthor = factory.createOne(Author);

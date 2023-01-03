@@ -5,6 +5,8 @@ const universeController = require('./../controllers/universeController');
 const router = express.Router();
 
 // ---------------------- SPECIAL ROUTES ------------------------
+// -- ABSOLUTE ALL --
+router.route('/abs').get(universeController.getAbsUniverses);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')

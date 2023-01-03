@@ -70,6 +70,7 @@ exports.getByUniverse = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
+exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
