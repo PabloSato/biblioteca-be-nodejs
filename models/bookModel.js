@@ -52,7 +52,13 @@ bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUG --
 bookSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  const combinated = this.name.split(',');
+  if (combinated.length > 1 && articles.includes(combinated[1])) {
+    const fix_name = `${combinated[1]} ${combinated[0]}`;
+    this.slug = slugify(fix_name, { lower: true });
+  } else {
+    this.slug = slugify(this.name, { lower: true });
+  }
   if (!this.compilation) {
     this.booksInside = [];
   }
@@ -85,6 +91,30 @@ bookSchema.pre(/^find/, function (next) {
   // @TODO: Populate
   next();
 });
+// --------------------------------------------- 0 - UTILS -----------------------------
+const articles = [
+  'al',
+  'el',
+  'il',
+  'ol',
+  'ul',
+  'la',
+  'le',
+  'li',
+  'lo',
+  'lu',
+  'a',
+  'an',
+  'the',
+  'of',
+  'de',
+  'del',
+  'las',
+  'les',
+  'lis',
+  'los',
+  'lus',
+];
 // --------------------------------------------- 0 - EXPORTAMOS -----------------------------
 const Book = mongoose.model('Book', bookSchema);
 
