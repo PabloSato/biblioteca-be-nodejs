@@ -1,6 +1,6 @@
 const express = require('express');
 
-const editiionController = require('./../controllers/editionController');
+const editionController = require('./../controllers/editionController');
 
 const router = express.Router();
 
@@ -8,21 +8,21 @@ const router = express.Router();
 // -- BY SHELF --
 router
   .route('/shelf/:shelfId')
-  .get(editiionController.getByShelf, editiionController.getAllEditions);
+  .get(editionController.getByShelf, editionController.getAllEditions);
 // -- BY LANGUAGE --
 router
   .route('/language/:languageId')
-  .get(editiionController.getByLanguage, editiionController.getAllEditions);
+  .get(editionController.getByLanguage, editionController.getAllEditions);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')
-  .get(editiionController.getAllEditions)
-  .post(editiionController.formData, editiionController.createEdition);
+  .get(editionController.getAllEditions)
+  .post(editionController.formData, editionController.createEdition);
 
 router
   .route('/:id')
-  .get(editiionController.getEdition)
-  .patch(editiionController.updateEdition)
-  .delete(editiionController.deleteEdition);
+  .get(editionController.getEdition)
+  .patch(editionController.updateEdition)
+  .delete(editionController.deleteEdition);
 
 module.exports = router;
