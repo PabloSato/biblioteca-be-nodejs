@@ -8,7 +8,10 @@ exports.getAbsolute = (Model) =>
   catchAsync(async (req, res, next) => {
     // const data = await Model.find(); // => All Data
 
-    const data = await Model.aggregate([{ $project: { name: 1 } }]); // => Only names
+    const data = await Model.aggregate([
+      { $project: { name: 1 } },
+      { $sort: { name: 1 } },
+    ]); // => Only names
 
     res.status(200).json({
       status: 'success',
