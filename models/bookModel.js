@@ -52,10 +52,13 @@ bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUG --
 bookSchema.pre('save', function (next) {
-  const combinated = this.name.split(',');
-  if (combinated.length > 1 && articles.includes(combinated[1])) {
-    const fix_name = `${combinated[1]} ${combinated[0]}`;
-    this.slug = slugify(fix_name, { lower: true });
+  const combinated = this.name.toLowerCase().split(',');
+
+  if (combinated.length > 1) {
+    if (articles.includes(combinated[1].trim())) {
+      const fix_name = `${combinated[1]} ${combinated[0]}`;
+      this.slug = slugify(fix_name, { lower: true });
+    }
   } else {
     this.slug = slugify(this.name, { lower: true });
   }
