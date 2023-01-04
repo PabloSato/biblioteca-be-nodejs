@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const setUpName = require('./../utils/setUpName');
 
 const Book = require('./bookModel');
 
@@ -34,7 +35,8 @@ const tagSchmea = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUGIFY --
 tagSchmea.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  const tmp_name = setUpName(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // --------------------------------------------- 3 - POPULATE -------------------------------

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const setUpName = require('./../utils/setUpName');
 
 const AppError = require('./../utils/appError');
 const Book = require('./bookModel');
@@ -53,7 +54,8 @@ const editionSchema = new mongoose.Schema(
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 editionSchema.pre('save', function (next) {
-  this.slug = slugify(this.version, { lower: true });
+  const tmp_name = setUpName(this.version);
+  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // --- CONTROL ---

@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const setUpName = require('./../utils/setUpName');
 
 const Universe = require('./universeModel');
 
@@ -28,7 +29,8 @@ const sagaSchema = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 // -- SLUG --
 sagaSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  const tmp_name = setUpName(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // -- INCLUDE --

@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const setUpName = require('./../utils/setUpName');
+
 const bookSchema = new mongoose.Schema(
   {
     name: {
@@ -52,16 +54,9 @@ bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUG --
 bookSchema.pre('save', function (next) {
-  const combinated = this.name.toLowerCase().split(',');
+  const tmp_name = setUpName(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
 
-  if (combinated.length > 1) {
-    if (articles.includes(combinated[1].trim())) {
-      const fix_name = `${combinated[1]} ${combinated[0]}`;
-      this.slug = slugify(fix_name, { lower: true });
-    }
-  } else {
-    this.slug = slugify(this.name, { lower: true });
-  }
   if (!this.compilation) {
     this.booksInside = [];
   }
@@ -94,30 +89,7 @@ bookSchema.pre(/^find/, function (next) {
   // @TODO: Populate
   next();
 });
-// --------------------------------------------- 0 - UTILS -----------------------------
-const articles = [
-  'al',
-  'el',
-  'il',
-  'ol',
-  'ul',
-  'la',
-  'le',
-  'li',
-  'lo',
-  'lu',
-  'a',
-  'an',
-  'the',
-  'of',
-  'de',
-  'del',
-  'las',
-  'les',
-  'lis',
-  'los',
-  'lus',
-];
+
 // --------------------------------------------- 0 - EXPORTAMOS -----------------------------
 const Book = mongoose.model('Book', bookSchema);
 
