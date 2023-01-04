@@ -86,14 +86,22 @@ exports.getOne = (Model, popOptions) =>
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
     if (req.file) req.body.image = req.file.filename;
-    const data = await Model.create(req.body);
+    try {
+      const data = await Model.create(req.body);
 
-    res.status(201).json({
-      status: 'success',
-      data: {
-        data: data,
-      },
-    });
+      res.status(201).json({
+        status: 'success',
+        data: {
+          data: data,
+        },
+      });
+    } catch (err) {
+      console.error('Error al añadir', err.message);
+      res.status(500).json({
+        status: 'failed',
+        message: 'Error al añadir a la BBDD',
+      });
+    }
   });
 // ----------------------------------------------- UPDATE --------------------------------------------------------
 exports.updateOne = (Model) =>
