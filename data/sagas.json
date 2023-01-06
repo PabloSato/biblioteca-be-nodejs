@@ -1,27 +1,59 @@
-[
-  {
-    "_id": "6393a865e5fcb099cfec5573",
-    "name": "el poder del perro",
-    "books": [],
-    "slug": "el-poder-del-perro"
+[{
+  "_id": {
+    "$oid": "6393a865e5fcb099cfec5573"
   },
-  {
-    "_id": "6393a898e5fcb099cfec5575",
-    "name": "el señor de los anillos",
-    "universe": "6393a1a432720a3fd8bfd3db",
-    "books": [],
-    "slug": "el-senor-de-los-anillos"
-  },
-  {
-    "_id": "6393a8d0e5fcb099cfec557a",
-    "name": "trilogía del baztán",
-    "books": [],
-    "slug": "trilogia-del-baztan"
-  },
-  {
-    "_id": "6393a8d9e5fcb099cfec557c",
-    "name": "salvajes",
-    "books": [],
-    "slug": "salvajes"
+  "name": "el poder del perro",
+  "slug": "el-poder-del-perro",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672764061719"
+    }
   }
-]
+},{
+  "_id": {
+    "$oid": "6393a898e5fcb099cfec5575"
+  },
+  "name": "el señor de los anillos",
+  "slug": "el-senor-de-los-anillos",
+  "universe": {
+    "$oid": "6393a1a432720a3fd8bfd3db"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672764061719"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6393a8d0e5fcb099cfec557a"
+  },
+  "name": "trilogía del baztán",
+  "slug": "trilogia-del-baztan",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672764061719"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "6393a8d9e5fcb099cfec557c"
+  },
+  "name": "salvajes",
+  "slug": "salvajes",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672764061719"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "63b5a2f81e0605f9d8d1003d"
+  },
+  "name": "saga, la",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672848100631"
+    }
+  },
+  "slug": "la-saga"
+}]

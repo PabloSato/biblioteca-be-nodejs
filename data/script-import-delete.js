@@ -28,11 +28,12 @@ const books = JSON.parse(
   // fs.readFileSync(`${__dirname}/simple-booksv4.json`, 'utf-8') // => Books with Tags IDs and Authors IDs and Universe IDs
   // fs.readFileSync(`${__dirname}/simple-booksv5.json`, 'utf-8') // => Books with Tags IDs and Authors IDs and Universe IDs and Editions
   // fs.readFileSync(`${__dirname}/simple-booksv6.json`, 'utf-8') // => Books with all bur image and pages
-  fs.readFileSync(`${__dirname}/simple-booksv7.json`, 'utf-8') // => Books with all bur image and pages and fix names
+  // fs.readFileSync(`${__dirname}/simple-booksv7.json`, 'utf-8') // => Books with all bur image and pages and fix names
+  fs.readFileSync(`${__dirname}/simple-booksv8.json`, 'utf-8') // => Books with all bur image and pages and fix names + new data
 );
 const tags = JSON.parse(fs.readFileSync(`${__dirname}/tags.json`, 'utf-8'));
 const authors = JSON.parse(
-  fs.readFileSync(`${__dirname}/authorsv2.json`, 'utf-8') // => Change Name
+  fs.readFileSync(`${__dirname}/authorsv3.json`, 'utf-8') // => Change Name
 );
 // const authors = JSON.parse(
 //   fs.readFileSync(`${__dirname}/authors.json`, 'utf-8')
@@ -45,7 +46,7 @@ const editions = JSON.parse(
   // fs.readFileSync(`${__dirname}/editions.json`, 'utf-8')
   // fs.readFileSync(`${__dirname}/editionsv2.json`, 'utf-8') // => with shelf
   // fs.readFileSync(`${__dirname}/editionsv3.json`, 'utf-8') // => playing
-  fs.readFileSync(`${__dirname}/editionsv4.json`, 'utf-8') // => playing with languages
+  fs.readFileSync(`${__dirname}/editionsv5.json`, 'utf-8') // => playing with languages
 );
 const shelfs = JSON.parse(
   fs.readFileSync(`${__dirname}/shelves.json`, 'utf-8')
