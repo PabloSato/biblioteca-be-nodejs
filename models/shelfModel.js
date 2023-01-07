@@ -16,6 +16,7 @@ shelfSchema = new mongoose.Schema(
     },
     slug: String,
     rack: { type: mongoose.Schema.ObjectId, ref: 'Rack' },
+    location: { type: mongoose.Schema.ObjectId, ref: 'Location' },
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -51,13 +52,13 @@ shelfSchema.post('save', async function (doc, next) {
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
-shelfSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'rack',
-    select: 'name',
-  });
-  next();
-});
+// shelfSchema.pre(/^find/, function (next) {
+//   this.populate({
+//     path: 'rack',
+//     select: 'name',
+//   });
+//   next();
+// });
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Shelf = mongoose.model('Shelf', shelfSchema);
 

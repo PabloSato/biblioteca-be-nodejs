@@ -91,11 +91,20 @@ editionSchema.post('save', async function (doc, next) {
 editionSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'shelf',
-    select: 'name',
-  }).populate({
-    path: 'language',
     select: 'name slug',
-  });
+  })
+    .populate({
+      path: 'language',
+      select: 'name slug',
+    })
+    .populate({
+      path: 'rack',
+      select: 'name slug',
+    })
+    .populate({
+      path: 'location',
+      select: 'name slug',
+    });
   next();
 });
 // --------------------------------------------- 0 - EXPORT --------------------------------

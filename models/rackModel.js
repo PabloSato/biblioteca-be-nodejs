@@ -52,13 +52,13 @@ rackSchema.post('save', async function (doc, next) {
   const updt = await Location.findByIdAndUpdate(doc.location, location);
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
-rackSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'location',
-    select: 'name',
-  });
-  next();
-});
+// rackSchema.pre(/^find/, function (next) {
+//   this.populate({
+//     path: 'location',
+//     select: 'name',
+//   });
+//   next();
+// });
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Rack = mongoose.model('Rack', rackSchema);
 
