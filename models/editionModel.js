@@ -25,6 +25,8 @@ const editionSchema = new mongoose.Schema(
     slug: String,
     book: { type: mongoose.Schema.Types.ObjectId, ref: 'Book' },
     shelf: { type: mongoose.Schema.ObjectId, ref: 'Shelf' },
+    location: { type: mongoose.Schema.ObjectId, ref: 'Location' },
+    rack: { type: mongoose.Schema.ObjectId, ref: 'Rack' },
     image: {
       type: String,
       default: 'default.jpeg',

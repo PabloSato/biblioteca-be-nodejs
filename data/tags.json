@@ -1,157 +1,80 @@
-[{
-  "_id": {
-    "$oid": "639057b615bbd94d3ee4cd91"
+[
+  {
+    "_id": "639057b615bbd94d3ee4cd91",
+    "name": "adventuras",
+    "slug": "adventuras",
+    "image": "aventuras.png"
   },
-  "name": "adventuras",
-  "slug": "adventuras",
-  "image": "aventuras.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "639057c915bbd94d3ee4cd93"
+  {
+    "_id": "639057c915bbd94d3ee4cd93",
+    "name": "comic",
+    "slug": "comic",
+    "image": "comic.png"
   },
-  "name": "comic",
-  "slug": "comic",
-  "image": "comic.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390584415bbd94d3ee4cd95"
+  {
+    "_id": "6390584415bbd94d3ee4cd95",
+    "name": "novela",
+    "slug": "novela",
+    "image": "novela.png"
   },
-  "name": "novela",
-  "slug": "novela",
-  "image": "novela.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390586215bbd94d3ee4cd97"
+  {
+    "_id": "6390586215bbd94d3ee4cd97",
+    "name": "novela negra",
+    "slug": "novela-negra",
+    "image": "negra.png"
   },
-  "name": "novela negra",
-  "slug": "novela-negra",
-  "image": "negra.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390587f15bbd94d3ee4cd99"
+  {
+    "_id": "6390587f15bbd94d3ee4cd99",
+    "name": "ficción",
+    "slug": "ficcion",
+    "image": "ficcion.png"
   },
-  "name": "ficción",
-  "slug": "ficcion",
-  "image": "ficcion.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390589515bbd94d3ee4cd9b"
+  {
+    "_id": "6390589515bbd94d3ee4cd9b",
+    "name": "contemporánea",
+    "slug": "contemporanea",
+    "image": "novela_contemporanea.png"
   },
-  "name": "contemporánea",
-  "slug": "contemporanea",
-  "image": "novela_contemporanea.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390590215bbd94d3ee4cda1"
+  {
+    "_id": "6390590215bbd94d3ee4cda1",
+    "name": "ciencia ficción",
+    "slug": "ciencia-ficcion",
+    "image": "sci-fi.png"
   },
-  "name": "ciencia ficción",
-  "slug": "ciencia-ficcion",
-  "image": "sci-fi.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390592f15bbd94d3ee4cda5"
+  {
+    "_id": "6390592f15bbd94d3ee4cda5",
+    "name": "ensayo",
+    "slug": "ensayo",
+    "image": "ensayo.png"
   },
-  "name": "ensayo",
-  "slug": "ensayo",
-  "image": "ensayo.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390593e15bbd94d3ee4cda7"
+  {
+    "_id": "6390593e15bbd94d3ee4cda7",
+    "name": "social",
+    "slug": "social",
+    "image": "social.png"
   },
-  "name": "social",
-  "slug": "social",
-  "image": "social.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390596c15bbd94d3ee4cda9"
+  {
+    "_id": "6390596c15bbd94d3ee4cda9",
+    "name": "actual",
+    "slug": "actual",
+    "image": "actual.png"
   },
-  "name": "actual",
-  "slug": "actual",
-  "image": "actual.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "6390599094849a6fee601389"
+  {
+    "_id": "6390599094849a6fee601389",
+    "name": "no-ficción",
+    "slug": "no-ficcion",
+    "image": "no-fic.png"
   },
-  "name": "no-ficción",
-  "slug": "no-ficcion",
-  "image": "no-fic.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-},{
-  "_id": {
-    "$oid": "639058bb15bbd94d3ee4cd9d"
+  {
+    "_id": "639058bb15bbd94d3ee4cd9d",
+    "name": "fantasía épica",
+    "slug": "fantasia-epica",
+    "image": "fantasia.png"
   },
-  "name": "fantasía épica",
-  "slug": "fantasia-epica",
-  "image": "fantasia.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
+  {
+    "_id": "639058e315bbd94d3ee4cd9f",
+    "name": "clásicos",
+    "slug": "clasicos",
+    "image": "clasicos2.png"
   }
-},{
-  "_id": {
-    "$oid": "639058e315bbd94d3ee4cd9f"
-  },
-  "name": "clásicos",
-  "slug": "clasicos",
-  "image": "clasicos2.png",
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061716"
-    }
-  }
-}]
+]

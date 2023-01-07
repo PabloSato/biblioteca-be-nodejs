@@ -1,60 +1,27 @@
-[{
-  "_id": {
-    "$oid": "639c7c55e276a1f05240fac4"
+[
+  {
+    "_id": "639c7c55e276a1f05240fac4",
+    "name": "estantería b",
+    "slug": "estanteria-b",
+    "shelfs": [
+      "639c7c60e276a1f05240fad0",
+      "639c7c65e276a1f05240fad9",
+      "639c7c68e276a1f05240fae2",
+      "639c7c65e276a1f05240fad9",
+      "639c7c68e276a1f05240fae2"
+    ],
+    "location": "639c669753def0115eb42e05"
   },
-  "name": "estantería b",
-  "slug": "estanteria-b",
-  "shelfs": [
-    {
-      "$oid": "639c7c60e276a1f05240fad0"
-    },
-    {
-      "$oid": "639c7c65e276a1f05240fad9"
-    },
-    {
-      "$oid": "639c7c68e276a1f05240fae2"
-    },
-    {
-      "$oid": "639c7c65e276a1f05240fad9"
-    },
-    {
-      "$oid": "639c7c68e276a1f05240fae2"
-    }
-  ],
-  "location": {
-    "$oid": "639c669753def0115eb42e05"
-  },
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061723"
-    }
+  {
+    "_id": "639c7b238f2da30aea3c1d80",
+    "name": "estantería a",
+    "slug": "estanteria-a",
+    "shelfs": [
+      "639c7c42e276a1f05240faa6",
+      "639c7c45e276a1f05240faaf",
+      "639c7c49e276a1f05240fab8",
+      "639c7c42e276a1f05240faa6"
+    ],
+    "location": "639c669753def0115eb42e05"
   }
-},{
-  "_id": {
-    "$oid": "639c7b238f2da30aea3c1d80"
-  },
-  "name": "estantería a",
-  "slug": "estanteria-a",
-  "shelfs": [
-    {
-      "$oid": "639c7c42e276a1f05240faa6"
-    },
-    {
-      "$oid": "639c7c45e276a1f05240faaf"
-    },
-    {
-      "$oid": "639c7c49e276a1f05240fab8"
-    },
-    {
-      "$oid": "639c7c42e276a1f05240faa6"
-    }
-  ],
-  "location": {
-    "$oid": "639c669753def0115eb42e05"
-  },
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1672764061723"
-    }
-  }
-}]
+]
