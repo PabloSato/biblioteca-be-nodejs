@@ -7,6 +7,14 @@ const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
 // -- ABSOLUTE ALL --
 router.route('/abs').get(editionController.getAbsEditions);
+// -- BY LOCATION --
+router
+  .route('/location/:locationId')
+  .get(editionController.getByLocation, editionController.getAllEditions);
+// -- BY RACK --
+router
+  .route('/rack/:rackId')
+  .get(editionController.getByRack, editionController.getAllEditions);
 // -- BY SHELF --
 router
   .route('/shelf/:shelfId')

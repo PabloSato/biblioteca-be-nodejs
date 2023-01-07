@@ -72,7 +72,8 @@ editionSchema.pre('save', async function (next) {
     });
 
     if (!this.name) {
-      this.name = book.name;
+      const tmp_name = setUpName(book.name);
+      this.name = tmp_name.trim();
     }
   }
   next();

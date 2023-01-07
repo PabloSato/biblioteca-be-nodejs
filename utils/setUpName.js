@@ -4,6 +4,13 @@ module.exports = (name) => {
   if (array_name.length > 1) {
     if (articles.includes(array_name[1].trim())) {
       fix_name = `${array_name[1]} ${array_name[0]}`;
+    } else {
+      for (let i = 0; i < name.length; i++) {
+        const letter = name[i];
+        if (!marcks.includes(letter)) {
+          fix_name += letter;
+        }
+      }
     }
   } else {
     fix_name = name;
@@ -35,3 +42,5 @@ const articles = [
   'los',
   'lus',
 ];
+
+const marcks = ['.', ',', ':', ';', '-', '_', "'", '"', '`', '´'];

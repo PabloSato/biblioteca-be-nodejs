@@ -12,6 +12,18 @@ exports.getByShelf = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// --- BY RACK ---
+exports.getByRack = (req, res, next) => {
+  const filter = { rack: req.params.rackId };
+  req.query.filter = filter;
+  next();
+};
+// --- BY LOCATION ---
+exports.getByLocation = (req, res, next) => {
+  const filter = { location: req.params.locationId };
+  req.query.filter = filter;
+  next();
+};
 // --- BY LANGUAGE ---
 exports.getByLanguage = (req, res, next) => {
   const filter = { language: req.params.languageId };
