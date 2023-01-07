@@ -2,17 +2,18 @@ TODO:
 
 # ---- RELEASE v1
 
-1 - Add nested functions where required
-2 - Fix search with accents
-3 - Refactor getBySlug methods
-4 - Control books with same name (join slug.name and slug.author, maybe?)
+1 - TODO: Add nested functions where required
+2 - FIXME: Fix search with accents
+3 - TODO: Refactor getBySlug methods
+4 - FIXME: Control books with same name (join slug.name and slug.author, maybe?)
+5 - TODO: Add location adn rack to edition's model
 
 # ---- RELEASE v2 ----
 
-4 - Add global error middleware
+4 - TODO: Add global error middleware
 
 # ---- RELEASE v3 ----
 
-1 - Add cors and beyond policy
-2 - All logic to error control
-3 - Add stats of books, editions, authors, pages....
+1 - TODO: Add cors and beyond policy
+2 - TODO: All logic to error control
+3 - TODO: Add stats of books, editions, authors, pages....
