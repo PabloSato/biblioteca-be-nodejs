@@ -31,10 +31,10 @@ locationSchema.pre('save', function (next) {
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
 locationSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'racks',
-    select: '-shelfs name',
-  });
+  // this.populate({
+  //   path: 'racks',
+  //   select: '-shelfs name',
+  // });
   next();
 });
 // --------------------------------------------- 0 - EXPORT --------------------------------

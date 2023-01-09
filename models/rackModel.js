@@ -53,6 +53,9 @@ rackSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'shelfs',
     select: 'name',
+  }).populate({
+    path: 'location',
+    select: 'name slug',
   });
   next();
 });
