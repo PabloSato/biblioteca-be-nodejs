@@ -21,6 +21,12 @@ const authorSchema = new mongoose.Schema(
       type: String,
       default: 'default-author.jpeg',
     },
+    books: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Book',
+      },
+    ],
     createdAt: {
       type: Date,
       default: Date.now(),

@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const setUpName = require('./../utils/setUpName');
+const Author = require('./authorModel');
 
 const bookSchema = new mongoose.Schema(
   {
@@ -87,6 +88,16 @@ bookSchema.pre('save', async function (next) {
   next();
 });
 // -- INCLUDE --
+bookSchema.post('save', async function (doc, next) {
+  const authors = doc.authors;
+  authors.forEach(async function (item) {
+    const author = await Author.findById(item);
+    if (author) {
+      author.books.push(this);
+      const updt = await Author.findByIdAndUpdate(item, author);
+    }
+  });
+});
 
 // --------------------------------------------- 3 - POPULATE -------------------------------
 bookSchema.pre(/^find/, function (next) {
