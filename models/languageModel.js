@@ -8,6 +8,7 @@ languageSchema = new mongoose.Schema(
       required: [true, 'Un lenguaje debe de tener un nombre'],
       trim: true,
       lowercase: true,
+      unique: true,
       maxlength: [20, 'Un lenguage debe tener menos de 20 caracteres'],
       minlength: [3, 'Un lenguage debe de tener al menos 3 caracteres'],
     },
