@@ -32,12 +32,30 @@ const bookSchema = new mongoose.Schema(
       trim: true,
       lowercase: true,
     },
-    authors: [{ type: mongoose.Schema.ObjectId, ref: 'Author' }],
-    tags: [{ type: mongoose.Schema.ObjectId, ref: 'Tag' }],
+    authors: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Author',
+        required: [true, 'A Book must have a author'],
+      },
+    ],
+    tags: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Tag',
+        required: [true, ' A book must have a tag'],
+      },
+    ],
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     saga: { type: mongoose.Schema.ObjectId, ref: 'Saga' },
     number: Number,
-    editions: [{ type: mongoose.Schema.ObjectId, ref: 'Edition' }],
+    editions: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Edition',
+        required: [true, 'A book must have a edition'],
+      },
+    ],
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -53,8 +71,14 @@ bookSchema.index({ name: 1 });
 bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUG --
-bookSchema.pre('save', function (next) {
-  const tmp_name = setUpName(this.name);
+bookSchema.pre('save', async function (next) {
+  let tmp_name = setUpName(this.name);
+  const already_books = await Book.find({ name: tmp_name });
+  already_books.forEach((book) => {
+    if (book.name === this.name) {
+      tmp_name = `${tmp_name}-${this.id}`;
+    }
+  });
   this.slug = slugify(tmp_name, { lower: true });
 
   if (!this.compilation) {
