@@ -89,14 +89,14 @@ bookSchema.pre('save', async function (next) {
 });
 // -- INCLUDE --
 bookSchema.post('save', async function (doc, next) {
-  const authors = doc.authors;
-  authors.forEach(async function (item) {
-    const author = await Author.findById(item);
-    if (author) {
-      author.books.push(this);
-      const updt = await Author.findByIdAndUpdate(item, author);
-    }
-  });
+  // const authors = doc.authors;
+  // authors.forEach(async function (item) {
+  //   const author = await Author.findById(item);
+  //   if (author) {
+  //     author.books.push(this);
+  //     const updt = await Author.findByIdAndUpdate(item, author);
+  //   }
+  // });
 });
 
 // --------------------------------------------- 3 - POPULATE -------------------------------
