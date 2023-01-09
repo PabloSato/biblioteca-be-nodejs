@@ -27,8 +27,10 @@ rackSchema = new mongoose.Schema(
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
-// --- CONTROL ---
 rackSchema.pre('save', async function (next) {
+  // ---- SLUG ----
+  this.slug = slugify(this.name, { lower: true });
+  // --- CONTROL ---
   const location = await Location.findById(this.location);
   const already_racks = location.racks;
   already_racks.forEach((rack) => {
@@ -36,11 +38,6 @@ rackSchema.pre('save', async function (next) {
       next(new AppError("This rack's name is alredy on location", 409));
     }
   });
-  next();
-});
-// ---- SLUG ----
-rackSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
   next();
 });
 
@@ -52,13 +49,13 @@ rackSchema.post('save', async function (doc, next) {
   const updt = await Location.findByIdAndUpdate(doc.location, location);
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
-// rackSchema.pre(/^find/, function (next) {
-//   this.populate({
-//     path: 'location',
-//     select: 'name',
-//   });
-//   next();
-// });
+rackSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: 'shelfs',
+    select: 'name',
+  });
+  next();
+});
 // --------------------------------------------- 0 - EXPORT --------------------------------
 const Rack = mongoose.model('Rack', rackSchema);
 

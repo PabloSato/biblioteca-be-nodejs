@@ -27,8 +27,10 @@ shelfSchema = new mongoose.Schema(
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
-// ---- CONTROL ----
 shelfSchema.pre('save', async function (next) {
+  // ---- SLUG -----
+  this.slug = slugify(this.name, { lower: true });
+  // ---- CONTROL ----
   const rack = await Rack.findById(this.rack);
   const already_shelfs = rack.shelfs;
   already_shelfs.forEach((shelf) => {
@@ -38,11 +40,7 @@ shelfSchema.pre('save', async function (next) {
   });
   next();
 });
-// ---- SLUG ----
-shelfSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
-  next();
-});
+
 // --- ADD RACK TO LOCATIONS.racks ----
 shelfSchema.post('save', async function (doc, next) {
   const rack = await Rack.findById(doc.rack);
