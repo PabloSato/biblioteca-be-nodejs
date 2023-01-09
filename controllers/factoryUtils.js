@@ -96,10 +96,10 @@ exports.createOne = (Model) =>
         },
       });
     } catch (err) {
-      console.error('Error al añadir', err.message);
-      res.status(500).json({
+      const status = err.statusCode ? err.statusCode : 500;
+      res.status(status).json({
         status: 'failed',
-        message: 'Error al añadir a la BBDD',
+        message: err.message,
       });
     }
   });
