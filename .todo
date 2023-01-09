@@ -2,11 +2,10 @@ TODO:
 
 # ---- RELEASE v1
 
-1 - TODO: Add nested functions where required
 2 - FIXME: Fix search with accents
 3 - TODO: Refactor getBySlug methods
-4 - FIXME: Control books with same name (join slug.name and slug.author, maybe?)
-5 - TODO: Add location adn rack to edition's model
+4 - FIXME: When error occurs on create a edition, delete book if is the first edition
+5 - TODO: Delete images when delete editions
 
 # ---- RELEASE v2 ----
 
