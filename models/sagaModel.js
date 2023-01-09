@@ -11,6 +11,7 @@ const sagaSchema = new mongoose.Schema(
       required: [true, 'Una Saga debe de tener un nombre'],
       trim: true,
       lowercase: true,
+      unique: true,
     },
     slug: String,
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },

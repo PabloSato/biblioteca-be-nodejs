@@ -9,6 +9,7 @@ const universeSchema = new mongoose.Schema(
       required: [true, 'Un Universo debe de tener un nombre'],
       trim: true,
       lowercase: true,
+      unique: true,
     },
     slug: String,
     createdAt: {
