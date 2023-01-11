@@ -66,27 +66,24 @@ exports.createBook = catchAsync(async (req, res, next) => {
     authors: try_authors,
   });
   if (already_books.length > 0) {
-    res.status(409).json({
-      status: 'failed',
-      message: 'Duplicated book',
-    });
-  } else {
-    try {
-      const data = await Book.create(req.body);
+    return next(new AppError('Duplicated Book', 409));
+  }
 
-      res.status(201).json({
-        status: 'success',
-        data: {
-          data: data,
-        },
-      });
-    } catch (err) {
-      const status = err.statusCode ? err.statusCode : 500;
-      res.status(status).json({
-        status: 'failed',
-        message: err.message,
-      });
-    }
+  try {
+    const data = await Book.create(req.body);
+    res.status(201).json({
+      status: 'success',
+      data: {
+        data: data,
+      },
+    });
+  } catch (err) {
+    const status = err.statusCode ? err.statusCode : 500;
+    console.log(err.message);
+    res.status(status).json({
+      status: 'failed',
+      message: err.message,
+    });
   }
 });
 // ---------------------- BASIC CRUD --------------------------------
