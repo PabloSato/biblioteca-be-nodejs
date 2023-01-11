@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const setUpName = require('./../utils/setUpName');
+const { notEmptyArray } = require('./../middleware/validators');
 const Author = require('./authorModel');
 
 const bookSchema = new mongoose.Schema(
@@ -37,14 +38,14 @@ const bookSchema = new mongoose.Schema(
       {
         type: mongoose.Schema.ObjectId,
         ref: 'Author',
-        required: [true, 'A Book must have a author'],
+        validate: [notEmptyArray, 'A book must have an author'],
       },
     ],
     tags: [
       {
         type: mongoose.Schema.ObjectId,
         ref: 'Tag',
-        required: [true, ' A book must have a tag'],
+        validate: [notEmptyArray, 'A book must have a tag'],
       },
     ],
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
@@ -54,7 +55,7 @@ const bookSchema = new mongoose.Schema(
       {
         type: mongoose.Schema.ObjectId,
         ref: 'Edition',
-        required: [true, 'A book must have a edition'],
+        validate: [notEmptyArray, 'A book must have an edition'],
       },
     ],
     createdAt: {
