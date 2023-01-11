@@ -24,6 +24,12 @@ exports.getByName = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// -- GET ALL CLEAN --
+exports.getAllClean = (req, res, next) => {
+  const filter = { name: { $ne: 'vv.aa' }, 'books.2': { $exists: true } };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAbsAuthors = factory.getAbsolute(Author);
 exports.getAllAuthors = factory.getAll(Author);

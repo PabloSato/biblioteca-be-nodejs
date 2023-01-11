@@ -4,6 +4,10 @@ const router = express.Router();
 // ---------------------- SPECIAL ROUTES -----------------------------
 // -- ABSOLUTE ALL AUTHORS --
 router.route('/abs').get(authorController.getAbsAuthors);
+// -- CLEAN ALL AUTHORS --
+router
+  .route('/clean')
+  .get(authorController.getAllClean, authorController.getAllAuthors);
 // -- BY SLUG --
 router
   .route('/slug/:slug')
