@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const slugify = require('slugify');
 
 const setUpName = require('./../utils/setUpName');
+const AppError = require('./../utils/appError');
 const { notEmptyArray } = require('./../middleware/validators');
 const Author = require('./authorModel');
 
@@ -72,16 +73,26 @@ bookSchema.index({ slug: 1 });
 bookSchema.index({ name: 'text' }, { default_language: 'none' });
 bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
-// -- SLUG --
 bookSchema.pre('save', async function (next) {
   let tmp_name = setUpName(this.name);
-  const already_books = await Book.find({ name: tmp_name });
+  // -- SAME NAME <> AUTHOR --
+  const already_books = await Book.find({
+    name: this.name,
+    authors: this.authors,
+  });
   if (already_books.length > 0) {
+    next(new AppError('Duplicated Book', 409));
+  }
+  // -- SAME NAME eq AUTHOR --
+  const already_books_with_name = await Book.find({ name: tmp_name });
+  if (already_books_with_name.length > 0) {
     const author = await Author.findById(this.authors[0]);
     tmp_name = `${tmp_name} by ${author.name.split(',')[0]}`;
   }
-  this.slug = slugify(tmp_name, { lower: true });
 
+  // -- SLUG --
+  this.slug = slugify(tmp_name, { lower: true });
+  // -- COMPILATION --
   if (!this.compilation) {
     this.booksInside = [];
   }
