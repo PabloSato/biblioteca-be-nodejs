@@ -75,11 +75,10 @@ bookSchema.index({ tags: 1 });
 bookSchema.pre('save', async function (next) {
   let tmp_name = setUpName(this.name);
   const already_books = await Book.find({ name: tmp_name });
-  already_books.forEach((book) => {
-    if (book.name === this.name) {
-      tmp_name = `${tmp_name}-${this.id}`;
-    }
-  });
+  if (already_books.length > 0) {
+    const author = await Author.findById(this.authors[0]);
+    tmp_name = `${tmp_name} by ${author.name.split(',')[0]}`;
+  }
   this.slug = slugify(tmp_name, { lower: true });
 
   if (!this.compilation) {

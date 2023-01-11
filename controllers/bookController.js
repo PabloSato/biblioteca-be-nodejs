@@ -1,6 +1,7 @@
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
+const setUpName = require('./../utils/setUpName');
 const { formData } = require('./../middleware/upload');
 
 const Book = require('./../models/bookModel');
@@ -57,10 +58,42 @@ exports.getByUniverse = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
+exports.createBook = catchAsync(async (req, res, next) => {
+  const try_name = setUpName(req.body.name).toLowerCase();
+  const try_authors = req.body.authors;
+  const already_books = await Book.find({
+    name: try_name,
+    authors: try_authors,
+  });
+  if (already_books.length > 0) {
+    res.status(409).json({
+      status: 'failed',
+      message: 'Duplicated book',
+    });
+  } else {
+    try {
+      const data = await Book.create(req.body);
+
+      res.status(201).json({
+        status: 'success',
+        data: {
+          data: data,
+        },
+      });
+    } catch (err) {
+      const status = err.statusCode ? err.statusCode : 500;
+      res.status(status).json({
+        status: 'failed',
+        message: err.message,
+      });
+    }
+  }
+});
+// ---------------------- BASIC CRUD --------------------------------
 exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
-exports.createBook = factory.createOne(Book);
+// exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
 exports.deleteBook = factory.deleteOne(Book);
 exports.formData = formData();
