@@ -16,7 +16,11 @@ rackSchema = new mongoose.Schema(
     },
     slug: String,
     shelfs: [{ type: mongoose.Schema.ObjectId, ref: 'Shelf' }],
-    location: { type: mongoose.Schema.ObjectId, ref: 'Location' },
+    location: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'Location',
+      required: true,
+    },
     createdAt: {
       type: Date,
       default: Date.now(),

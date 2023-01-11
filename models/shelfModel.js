@@ -15,8 +15,12 @@ shelfSchema = new mongoose.Schema(
       minlength: [1, 'Una balda debe de tener al menos 1 caracter'],
     },
     slug: String,
-    rack: { type: mongoose.Schema.ObjectId, ref: 'Rack' },
-    location: { type: mongoose.Schema.ObjectId, ref: 'Location' },
+    rack: { type: mongoose.Schema.ObjectId, ref: 'Rack', required: true },
+    location: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'Location',
+      required: true,
+    },
     createdAt: {
       type: Date,
       default: Date.now(),
