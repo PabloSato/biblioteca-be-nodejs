@@ -2,8 +2,6 @@ TODO:
 
 # ---- RELEASE v1
 
-3 - FIXME: Control duplicate books from the same authors
-4 - FIXME: When error occurs on create a edition, delete book if is the first edition
 5 - TODO: Delete images when delete editions
 
 # ---- RELEASE v2 ----
