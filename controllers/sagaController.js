@@ -4,11 +4,6 @@ const { formData } = require('./../middleware/upload');
 const Saga = require('./../models/sagaModel');
 
 // ---------------------- SPECIAL METHODS ---------------------
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // ---------------------- CRUD METHODS ------------------------
 exports.getAbsSagas = factory.getAbsolute(Saga);
 exports.getAllSagas = factory.getAll(Saga);

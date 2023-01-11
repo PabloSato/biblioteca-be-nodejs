@@ -6,11 +6,6 @@ const { formData } = require('./../middleware/upload');
 const Universe = require('./../models/universeModel');
 
 // ---------------------- SPECIAL METHODS ------------------------
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // ---------------------- CRUD METHODS ---------------------------
 exports.getAbsUniverses = factory.getAbsolute(Universe);
 exports.getAllUniverses = factory.getAll(Universe);

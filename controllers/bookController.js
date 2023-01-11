@@ -30,20 +30,6 @@ exports.stats = catchAsync(async (req, res, next) => {
     },
   });
 });
-// -- BY NAME --
-exports.getByName = (req, res, next) => {
-  const name = req.params.name;
-  // const filter = { name: { $regex: name, $options: 'i' } };
-  const filter = { $text: { $search: name, $caseSensitive: false } };
-  req.query.filter = filter;
-  next();
-};
-// -- BY SLUG --
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // -- BY TAG --
 exports.getByTag = (req, res, next) => {
   const filter = { tags: req.params.tagId };

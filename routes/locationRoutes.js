@@ -1,6 +1,7 @@
 const express = require('express');
 
 const locationController = require('./../controllers/locationController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
@@ -9,7 +10,7 @@ router.route('/abs').get(locationController.getAbsLocations);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')
-  .get(locationController.getBySlug, locationController.getLocation);
+  .get(filter.getBySlug, locationController.getLocation);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

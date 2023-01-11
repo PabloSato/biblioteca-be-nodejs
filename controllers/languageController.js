@@ -3,11 +3,6 @@ const { formData } = require('./../middleware/upload');
 
 const Language = require('./../models/languageModel');
 // ---------------------- SPECIAL METHODS ---------------------------
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // ---------------------- BASIC CRUD ---------------------------
 exports.getAbsLanguages = factory.getAbsolute(Language);
 exports.getAllLanguages = factory.getAll(Language);

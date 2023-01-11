@@ -1,19 +1,18 @@
 const express = require('express');
 
 const rackController = require('./../controllers/rackController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
 // -- ABSOLUTE ALL --
 router.route('/abs').get(rackController.getAbsRacks);
 // -- SEARCH BY SLUG --
-router
-  .route('/slug/:slug')
-  .get(rackController.getBySlug, rackController.getRack);
+router.route('/slug/:slug').get(filter.getBySlug, rackController.getRack);
 // -- SEARCH BY LOCATION
 router
   .route('/location/:locationId')
-  .get(rackController.getByLocation, rackController.getAllRacks);
+  .get(filter.getByLocation, rackController.getAllRacks);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

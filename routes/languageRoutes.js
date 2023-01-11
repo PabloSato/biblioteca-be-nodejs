@@ -1,5 +1,6 @@
 const express = require('express');
 const languageController = require('./../controllers/languageController');
+const filter = require('./../controllers/filtersController');
 const router = express.Router();
 
 // ---------------------- SPECIAL ROUTES -----------------------------
@@ -8,7 +9,7 @@ router.route('/abs').get(languageController.getAbsLanguages);
 // -- BY SLUG --
 router
   .route('/slug/:slug')
-  .get(languageController.getBySlug, languageController.getLanguage);
+  .get(filter.getBySlug, languageController.getLanguage);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')

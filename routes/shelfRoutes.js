@@ -1,19 +1,18 @@
 const express = require('express');
 
 const shelfController = require('./../controllers/shelfController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 // ---------------------- SPECIALS ROUTES -----------------------
 // -- ABSOLUTE ALL --
 router.route('/abs').get(shelfController.getAbsShelfs);
 // -- SEARCH BY SLUG --
-router
-  .route('/slug/:slug')
-  .get(shelfController.getBySlug, shelfController.getShelf);
+router.route('/slug/:slug').get(filter.getBySlug, shelfController.getShelf);
 // -- SEARCH BY RACK --
 router
   .route('/rack/:rackId')
-  .get(shelfController.getByRack, shelfController.getAllShelfs);
+  .get(filter.getByRack, shelfController.getAllShelfs);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

@@ -1,6 +1,7 @@
 const express = require('express');
 
 const sagaController = require('./../controllers/sagaController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 
@@ -8,9 +9,7 @@ const router = express.Router();
 // -- ABSOLUTE ALL --
 router.route('/abs').get(sagaController.getAbsSagas);
 // -- SEARCH BY SLUG --
-router
-  .route('/slug/:slug')
-  .get(sagaController.getBySlug, sagaController.getSaga);
+router.route('/slug/:slug').get(filter.getBySlug, sagaController.getSaga);
 
 // ---------------------- CRUD ROUTES ---------------------------
 router

@@ -1,6 +1,7 @@
 const express = require('express');
 
 const editionController = require('./../controllers/editionController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 
@@ -10,11 +11,11 @@ router.route('/abs').get(editionController.getAbsEditions);
 // -- BY LOCATION --
 router
   .route('/location/:locationId')
-  .get(editionController.getByLocation, editionController.getAllEditions);
+  .get(filter.getByLocation, editionController.getAllEditions);
 // -- BY RACK --
 router
   .route('/rack/:rackId')
-  .get(editionController.getByRack, editionController.getAllEditions);
+  .get(filter.getByRack, editionController.getAllEditions);
 // -- BY SHELF --
 router
   .route('/shelf/:shelfId')

@@ -4,11 +4,6 @@ const { formData } = require('./../middleware/upload');
 const Colection = require('./../models/colectionModel');
 
 // ---------------------- SPECIAL METHODS ---------------------
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // ---------------------- CRUD METHODS ------------------------
 exports.getAbsColections = factory.getAbsolute(Colection);
 exports.getAllColections = factory.getAll(Colection);

@@ -6,24 +6,6 @@ const { formData } = require('./../middleware/upload');
 const Author = require('./../models/authorModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
-// -- ORDER --
-exports.setOrder = (req, res, next) => {
-  req.query.sort = 'name';
-  next();
-};
-// -- BY SLUG --
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
-// -- BY NAME --
-exports.getByName = (req, res, next) => {
-  const name = req.params.name;
-  const filter = { name: { $regex: name, $options: 'i' } };
-  req.query.filter = filter;
-  next();
-};
 // -- GET ALL CLEAN --
 exports.getAllClean = (req, res, next) => {
   const filter = { name: { $ne: 'vv.aa' }, 'books.2': { $exists: true } };

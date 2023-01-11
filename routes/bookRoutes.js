@@ -1,6 +1,7 @@
 const express = require('express');
 
 const bookController = require('./../controllers/bookController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 
@@ -16,13 +17,9 @@ router
   .route('/last-books')
   .get(bookController.getLastBooks, bookController.getAllBooks);
 // -- SEARCH BY NAME --
-router
-  .route('/search/:name')
-  .get(bookController.getByName, bookController.getAllBooks);
+router.route('/search/:name').get(filter.getByName, bookController.getAllBooks);
 // -- SEARCH BY SLUG --
-router
-  .route('/slug/:slug')
-  .get(bookController.getBySlug, bookController.getBook);
+router.route('/slug/:slug').get(filter.getBySlug, bookController.getBook);
 // -- SEARCH BY TAG --
 router
   .route('/tag/:tagId')

@@ -1,6 +1,7 @@
 const express = require('express');
 
 const colectionController = require('./../controllers/colectionController');
+const filter = require('./../controllers/filtersController');
 
 const router = express.Router();
 
@@ -10,7 +11,7 @@ router.route('/abs').get(colectionController.getAbsColections);
 // -- SEARCH BY SLUG --
 router
   .route('/slug/:slug')
-  .get(colectionController.getBySlug, colectionController.getColection);
+  .get(filter.getBySlug, colectionController.getColection);
 
 // ---------------------- CRUD ROUTES ---------------------------
 router

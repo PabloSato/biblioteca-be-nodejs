@@ -6,11 +6,6 @@ const { formData } = require('./../middleware/upload');
 const Location = require('./../models/locationModel');
 
 // ---------------------- SPECIAL METHODS ----------------------
-exports.getBySlug = (req, res, next) => {
-  const filter = { slug: req.params.slug };
-  req.query.filter = filter;
-  next();
-};
 // ---------------------- BASIC CRUD ---------------------------
 exports.getAbsLocations = factory.getAbsolute(Location);
 exports.getAllLocations = factory.getAll(Location);
