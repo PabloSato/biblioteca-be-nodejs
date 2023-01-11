@@ -39,6 +39,7 @@ const authorSchema = new mongoose.Schema(
   }
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
+authorSchema.index({ name: 'text' }, { default_language: 'none' });
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 authorSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });
