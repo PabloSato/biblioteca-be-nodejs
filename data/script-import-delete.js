@@ -33,7 +33,7 @@ const books = JSON.parse(
 );
 const tags = JSON.parse(fs.readFileSync(`${__dirname}/tags.json`, 'utf-8'));
 const authors = JSON.parse(
-  fs.readFileSync(`${__dirname}/authorsv3.json`, 'utf-8') // => Change Name
+  fs.readFileSync(`${__dirname}/authorsv4.json`, 'utf-8') // => Change Name
 );
 // const authors = JSON.parse(
 //   fs.readFileSync(`${__dirname}/authors.json`, 'utf-8')
