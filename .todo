@@ -2,7 +2,6 @@ TODO:
 
 # ---- RELEASE v1
 
-2 - FIXME: Fix search with accents
 3 - TODO: Refactor getBySlug methods
 4 - FIXME: When error occurs on create a edition, delete book if is the first edition
 5 - TODO: Delete images when delete editions

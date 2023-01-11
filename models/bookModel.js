@@ -68,7 +68,7 @@ const bookSchema = new mongoose.Schema(
 
 // --------------------------------------------- 1 - ORDER ---------------------------------
 bookSchema.index({ slug: 1 });
-bookSchema.index({ name: 1 });
+bookSchema.index({ name: 'text' }, { default_language: 'none' });
 bookSchema.index({ tags: 1 });
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUG --

@@ -33,7 +33,8 @@ exports.stats = catchAsync(async (req, res, next) => {
 // -- BY NAME --
 exports.getByName = (req, res, next) => {
   const name = req.params.name;
-  const filter = { name: { $regex: name, $options: 'i' } };
+  // const filter = { name: { $regex: name, $options: 'i' } };
+  const filter = { $text: { $search: name, $caseSensitive: false } };
   req.query.filter = filter;
   next();
 };
