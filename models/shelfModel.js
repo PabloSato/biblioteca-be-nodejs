@@ -35,13 +35,10 @@ shelfSchema.pre('save', async function (next) {
   // ---- SLUG -----
   this.slug = slugify(this.name, { lower: true });
   // ---- CONTROL ----
-  const rack = await Rack.findById(this.rack);
-  const already_shelfs = rack.shelfs;
-  already_shelfs.forEach((shelf) => {
-    if (shelf.name === this.name) {
-      next(new AppError("This shelf's name is already in rack", 409));
-    }
-  });
+  const already_shelfs = await Shelf.find({ name: this.name, rack: this.rack });
+  if (already_shelfs.length > 0) {
+    next(new AppError('Duplicated Shelf', 409));
+  }
   next();
 });
 

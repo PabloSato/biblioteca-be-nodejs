@@ -35,13 +35,10 @@ rackSchema.pre('save', async function (next) {
   // ---- SLUG ----
   this.slug = slugify(this.name, { lower: true });
   // --- CONTROL ---
-  const location = await Location.findById(this.location);
-  const already_racks = location.racks;
-  already_racks.forEach((rack) => {
-    if (rack.name === this.name) {
-      next(new AppError("This rack's name is alredy on location", 409));
-    }
-  });
+  const already_racks = await Rack.find({ name: this.name, rack: this.rack });
+  if (already_racks.length > 0) {
+    next(new AppError('Duplicated Rack', 409));
+  }
   next();
 });
 
