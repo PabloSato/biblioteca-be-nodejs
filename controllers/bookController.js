@@ -58,36 +58,7 @@ exports.getByUniverse = (req, res, next) => {
   req.query.sort = 'name';
   next();
 };
-// ---------------------- BASIC CRUD --------------------------------
-// ----- CREATE -----
-exports.createBook = catchAsync(async (req, res, next) => {
-  const try_name = setUpName(req.body.name).toLowerCase();
-  const try_authors = req.body.authors;
-  const already_books = await Book.find({
-    name: try_name,
-    authors: try_authors,
-  });
-  if (already_books.length > 0) {
-    return next(new AppError('Duplicated Book', 409));
-  }
-
-  try {
-    const data = await Book.create(req.body);
-    res.status(201).json({
-      status: 'success',
-      data: {
-        data: data,
-      },
-    });
-  } catch (err) {
-    const status = err.statusCode ? err.statusCode : 500;
-    console.log(err.message);
-    res.status(status).json({
-      status: 'failed',
-      message: err.message,
-    });
-  }
-});
+// ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteBook = catchAsync(async (req, res, next) => {
   const book = await Book.findById(req.params.id);
@@ -120,7 +91,7 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
 exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
-// exports.createBook = factory.createOne(Book);
+exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
 // exports.deleteBook = factory.deleteOne(Book);
 exports.formData = formData();
