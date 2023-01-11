@@ -2,16 +2,12 @@ TODO:
 
 # ---- RELEASE v1
 
-3 - TODO: Refactor getBySlug methods
 4 - FIXME: When error occurs on create a edition, delete book if is the first edition
 5 - TODO: Delete images when delete editions
 
 # ---- RELEASE v2 ----
 
-4 - TODO: Add global error middleware
-
 # ---- RELEASE v3 ----
 
 1 - TODO: Add cors and beyond policy
-2 - TODO: All logic to error control
 3 - TODO: Add stats of books, editions, authors, pages....
