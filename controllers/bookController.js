@@ -5,6 +5,7 @@ const setUpName = require('./../utils/setUpName');
 const { formData } = require('./../middleware/upload');
 
 const Book = require('./../models/bookModel');
+const Edition = require('./../models/editionModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- LAST BOOKS --
@@ -58,6 +59,7 @@ exports.getByUniverse = (req, res, next) => {
   next();
 };
 // ---------------------- BASIC CRUD --------------------------------
+// ----- CREATE -----
 exports.createBook = catchAsync(async (req, res, next) => {
   const try_name = setUpName(req.body.name).toLowerCase();
   const try_authors = req.body.authors;
@@ -86,11 +88,39 @@ exports.createBook = catchAsync(async (req, res, next) => {
     });
   }
 });
+// ----- DELETE -----
+exports.deleteBook = catchAsync(async (req, res, next) => {
+  const book = await Book.findById(req.params.id);
+  const editions = book.editions;
+  const editions_id = [];
+  editions.forEach((item) => editions_id.push(item._id));
+  const edit_remove = await Edition.deleteMany({ _id: { $in: editions_id } });
+
+  if (edit_remove.deletedCount < editions.length) {
+    return next(
+      new AppError(
+        `Can't delete book ${req.params.id}, editions remaining`,
+        400
+      )
+    );
+  }
+
+  const data = await Book.findByIdAndDelete(req.params.id);
+
+  if (!data) {
+    return next(new AppError('No book found with that ID', 404));
+  }
+
+  res.status(204).json({
+    status: 'success',
+    data: null,
+  });
+});
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
 // exports.createBook = factory.createOne(Book);
 exports.updateBook = factory.updateOne(Book);
-exports.deleteBook = factory.deleteOne(Book);
+// exports.deleteBook = factory.deleteOne(Book);
 exports.formData = formData();
