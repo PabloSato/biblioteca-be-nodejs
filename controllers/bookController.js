@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 const factory = require('./factoryUtils');
 const AppError = require('./../utils/appError');
 const catchAsync = require('./../utils/catchAsync');
@@ -64,17 +67,26 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
   const book = await Book.findById(req.params.id);
   const editions = book.editions;
   const editions_id = [];
-  editions.forEach((item) => editions_id.push(item._id));
-  const edit_remove = await Edition.deleteMany({ _id: { $in: editions_id } });
+  let message = '';
+  // editions.forEach((item) => editions_id.push(item._id));
+  // const edit_remove = await Edition.deleteMany({ _id: { $in: editions_id } });
 
-  if (edit_remove.deletedCount < editions.length) {
-    return next(
-      new AppError(
-        `Can't delete book ${req.params.id}, editions remaining`,
-        400
-      )
-    );
-  }
+  editions.forEach(async (item) => {
+    const edit = await Edition.findById(item._id);
+    const image = edit.image;
+    if (image.length > 0) {
+      const del_image = path.join(__basedir, 'public', 'images', image);
+      if (fs.existsSync(del_image)) {
+        fs.unlink(del_image, (err) => {
+          if (err) {
+            console.error(err);
+            message = `Can't delete image from edition: ${edit.version}`;
+          }
+        });
+      }
+    }
+    await Edition.findByIdAndDelete(item._id);
+  });
 
   const data = await Book.findByIdAndDelete(req.params.id);
 
