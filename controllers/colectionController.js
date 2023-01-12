@@ -1,7 +1,7 @@
 const factory = require('./factoryUtils');
 const { formData } = require('./../middleware/upload');
 
-const Colection = require('./../models/colectionModel');
+const Colection = require('./../models/collectionModel');
 
 // ---------------------- SPECIAL METHODS ---------------------
 // ---------------------- CRUD METHODS ------------------------

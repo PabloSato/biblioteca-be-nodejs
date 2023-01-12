@@ -32,7 +32,7 @@ const editionSchema = new mongoose.Schema(
       default: 'default.jpeg',
     },
     pages: Number,
-    colection: { type: mongoose.Schema.ObjectId, ref: 'Colection' },
+    colection: { type: mongoose.Schema.ObjectId, ref: 'Collection' },
     numberOnColection: Number,
     isbn: {
       type: Number,
