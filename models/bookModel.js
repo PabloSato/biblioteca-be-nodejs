@@ -101,18 +101,11 @@ bookSchema.pre('save', async function (next) {
 // -- INCLUDE --
 bookSchema.post('save', async function (doc, next) {
   const authors = doc.authors;
-  console.log('----DOC-----');
-  console.log(doc);
-
   authors.forEach(async (item) => {
     const author = await Author.findById(item);
     const author_books = author.books;
     author_books.push(doc);
-    console.log('----AUTBOOK-----');
-    console.log(author_books);
     const updt = await Author.findByIdAndUpdate(item, author);
-    console.log('----LAST-----');
-    console.log(updt);
   });
 });
 
