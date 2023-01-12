@@ -42,12 +42,13 @@ shelfSchema.pre('save', async function (next) {
   next();
 });
 
-// --- ADD RACK TO LOCATIONS.racks ----
+// --- ADD SHELF TO RACK ----
 shelfSchema.post('save', async function (doc, next) {
   const rack = await Rack.findById(doc.rack);
   const already_shelfs = rack.shelfs;
   already_shelfs.push(doc);
   const upt = await Rack.findByIdAndUpdate(doc.rack, rack);
+
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
