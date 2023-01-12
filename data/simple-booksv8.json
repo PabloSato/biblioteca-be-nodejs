@@ -1,6 +1,6 @@
 [
   {
-    "id": "63b45a9df611d2c38039ae0b",
+    "_id": "63b45a9df611d2c38039ae0b",
     "name": "frontera, la",
     "slug": "la-frontera",
     "argument": "¿Qué haces cuando ya no hay fronteras? ¿Cuándo las líneas que creías que existían sencillamente se han esfumado? ¿Cómo te mantienes de pie cuando ya no sabes realmente de qué lado estás? La guerra ha llegado a casa. Hace cuarenta años que Art Keller está en primera línea de fuego del confl icto más largo de la historia de EE.UU.: la guerra contra la droga. Su obsesión por derrotar al capo más poderoso, rico y letal del mundo —el líder del cártel de Sinaloa, Adán Barrera— le ha costado cicatrices físicas y mentales, tener que despedir a personas a las que amaba e incluso se ha llevado parte de su alma. Ahora Keller se encuentra a los mandos de la DEA solo para ver como por destruir al monstruo han surgido otros treinta que están llevando incluso más caos y destrucción a su amado México. Pero eso no es todo.",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "id": "63b45a9df611d2c38039ae0c",
+    "_id": "63b45a9df611d2c38039ae0c",
     "name": "cártel, el",
     "slug": "el-cartel",
     "argument": "El cártel es una colosal narración que se mueve entre los áridos escenarios mexicanos y los despachos de los poderosos en Washington, y que se extiende hasta ciudades europeas como Berlín y Barcelona. El absorbente trabajo de documentación de Winslow (libros, prensa, fotos, vídeos, encuentros personales...) le ocupó cinco años, y marcó su vida personal por las implicaciones que acarrea adentrarse en un mundo tan increíblemente violento y corrupto.",
@@ -41,7 +41,7 @@
     "editions": ["63650c6b5b839c840dcf60b4"]
   },
   {
-    "id": "63b45a9df611d2c38039ae0d",
+    "_id": "63b45a9df611d2c38039ae0d",
     "name": "salvajes",
     "slug": "salvajes",
     "argument": "Ben y Chon son dos tíos que saben disfrutar de la vida: les encanta el sexo, el voleibol, la cerveza y las chicas. Ophelia, más conocida como O., tiene fama de alcanzar orgasmos muy escandalosos (por eso sus amigas a veces la llaman Multi O.) y está loca por Ben y Chon. En fin, que se acuesta con ambos. Pero lo que de verdad hace diferentes a Ben y Chon de los demás es que producen la mejor maría del mundo. ¿Algún problema? Ninguno. Bueno, sí, uno: el cartel de Baja.",
@@ -59,7 +59,7 @@
     "editions": ["63650c835b839c840dcf60cb"]
   },
   {
-    "id": "63b45a9df611d2c38039ae0e",
+    "_id": "63b45a9df611d2c38039ae0e",
     "name": "corrupción policial",
     "slug": "corrupcion-policial",
     "argument": "Denny Malone es «el rey de Manhattan Norte», un condecorado sargento del Departamento de Policía de Nueva York y el auténtico líder de «La Unidad». Malone y sus hombres son los más listos, los más duros, los más rápidos, los más valientes, los más malos… y lo más corruptos.Ahora su corrupción está a punto de salir a la luz y Malone se verá obligado a transitar por la delgada línea que separa la traición a todo aquello en lo que cree y su propia supervivencia. Ahora, Denny Malone deberá decidir de una vez por todas qué significa ser un buen policía.",
@@ -75,7 +75,7 @@
     "editions": ["63650c965b839c840dcf60db"]
   },
   {
-    "id": "63b45a9df611d2c38039ae0f",
+    "_id": "63b45a9df611d2c38039ae0f",
     "name": "rotos",
     "slug": "rotos",
     "argument": "In six intense short novels connected by the themes of crime, corruption, vengeance, justice, loss, betrayal, guilt and redemption, Broken is #1 international bestseller Don Winslow at his nerve-shattering, heart-stopping, heartbreaking best. In Broken, he creates a world of high-level thieves and low-life crooks, obsessed cops struggling with life on and off the job, private detectives, dope dealers, bounty hunters and fugitives, the lost souls driving without headlights through the dark night on the American criminal highway.",
@@ -91,7 +91,7 @@
     "editions": ["63650cae5b839c840dcf60e8"]
   },
   {
-    "id": "63b45a9df611d2c38039ae10",
+    "_id": "63b45a9df611d2c38039ae10",
     "name": "hobbit, the",
     "slug": "the-hobbit",
     "argument": "Smaug parecía profundamente dormido cuando Bilbo espió una vez más desde la entrada. ¡Pero fingía estar dormido! ¡Estaba vigilando la entrada del túnel!... Sacado de su cómodo agujero-hobbit por Gandalf y una banda de enanos, Bilbo se encuentra de pronto en medio de una conspiración que pretende apoderarse del tesoro de Smaug el Magnífico, un enorme y muy peligroso dragón...",
@@ -109,7 +109,7 @@
     "editions": ["63650cc35b839c840dcf60f5"]
   },
   {
-    "id": "63b45a9df611d2c38039ae11",
+    "_id": "63b45a9df611d2c38039ae11",
     "name": "comunidad del anillo, la",
     "slug": "la-comunidad-del-anillo",
     "argument": "En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en las Grietas del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.",
@@ -129,7 +129,7 @@
     "editions": ["63650d6d5b839c840dcf61a1"]
   },
   {
-    "id": "63b45a9df611d2c38039ae12",
+    "_id": "63b45a9df611d2c38039ae12",
     "name": "dos torres, las",
     "slug": "las-dos-torres",
     "argument": "La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam continúan solos su viaje a lo largo del río Anduin, perseguidos por la sombra misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas del Señor del Mal.",
@@ -149,7 +149,7 @@
     "editions": ["63650cd05b839c840dcf6108"]
   },
   {
-    "id": "63b45a9df611d2c38039ae15",
+    "_id": "63b45a9df611d2c38039ae15",
     "name": "silmarillion, el",
     "slug": "el-silmarillion",
     "argument": "El Silmarillion cuenta la historia de la Primera Edad, el antiguo drama del que hablan los personajes de El Señor de los Anillos, y en cuyos acontecimientos algunos de ellos tomaron parte, como Elrond y Galadriel. Los tres Silmarils eran gemas creadas por Fëanor, el más dotado de los Elfos, y contenían la Luz de los Dos Árboles de Valinor antes que los Árboles mismos fueran destruidos por Morgoth, el primer Señor Oscuro. Desde entonces, la inmaculada Luz de Valinor vivió sólo en los Silmarils, pero Morgoth se apoderó de ellos, y los engarzó en su corona, guardada en la fortaleza impenetrable de Angband en el norte de la Tierra Media.",
@@ -167,7 +167,7 @@
     "editions": ["63650c6b5b839c840dcf60b8"]
   },
   {
-    "id": "63b45a9df611d2c38039ae16",
+    "_id": "63b45a9df611d2c38039ae16",
     "name": "yo, robot",
     "slug": "yo-robot",
     "argument": "Los robots de Isaac Asimov son máquinas capaces de llevar a cabo muy diversas tareas, y que a menudo se plantean a sí mismos problemas de 'conducta humana'. Pero estas cuestiones se resuelven en Yo, robot en el ámbito de las tres leyes fundamentales de la robótica, concebidas por Asimov, y que no dejan de proponer extraordinarias paradojas que a veces se explican por errores de funcionamiento y otras por la creciente complejidad de los 'programas'. Las paradojas que se plantean en estos relatos futuristas no son sólo ingeniosos ejercicios intelectuales sino sobre todo una indagación sobre la situación del hombre actual en relación con los avances tecnológicos y con la experiencia del tiempo.",
@@ -183,7 +183,7 @@
     "editions": ["63650d045b839c840dcf6144"]
   },
   {
-    "id": "63b45a9df611d2c38039ae17",
+    "_id": "63b45a9df611d2c38039ae17",
     "name": "guardián invisible, el",
     "slug": "el-guardian-invisible",
     "argument": "En los márgenes del río Baztán, en el valle de Navarra, aparece el cuerpo desnudo de una adolescente en unas circunstancias que lo ponen en relación con un asesinato ocurrido en los alrededores un mes atrás. La inspectora de la sección de homicidios de la Policía Foral, Amaia Salazar, será la encargada de dirigir una investigación que la llevará devuelta a Elizondo, una pequeña población de donde es originaria y de la que ha tratado de huir toda su vida. Enfrentada con las cada vez más complicadas derivaciones del caso y con sus propios fantasmas familiares, la investigación de Amaia es una carrera contrarreloj para dar con un asesino que puede mostrar el rostro más aterrador de una realidad brutal al tiempo que convocar a los seres más inquietantes de las leyendas del Norte.",
@@ -201,7 +201,7 @@
     "editions": ["63650d135b839c840dcf6151"]
   },
   {
-    "id": "63b45a9df611d2c38039ae18",
+    "_id": "63b45a9df611d2c38039ae18",
     "name": "reyes de lo cool, los",
     "slug": "los-reyes-de-lo-cool",
     "argument": "En Los reyes de lo cool, la precuela de Salvajes , Don Winslow recupera los personajes de aquella novela para reconstruir su pasado, y nos transporta a una California casi mítica en la que somos testigos de los orígenes del tráfico de drogas y sus conexiones con los cárteles de la droga mexicanos.Estamos en 2005. Ben, Chon y O viven a tope en Laguna Beach, al sur de California. Aparte de disfrutar del sexo, las cervezas y el voleibol, no saben muy bien qué hacer con sus vidas. Hasta el día en que Chon vuelve de permiso de Afganistán con una semilla de Viuda Blanca y la clave de su futuro. La Viuda Blanca es una variedad de cannabis tan exquisita y cargada de THC que es solo cuestión de tiempo que su negocio de cultivo y venta de marihuana florezca. También es solo cuestión de tiempo que empiecen los problemas.",
@@ -219,7 +219,7 @@
     "editions": ["63650d1f5b839c840dcf6161"]
   },
   {
-    "id": "63b45a9df611d2c38039ae19",
+    "_id": "63b45a9df611d2c38039ae19",
     "name": "imperio del dolor, el",
     "slug": "el-imperio-del-dolor",
     "argument": "El retrato demoledor de una dinastía cuya fortuna se construyó gracias a Valium y cuya reputación fue destruida por OxyContin.\n El imperio del dolor empieza en la Gran Depresión, con la historia de tres hermanos dedicados a la medicina: Raymond, Mortimer y el infatigable Arthur Sackler, dotado de una visión especial para la publicidad y el marketing. Años después, contribuyó a la primera fortuna familiar ideando la estrategia comercial de Valium, un revolucionario tranquilizante, para una gran farmacéutica.",
@@ -235,7 +235,7 @@
     "editions": ["63650d2f5b839c840dcf6171"]
   },
   {
-    "id": "63b45a9df611d2c38039ae1a",
+    "_id": "63b45a9df611d2c38039ae1a",
     "name": "apéndices",
     "slug": "apendices",
     "argument": "apendices",
@@ -255,7 +255,7 @@
     "editions": ["63650d465b839c840dcf617e"]
   },
   {
-    "id": "63b45a9df611d2c38039ae1b",
+    "_id": "63b45a9df611d2c38039ae1b",
     "name": "en lo más profundo de la meseta solitaria",
     "slug": "en-lo-mas-profundo-de-la-meseta-solitaria",
     "argument": "en-lo-más-profundo-de-la-meseta-solitaria",
@@ -271,7 +271,7 @@
     "editions": ["63650d625b839c840dcf6194"]
   },
   {
-    "id": "63b45a9df611d2c38039ae14",
+    "_id": "63b45a9df611d2c38039ae14",
     "name": "poder del perro, el",
     "slug": "el-poder-del-perro",
     "argument": "Cuando su compañero aparece muerto con signos de haber sido torturado por la mafia de la droga, el agente de la DEA Art Keller, emprende una feroz venganza. Encadenados a la misma guerra, se encuentran una hermosa prostituta de alto standing; un cura católico confidente de esta y empeñado en ayudar al pueblo, y Billy «el Niño» Callan, un chico taciturno convertido por azar en asesino a sueldo. Narcovaqueros, campesinos, mafia al puro estilo italoamericano, policías corruptos, un soplón y un santo milagrero conforman el universo de esta historia de traiciones, frustración, amor, sexo y fe sobre la búsqueda de la redención.",
@@ -289,7 +289,7 @@
     "editions": ["63650cf65b839c840dcf6134"]
   },
   {
-    "id": "63b45a9df611d2c38039ae13",
+    "_id": "63b45a9df611d2c38039ae13",
     "name": "retorno del rey, el",
     "slug": "el-retorno-del-rey",
     "argument": "Para la historia misma de la novela -una historia que se remonta a la Odisea y antes de la Odisea- El senor de los Anillos no es un retorno, sino un paso adelante o una revolucion: la conquista de un territorio nuevo.",
@@ -309,7 +309,7 @@
     "editions": ["63650cdd5b839c840dcf611e"]
   },
   {
-    "id": "63b85bd306ed90098ac878c0",
+    "_id": "63b85bd306ed90098ac878c0",
     "name": "postguerra",
     "subtitle": "historia de europa desde 1945, una",
     "argument": "En 1945 Europa se encontraba en sus momentos más bajos. Gran parte del continente estaba devastado por la guerra, los asesinatos en masa, los bombardeos y el caos. Amplias zonas de Europa del Este empezaban a caer bajo control soviético para cambiar un despotismo por otro. En la actualidad, la Unión Soviética ya no existe y las democracias europeas llegan hasta la frontera de Rusia.\n\nPostguerra narra la rica y compleja historia del camino que hemos recorrido desde entonces hasta ahora, una historia que avanza bajo la sombra permanente de la guerra: la recuperación europea de la ruina, el declive y la caída del comunismo soviético, el auge del Mercado Común y la Unión Europea, el fin de los imperios europeos, la relación difícil y cambiante del Viejo Continente con la memoria de la guerra y con las dos grandes potencias que la flanquean: Rusia y Estados Unidos.",
@@ -335,7 +335,7 @@
     "slug": "postguerra"
   },
   {
-    "id": "63b85c9b06ed90098ac87901",
+    "_id": "63b85c9b06ed90098ac87901",
     "name": "borgia, los",
     "argument": "La familia Borgia constituye una de las más fascinantes sagas europeas. De origen español, llegaron a dominar buena parte de Italia desde el trono papal, que usaron en su propio interés para enriquecerse y alcanzar el poder político. Considerados la primera familia mafiosa de la historia, su leyenda ha trascendido fronteras y ha hecho correr ríos de tinta.\n\nTambién los maestros del cómic europeo Milo Manara y Alejandro Jodorowsky sintieron la fascinación por los Borgia y se entregaron a plasmar su apasionante historia. Con especial interés por sus detalles más morbosos, nos regalan esta historia de engaño, pasiones, incesto, violencia, traiciones, sexo y asesinatos publicada, por primera vez, en edición integral.",
     "compilation": false,
