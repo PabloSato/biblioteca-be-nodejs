@@ -11,6 +11,7 @@ const Edition = require('./../models/editionModel');
 const Shelf = require('./../models/shelfModel');
 const Rack = require('./../models/rackModel');
 const Location = require('./../models/locationModel');
+const Language = require('./../models/languageModel');
 
 dotenv.config({ path: './config.env' });
 // --------------------------------------------- DB ----------------------------------------
@@ -55,6 +56,9 @@ const racks = JSON.parse(fs.readFileSync(`${__dirname}/racks.json`, 'utf-8'));
 const locations = JSON.parse(
   fs.readFileSync(`${__dirname}/locations.json`, 'utf-8')
 );
+const langs = JSON.parse(
+  fs.readFileSync(`${__dirname}/languages.json`, 'utf-8')
+);
 
 // --------------------------------------------- 2 - IMPORT TO DB ----------------------------------------
 const importData = async () => {
@@ -66,6 +70,7 @@ const importData = async () => {
     await Author.create(authors);
     await Universe.create(universes);
     await Saga.create(sagas);
+    await Language.create(langs);
     await Book.create(books);
     await Edition.create(editions);
     console.log('DATA LOADED!');
@@ -86,6 +91,7 @@ const deleteData = async () => {
     await Location.deleteMany();
     await Rack.deleteMany();
     await Shelf.deleteMany();
+    await Language.deleteMany();
     console.log('DATA DELETED!');
   } catch (err) {
     console.log(err);
