@@ -9,6 +9,7 @@ const { formData } = require('./../middleware/upload');
 
 const Book = require('./../models/bookModel');
 const Edition = require('./../models/editionModel');
+const Author = require('../models/authorModel');
 
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- LAST BOOKS --
@@ -64,12 +65,12 @@ exports.getByUniverse = (req, res, next) => {
 // ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteBook = catchAsync(async (req, res, next) => {
-  const book = await Book.findById(req.params.id);
+  console.log(req.params.id);
+  const id = req.params.id;
+  const book = await Book.findById(id);
   const editions = book.editions;
-  const editions_id = [];
+  const authors = book.authors;
   let message = '';
-  // editions.forEach((item) => editions_id.push(item._id));
-  // const edit_remove = await Edition.deleteMany({ _id: { $in: editions_id } });
 
   editions.forEach(async (item) => {
     const edit = await Edition.findById(item._id);
@@ -86,6 +87,13 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
       }
     }
     await Edition.findByIdAndDelete(item._id);
+  });
+
+  authors.forEach(async (item) => {
+    const author = await Author.findById(item._id);
+    const array_books = author.books;
+    const index = array_books.indexOf(id);
+    array_books.splice(index, 1);
   });
 
   const data = await Book.findByIdAndDelete(req.params.id);
