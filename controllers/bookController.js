@@ -65,7 +65,6 @@ exports.getByUniverse = (req, res, next) => {
 // ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteBook = catchAsync(async (req, res, next) => {
-  console.log(req.params.id);
   const id = req.params.id;
   const book = await Book.findById(id);
   const editions = book.editions;
@@ -94,6 +93,8 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
     const array_books = author.books;
     const index = array_books.indexOf(id);
     array_books.splice(index, 1);
+    author.books = array_books;
+    const upt = await Author.findByIdAndUpdate(item._id, author);
   });
 
   const data = await Book.findByIdAndDelete(req.params.id);
