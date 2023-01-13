@@ -8,7 +8,7 @@ const Author = require('./../models/authorModel');
 // ---------------------- SPECIAL METHODS ---------------------------
 // -- GET ALL CLEAN --
 exports.getAllClean = (req, res, next) => {
-  const filter = { name: { $ne: 'vv.aa' }, 'books.2': { $exists: true } };
+  const filter = { name: { $ne: 'vv.aa' }, 'books.1': { $exists: true } };
   req.query.filter = filter;
   next();
 };
