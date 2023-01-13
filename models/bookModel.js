@@ -51,7 +51,7 @@ const bookSchema = new mongoose.Schema(
     ],
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },
     saga: { type: mongoose.Schema.ObjectId, ref: 'Saga' },
-    number: Number,
+    number: String,
     editions: [
       {
         type: mongoose.Schema.ObjectId,
