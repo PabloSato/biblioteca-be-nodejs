@@ -26,12 +26,12 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
 
-const limiter = rateLimit({
-  max: 100,
-  windowMs: 60 * 60 * 1000, // => 1 hour in miliseconds
-  message: 'Too many request from this IP, please try again later',
-});
-app.use('/api', limiter);
+// const limiter = rateLimit({
+//   max: 100,
+//   windowMs: 60 * 60 * 1000, // => 1 hour in miliseconds
+//   message: 'Too many request from this IP, please try again later',
+// });
+// app.use('/api', limiter);
 
 app.use(express.static(`${__dirname}/public`));
 app.use(express.json());
