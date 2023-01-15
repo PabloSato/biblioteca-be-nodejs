@@ -82,8 +82,7 @@ editionSchema.pre('save', async function (next) {
 editionSchema.post('save', async function (doc, next) {
   const book = await Book.findById(doc.book);
   if (book) {
-    const already_editions = book.editions;
-    already_editions.push(doc);
+    book.editions.push(doc);
     const updt = await Book.findByIdAndUpdate(doc.book, book);
   }
 });

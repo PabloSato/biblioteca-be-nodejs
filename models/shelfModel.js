@@ -45,11 +45,8 @@ shelfSchema.pre('save', async function (next) {
 // --- ADD SHELF TO RACK ----
 shelfSchema.post('save', async function (doc, next) {
   const rack = await Rack.findById(doc.rack);
-  const already_shelfs = rack.shelfs;
-  already_shelfs.push(doc);
+  rack.shelfs.push(doc);
   const upt = await Rack.findByIdAndUpdate(doc.rack, rack);
-
-  next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
 // shelfSchema.pre(/^find/, function (next) {

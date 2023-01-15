@@ -45,8 +45,7 @@ rackSchema.pre('save', async function (next) {
 // --- ADD RACK TO LOCATIONS.racks ----
 rackSchema.post('save', async function (doc, next) {
   const location = await Location.findById(doc.location);
-  const already_racks = location.racks;
-  already_racks.push(doc);
+  location.racks.push(doc);
   const updt = await Location.findByIdAndUpdate(doc.location, location);
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
