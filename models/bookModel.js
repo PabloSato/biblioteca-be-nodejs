@@ -103,8 +103,7 @@ bookSchema.post('save', async function (doc, next) {
   const authors = doc.authors;
   authors.forEach(async (item) => {
     const author = await Author.findById(item);
-    const author_books = author.books;
-    author_books.push(doc);
+    author.books.push(doc);
     const updt = await Author.findByIdAndUpdate(item, author);
   });
 });

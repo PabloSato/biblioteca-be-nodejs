@@ -88,12 +88,10 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
     await Edition.findByIdAndDelete(item._id);
   });
 
-  authors.forEach(async (item) => {
+  book.authors.forEach(async (item) => {
     const author = await Author.findById(item._id);
-    const array_books = author.books;
-    const index = array_books.indexOf(id);
-    array_books.splice(index, 1);
-    author.books = array_books;
+    const index = author.books.indexOf(id);
+    author.books.splice(index, 1);
     const upt = await Author.findByIdAndUpdate(item._id, author);
   });
 
