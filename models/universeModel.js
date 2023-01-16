@@ -10,6 +10,8 @@ const universeSchema = new mongoose.Schema(
       trim: true,
       lowercase: true,
       unique: true,
+      maxlength: [100, 'Un universo debe de tener menos de 100 caracteres'],
+      minlength: [1, 'Un universo debe de tener al menos 1 caracter'],
     },
     slug: String,
     createdAt: {

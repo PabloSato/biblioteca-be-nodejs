@@ -12,6 +12,8 @@ const sagaSchema = new mongoose.Schema(
       trim: true,
       lowercase: true,
       unique: true,
+      maxlength: [100, 'Una saga debe de tener menos de 100 caracteres'],
+      minlength: [1, 'Una saga debe de tener al menos 1 caracter'],
     },
     slug: String,
     universe: { type: mongoose.Schema.ObjectId, ref: 'Universe' },

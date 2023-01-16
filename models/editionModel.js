@@ -21,7 +21,13 @@ const editionSchema = new mongoose.Schema(
         'La version de la edición debe de tener al menos 1 caracter',
       ],
     },
-    name: String,
+    name: {
+      type: String,
+      maxlength: [
+        50,
+        'El nombre de la edición no debe ser mayor a 50 caracteres',
+      ],
+    },
     slug: String,
     book: { type: mongoose.Schema.Types.ObjectId, ref: 'Book' },
     shelf: { type: mongoose.Schema.ObjectId, ref: 'Shelf' },

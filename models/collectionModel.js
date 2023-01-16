@@ -10,6 +10,7 @@ const collectionSchema = new mongoose.Schema(
       trim: true,
       unique: true,
       lowercase: true,
+      maxlength: [50, 'Un nombre no puede tener más de 50 caracteres'],
     },
     slug: String,
     createdAt: {

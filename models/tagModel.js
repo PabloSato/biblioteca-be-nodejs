@@ -13,6 +13,7 @@ const tagSchmea = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minlength: [1, 'El nombre debe de tener por lo menos 1 carácter'],
+      maxlength: [50, 'El nombre debe de tener menos de 100 caracteres'],
     },
     slug: String,
     image: {

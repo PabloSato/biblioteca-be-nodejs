@@ -14,17 +14,19 @@ const bookSchema = new mongoose.Schema(
       trim: true,
       lowercase: true,
       minlength: [1, 'Un título debe de tener por lo menos 1 carácter'],
+      maxlength: [150, 'Un título no puede tener más de 150 caracteres'],
     },
     subtitle: {
       type: String,
       trim: true,
+      maxlength: [200, 'Un subtítulo no puede tener más de 200 caracteres'],
     },
     slug: String,
     argument: {
       type: String,
       default: this.slug,
       trim: true,
-      maxLength: [950, 'Un argumento no debe ser mayor a 950 caracteres'],
+      maxlength: [950, 'Un argumento no debe ser mayor a 950 caracteres'],
     },
     compilation: {
       type: Boolean,
