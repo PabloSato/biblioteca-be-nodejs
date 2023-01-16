@@ -10,6 +10,13 @@ const authorSchema = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minlength: [1, 'Un nombre debe de tener al menor un caracter'],
+      maxlength: [100, 'Un nombre no puede tener más de 100 caracteres'],
+    },
+    alias: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      maxlength: [50, 'Un alias no puede tener más de 50 caracteres'],
     },
     slug: String,
     bio: {
