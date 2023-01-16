@@ -118,7 +118,7 @@ bookSchema.pre(/^find/, function (next) {
   })
     .populate({
       path: 'authors',
-      select: 'name slug',
+      select: 'name slug alias',
     })
     .populate({
       path: 'universe',
