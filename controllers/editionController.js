@@ -21,6 +21,12 @@ exports.getByLanguage = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// --- BY COLLECTION ---
+exports.getByCollection = (req, res, next) => {
+  const filter = { colection: req.params.collectionId };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteEdition = catchAsync(async (req, res, next) => {
