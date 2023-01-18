@@ -109,6 +109,10 @@ editionSchema.pre(/^find/, function (next) {
     .populate({
       path: 'location',
       select: 'name slug',
+    })
+    .populate({
+      path: 'colection',
+      select: 'name slug',
     });
   next();
 });

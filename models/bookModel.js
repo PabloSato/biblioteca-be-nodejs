@@ -130,7 +130,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'editions',
-      select: 'name pages image version',
+      select: 'name pages image version colection numberOnColection',
     });
   // @TODO: Populate
   next();
