@@ -17,13 +17,13 @@ router
   .route('/last-books')
   .get(bookController.getLastBooks, bookController.getAllBooks);
 // -- SEARCH BY NAME --
-router.route('/search/:name').get(filter.getByName, bookController.getAllBooks);
+router.route('/search/:name').get(filter.getByName, bookController.getBysAbs);
 // -- SEARCH BY SLUG --
 router.route('/slug/:slug').get(filter.getBySlug, bookController.getBook);
 // -- SEARCH BY TAG --
 router
   .route('/tag/:tagId')
-  .get(bookController.getByTag, bookController.getAllBooks);
+  .get(bookController.getByTag, bookController.getBysAbs);
 // -- SEARCH BY AUTHOR --
 router
   .route('/author/:authorId')
@@ -31,11 +31,11 @@ router
 // -- SEARCH BY SAGA --
 router
   .route('/saga/:sagaId')
-  .get(bookController.getBySaga, bookController.getAllBooks);
+  .get(bookController.getBySaga, bookController.getBysAbs);
 // -- SEARCH BY UNIVERSE --
 router
   .route('/universe/:universeId')
-  .get(bookController.getByUniverse, bookController.getAllBooks);
+  .get(bookController.getByUniverse, bookController.getBysAbs);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
