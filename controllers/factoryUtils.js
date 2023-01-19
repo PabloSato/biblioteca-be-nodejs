@@ -9,7 +9,7 @@ exports.getAbsolute = (Model) =>
     // const data = await Model.find(); // => All Data
 
     const data = await Model.aggregate([
-      { $project: { name: 1 } },
+      { $project: { name: 1, slug: 1 } },
       { $addFields: { id: '$_id' } },
       { $sort: { name: 1 } },
     ]); // => Only names
