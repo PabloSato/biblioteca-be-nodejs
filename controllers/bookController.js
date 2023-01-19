@@ -109,6 +109,7 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
 });
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAbsBooks = factory.getAbsolute(Book);
+exports.getBysAbs = factory.getBysAbs(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);

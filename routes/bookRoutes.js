@@ -27,7 +27,7 @@ router
 // -- SEARCH BY AUTHOR --
 router
   .route('/author/:authorId')
-  .get(bookController.getByAuthor, bookController.getAllBooks);
+  .get(bookController.getByAuthor, bookController.getBysAbs);
 // -- SEARCH BY SAGA --
 router
   .route('/saga/:sagaId')

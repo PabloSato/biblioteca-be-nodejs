@@ -21,6 +21,25 @@ exports.getAbsolute = (Model) =>
       },
     });
   });
+// ----------------------------------------------- GET BYs ABSOLUTE ----------------------------------------------
+exports.getBysAbs = (Model) =>
+  catchAsync(async (req, res, next) => {
+    const filter = req.query.filter;
+    const total_docs = await Model.countDocuments(filter);
+    const features = new APIFeatures(Model.find(filter), req.query)
+      .filter()
+      .sort()
+      .limitFields();
+    const data = await features.query;
+
+    res.status(200).json({
+      status: 'success',
+      size: total_docs,
+      data: {
+        data: data,
+      },
+    });
+  });
 // ----------------------------------------------- GET ALL -------------------------------------------------------
 exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
