@@ -107,6 +107,24 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
     message: message,
   });
 });
+// ---------------------- FIX --------------------------------
+exports.fixEditions = catchAsync(async (req, res, next) => {
+  const books = await Book.find();
+  books.forEach(async (book) => {
+    const name_book = book.name;
+    const slug = book.slug;
+    const edition = book.editions[0];
+    const id_edit = edition._id;
+    edition.name = name_book;
+    edition.slug = slug;
+    const update = { name: name_book, slug: slug };
+    const upt = await Edition.updateOne({ _id: edition._id }, update);
+  });
+  res.status(200).json({
+    status: 'success',
+    data: null,
+  });
+});
 // ---------------------- BASIC CRUD --------------------------------
 exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getBysAbs = factory.getBysAbs(Book);
