@@ -11,6 +11,7 @@ const router = express.Router();
 // TODO: Add Specials Routes
 // -- ABSOLUTE ALL BOOKS --
 router.route('/abs').get(bookController.getAbsBooks);
+router.route('/fix').get(bookController.fixEditions);
 // -- LAST BOOKS --
 router.route('/stats').get(bookController.stats);
 router
