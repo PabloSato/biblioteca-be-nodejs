@@ -63,7 +63,6 @@ const editionSchema = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 editionSchema.pre('save', function (next) {
   const tmp_name = setUpName(this.version);
-  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // --- CONTROL ---
@@ -78,8 +77,9 @@ editionSchema.pre('save', async function (next) {
     });
 
     if (!this.name) {
-      const tmp_name = setUpName(book.name);
-      this.name = tmp_name.trim();
+      const tmp_name = setUpName(book.name).trim();
+      this.name = tmp_name;
+      this.slug = slugify(tmp_name, { lower: true });
     }
   }
   next();
