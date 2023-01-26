@@ -36,7 +36,7 @@ exports.deleteEdition = catchAsync(async (req, res, next) => {
   }
   const image = edit.image;
   const message = '';
-  if (image.length > 0) {
+  if (image && image.length > 0) {
     const del_image = path.join(__basedir, 'public', 'images', image);
     if (fs.existsSync(del_image)) {
       fs.unlink(del_image, (err) => {

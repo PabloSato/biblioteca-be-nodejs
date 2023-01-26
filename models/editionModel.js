@@ -26,7 +26,7 @@ const editionSchema = new mongoose.Schema(
       lowercase: true,
       trim: true,
       maxlength: [
-        50,
+        250,
         'El nombre de la edición no debe ser mayor a 50 caracteres',
       ],
     },
