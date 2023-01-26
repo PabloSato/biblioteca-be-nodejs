@@ -19,6 +19,7 @@ const bookSchema = new mongoose.Schema(
     subtitle: {
       type: String,
       trim: true,
+      lowercase: true,
       maxlength: [200, 'Un subtítulo no puede tener más de 200 caracteres'],
     },
     slug: String,
