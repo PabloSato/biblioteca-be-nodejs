@@ -68,7 +68,10 @@ exports.getAll = (Model) =>
       .limitFields()
       .paginate();
 
-    const data = await features.query;
+    const data = await features.query.collation({
+      locale: 'es',
+      numericOrdering: true,
+    });
     res.status(200).json({
       status: 'success',
       size: total_docs,

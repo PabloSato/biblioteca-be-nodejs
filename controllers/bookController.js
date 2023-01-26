@@ -59,7 +59,6 @@ exports.getBySaga = (req, res, next) => {
 exports.getByUniverse = (req, res, next) => {
   const filter = { universe: req.params.universeId };
   req.query.filter = filter;
-  req.query.sort = 'name';
   next();
 };
 // ---------------------- CRUD METHODS --------------------------------
