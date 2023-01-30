@@ -37,6 +37,7 @@ const editionSchema = new mongoose.Schema(
     rack: { type: mongoose.Schema.ObjectId, ref: 'Rack' },
     image: {
       type: String,
+      default: 'default.jpeg',
     },
     pages: Number,
     colection: { type: mongoose.Schema.ObjectId, ref: 'Collection' },
@@ -67,8 +68,6 @@ const editionSchema = new mongoose.Schema(
 editionSchema.pre('save', async function (next) {
   let tmp_name = '';
   const book = await Book.findById(this.book);
-  console.log('--------------------');
-  console.log(book);
   if (book) {
     const already_editions = book.editions;
     already_editions.forEach((edit) => {
