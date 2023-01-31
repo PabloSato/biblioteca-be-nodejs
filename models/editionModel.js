@@ -82,13 +82,13 @@ editionSchema.pre('save', async function (next) {
       tmp_name = tmp_name.replace(',', '');
       tmp_name = tmp_name.replace('.', '');
       tmp_name = tmp_name.replace(':', '');
-      this.slug = slugify(tmp_name, { lower: true });
+      this.slug = book.slug;
     } else {
       tmp_name = setUpName(this.name).trim();
       tmp_name = tmp_name.replace(',', '');
       tmp_name = tmp_name.replace('.', '');
       tmp_name = tmp_name.replace(':', '');
-      this.slug = slugify(tmp_name, { lower: true });
+      this.slug = book.slug;
     }
   }
   next();
