@@ -61,6 +61,25 @@ exports.getByUniverse = (req, res, next) => {
   req.query.filter = filter;
   next();
 };
+// -- BY ABSOLUTE --
+exports.getAbsBooks = catchAsync(async (req, res, next) => {
+  const data = await Book.aggregate([
+    { $project: { name: 1, slug: 1, authors: 1 } },
+    { $addFields: { id: '$_id' } },
+    { $sort: { name: 1 } },
+  ]);
+
+  const opts = [{ path: 'authors', select: 'name' }];
+  const result = await Book.populate(data, opts);
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      data: result,
+    },
+  });
+});
+
 // ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteBook = catchAsync(async (req, res, next) => {
@@ -125,7 +144,7 @@ exports.fixEditions = catchAsync(async (req, res, next) => {
   });
 });
 // ---------------------- BASIC CRUD --------------------------------
-exports.getAbsBooks = factory.getAbsolute(Book);
+// exports.getAbsBooks = factory.getAbsolute(Book);
 exports.getBysAbs = factory.getBysAbs(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);

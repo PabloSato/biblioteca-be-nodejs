@@ -133,7 +133,6 @@ bookSchema.pre(/^find/, function (next) {
       path: 'editions',
       select: 'name pages image version colection numberOnColection',
     });
-  // @TODO: Populate
   next();
 });
 
