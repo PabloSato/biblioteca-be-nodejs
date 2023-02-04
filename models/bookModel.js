@@ -131,7 +131,7 @@ bookSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'editions',
-      select: 'name pages image version colection numberOnColection',
+      select: 'name pages image version colection numberOnColection isbn',
     });
   next();
 });
