@@ -118,7 +118,12 @@ exports.createOne = (Model) =>
         },
       });
     } catch (err) {
-      const status = err.statusCode ? err.statusCode : 500;
+      let status = err.statusCode ? err.statusCode : 500;
+      if (err.code && err.code === 11000) {
+        // Control duplicate keys
+        status = 409;
+      }
+      console.log(status);
       res.status(status).json({
         status: 'failed',
         message: err.message,
