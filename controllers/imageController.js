@@ -1,5 +1,7 @@
 const sharp = require('sharp');
 const crypto = require('crypto');
+const path = require('path');
+const fs = require('fs');
 
 const { uploadImage } = require('./../middleware/upload');
 
@@ -38,4 +40,37 @@ exports.uploadImage = async (req, res) => {
 exports.getImage = (req, res) => {
   const { name } = req.params;
   res.sendFile(`${__basedir}/public/images/${name}`);
+};
+
+exports.deleteImage = (req, res) => {
+  console.log('JOJOJOJOJOJOJOJOJOJOJOJOOOJOJO');
+  if (!req.image || req.image == '' || req.image.length == 0) {
+    return res
+      .status(400)
+      .send({ message: "Please send an image's name to delete" });
+  }
+  const image = req.image.trim();
+  if (image.length == 0) {
+    return res
+      .status(400)
+      .send({ message: "Please send an image's name to delete" });
+  }
+  const del_image = path.join(__basedir, 'public', 'images', image);
+  let statusCode = 204;
+  let status = 'success';
+  if (fs.existsSync(del_image)) {
+    fs.unlink(del_image, (err) => {
+      if (err) {
+        console.error(err);
+        status = 'failed';
+        statusCode = err.statusCode || 500;
+        message = `Can't delete image ${image}`;
+      }
+    });
+  }
+  res.status(statusCode).json({
+    status: status,
+    data: null,
+    message: message,
+  });
 };
