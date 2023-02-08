@@ -50,13 +50,13 @@ rackSchema.post('save', async function (doc, next) {
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
 rackSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'shelfs',
-    select: 'name',
-  }).populate({
-    path: 'location',
-    select: 'name slug',
-  });
+  // this.populate({
+  //   path: 'shelfs',
+  //   select: 'name',
+  // }).populate({
+  //   path: 'location',
+  //   select: 'name slug',
+  // });
   next();
 });
 // --------------------------------------------- 0 - EXPORT --------------------------------
