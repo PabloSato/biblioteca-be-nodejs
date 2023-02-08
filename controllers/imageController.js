@@ -26,7 +26,7 @@ exports.uploadImage = async (req, res) => {
     });
   } catch (err) {
     if (err.code == 'LIMIT_FILE_SIZE') {
-      return res.status(500).send({
+      return res.status(403).send({
         message: 'Image size cannot be larger than 2MB!',
       });
     }
