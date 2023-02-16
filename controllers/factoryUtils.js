@@ -108,27 +108,33 @@ exports.getOne = (Model, popOptions) =>
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
     if (req.file) req.body.image = req.file.filename;
-    try {
-      const data = await Model.create(req.body);
 
-      res.status(201).json({
-        status: 'success',
-        data: {
-          data: data,
-        },
-      });
-    } catch (err) {
-      let status = err.statusCode ? err.statusCode : 500;
-      if (err.code && err.code === 11000) {
-        // Control duplicate keys
-        status = 409;
-      }
-      console.log(status);
-      res.status(status).json({
-        status: 'failed',
-        message: err.message,
-      });
-    }
+    // try {
+    const data = await Model.create(req.body);
+
+    res.status(201).json({
+      status: 'success',
+      data: {
+        data: data,
+      },
+    });
+    // } catch (err) {
+    //   let status = err.statusCode ? err.statusCode : 500;
+
+    //   // Control duplicate keys
+    //   if (err.code && err.code === 11000) {
+    //     status = 409;
+    //   }
+    //   // Control Model Validation's errors
+    //   if (err.name == 'ValidationError') {
+    //     status = 406;
+    //   }
+
+    //   res.status(status).json({
+    //     status: 'failed',
+    //     message: err.message,
+    //   });
+    // }
   });
 // ----------------------------------------------- UPDATE --------------------------------------------------------
 exports.updateOne = (Model) =>

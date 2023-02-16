@@ -18,7 +18,7 @@ const handlerValidationErrorDB = (err) => {
   // Loop over the object
   const errors = Object.values(err.errors).map((ele) => ele.message);
   const message = `Invalid input data: ${errors.join('. ')}`;
-  return new AppError(message, 400);
+  return new AppError(message, 406);
 };
 
 // Error to Dev
