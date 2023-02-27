@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
-const setUpName = require('../utils/setUpName');
+const setUpSlug = require('../utils/setUpSlug');
 
 const collectionSchema = new mongoose.Schema(
   {
@@ -24,7 +24,8 @@ const collectionSchema = new mongoose.Schema(
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 collectionSchema.pre('save', function (next) {
-  const tmp_name = setUpName(this.name);
+  // -- SLUG --
+  const tmp_name = setUpSlug(this.name);
   this.slug = slugify(tmp_name, { lower: true });
   next();
 });

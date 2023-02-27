@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const setUpSlug = require('./../utils/setUpSlug');
+
 const locationSchema = new mongoose.Schema(
   {
     name: {
@@ -26,7 +28,9 @@ const locationSchema = new mongoose.Schema(
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 locationSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  // -- SLUG --
+  const tmp_name = setUpSlug(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------

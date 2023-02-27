@@ -1,5 +1,3 @@
-//TODO: add and config MULTER
-
 const factory = require('./factoryUtils');
 const { formData } = require('./../middleware/upload');
 

@@ -66,7 +66,7 @@ module.exports = (err, req, res, next) => {
   console.log('------------------');
   console.log(err);
   if (err.name === 'CastError') error = handlerCastErrorDB(error);
-  if (err.code === 1100) error = handlerDuplicateFieldsDB(error);
+  if (err.code === 11000) error = handlerDuplicateFieldsDB(error);
   if (err.name === 'ValidationError') error = handlerValidationErrorDB(error);
 
   sendErrorProd(error, req, res);
