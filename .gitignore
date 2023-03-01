@@ -5,7 +5,7 @@
 *.env
 
 ## IMAGES
-public/images/*
+images/*
 
 # Folder view configuration files
 .DS_Store
