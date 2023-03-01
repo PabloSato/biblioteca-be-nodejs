@@ -1,6 +1,7 @@
 TODO:
 
 # ---- RELEASE v1 ----
+1 - Remove all logic from the models and move it to controllers => https://www.youtube.com/watch?v=2DOkiQFB5ic
 
 # ---- RELEASE v2 ----
 
