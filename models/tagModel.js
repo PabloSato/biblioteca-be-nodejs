@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
+const setUpName = require('./../utils/setUpName');
 
 const Book = require('./bookModel');
 
@@ -12,13 +13,13 @@ const tagSchmea = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minlength: [1, 'El nombre debe de tener por lo menos 1 carácter'],
+      maxlength: [50, 'El nombre debe de tener menos de 100 caracteres'],
     },
     slug: String,
     image: {
       type: String,
       default: 'default-tag.jpeg',
     },
-    // books: [{ type: mongoose.Schema.ObjectId, ref: 'Book' }],
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -35,7 +36,8 @@ const tagSchmea = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE -----------------------------
 // -- SLUGIFY --
 tagSchmea.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  const tmp_name = setUpName(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   next();
 });
 // --------------------------------------------- 3 - POPULATE -------------------------------

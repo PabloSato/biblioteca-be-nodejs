@@ -1,7 +1,26 @@
-const catchAsync = require('../utils/catchAsync');
-const AppError = require('../utils/appError');
-const APIFeatures = require('../utils/apiFeatures');
+const catchAsync = require('./../utils/catchAsync');
+const AppError = require('./../utils/appError');
+const APIFeatures = require('./../utils/apiFeatures');
+const { Model } = require('mongoose');
 
+// ----------------------------------------------- GET ABSOLUTE --------------------------------------------------
+exports.getAbsolute = (Model) =>
+  catchAsync(async (req, res, next) => {
+    // const data = await Model.find(); // => All Data
+
+    const data = await Model.aggregate([
+      { $project: { name: 1 } },
+      { $addFields: { id: '$_id' } },
+      { $sort: { name: 1 } },
+    ]); // => Only names
+
+    res.status(200).json({
+      status: 'success',
+      data: {
+        data: data,
+      },
+    });
+  });
 // ----------------------------------------------- GET ALL -------------------------------------------------------
 exports.getAll = (Model) =>
   catchAsync(async (req, res, next) => {
@@ -10,6 +29,20 @@ exports.getAll = (Model) =>
     if (req.query.filter) {
       filter = req.query.filter;
     }
+    let total_docs = 0;
+    if (!filter) {
+      const count = await Model.aggregate([
+        {
+          $group: {
+            _id: null,
+            total: { $sum: 1 },
+          },
+        },
+      ]);
+      total_docs = count[0] ? count[0].total : 0;
+    } else {
+      total_docs = await Model.countDocuments(filter);
+    }
     const features = new APIFeatures(Model.find(filter), req.query)
       .filter()
       .sort()
@@ -17,30 +50,11 @@ exports.getAll = (Model) =>
       .paginate();
 
     const data = await features.query;
-
-    let totalDocs = 0;
-    let actualPage = 0;
-    const limit = features.query.options.limit;
-    if (!filter) {
-      totalDocs = await Model.estimatedDocumentCount();
-    } else {
-      totalDocs = data.length;
-    }
-    const totalPages = Math.ceil(totalDocs / limit);
-    actualPage = totalPages > 1 ? features.query.options.skip + 1 : 1;
-    const docsPage = totalDocs > limit ? limit : totalDocs;
-
     res.status(200).json({
       status: 'success',
-      size: data.length,
+      size: total_docs,
       data: {
         data: data,
-        pagination: {
-          totalDocs: totalDocs, // => Count of ALL elements in the DB
-          totalPages: totalPages, // => Total pages available
-          page: actualPage, // => Current page number
-          size: docsPage, // => size of elements per page
-        },
       },
     });
   });
@@ -71,16 +85,23 @@ exports.getOne = (Model, popOptions) =>
 // ----------------------------------------------- CREATE --------------------------------------------------------
 exports.createOne = (Model) =>
   catchAsync(async (req, res, next) => {
-    if (req.file) req.body.img = req.file.filename;
+    if (req.file) req.body.image = req.file.filename;
+    try {
+      const data = await Model.create(req.body);
 
-    const data = await Model.create(req.body);
-
-    res.status(201).json({
-      status: 'success',
-      data: {
-        data: data,
-      },
-    });
+      res.status(201).json({
+        status: 'success',
+        data: {
+          data: data,
+        },
+      });
+    } catch (err) {
+      const status = err.statusCode ? err.statusCode : 500;
+      res.status(status).json({
+        status: 'failed',
+        message: err.message,
+      });
+    }
   });
 // ----------------------------------------------- UPDATE --------------------------------------------------------
 exports.updateOne = (Model) =>

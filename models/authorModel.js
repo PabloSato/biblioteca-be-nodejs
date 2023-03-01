@@ -10,6 +10,13 @@ const authorSchema = new mongoose.Schema(
       unique: true,
       lowercase: true,
       minlength: [1, 'Un nombre debe de tener al menor un caracter'],
+      maxlength: [100, 'Un nombre no puede tener más de 100 caracteres'],
+    },
+    alias: {
+      type: String,
+      trim: true,
+      lowercase: true,
+      maxlength: [50, 'Un alias no puede tener más de 50 caracteres'],
     },
     slug: String,
     bio: {
@@ -21,6 +28,12 @@ const authorSchema = new mongoose.Schema(
       type: String,
       default: 'default-author.jpeg',
     },
+    books: [
+      {
+        type: mongoose.Schema.ObjectId,
+        ref: 'Book',
+      },
+    ],
     createdAt: {
       type: Date,
       default: Date.now(),
@@ -33,6 +46,7 @@ const authorSchema = new mongoose.Schema(
   }
 );
 // --------------------------------------------- 1 - ORDER ---------------------------------
+authorSchema.index({ name: 'text' }, { default_language: 'none' });
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 authorSchema.pre('save', function (next) {
   this.slug = slugify(this.name, { lower: true });

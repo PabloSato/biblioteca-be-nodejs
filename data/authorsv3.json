@@ -1,0 +1,64 @@
+[
+  {
+    "_id": "6390969594845ad46c565c95",
+    "name": "winslow, don",
+    "slug": "winslow-don",
+    "bio": "DON WINSLOW (Nueva York, 1953) ha alcanzado la fama y la aclamación unánime de la crítica. En 1991 escribió su primera novela, Un soplo de aire fresco, de la serie protagonizada por el detective Neal Carey. Entre sus obras destacan El invierno de Frankie Machine y, sobre todo, El poder del perro, El cártel (Premio RBA de Novela Policiaca 2015) y Corrupción policial.",
+    "image": "aut-4.jpeg"
+  },
+  {
+    "_id": "639096f294845ad46c565c97",
+    "name": "tolkien, j.r.r.",
+    "slug": "tolkien-j.r.r.",
+    "bio": "Tolkien fue uno de los mejores filólogos de su época y gran parte de su vida laboral transcurrió en Oxford, primero como profesor de anglosajón y luego como profesor de lengua inglesa y literatura. Al mismo tiempo, en privado, trabajaba en el gran ciclo de mitos y leyendas que más adelante se publicaría con el título de El Silmarillion. Edith y él tuvieron cuatro hijos, y en parte fue para ellos por lo que escribió el cuento El Hobbit, publicado por Allen & Unwin en 1937. Tuvo tanto éxito que el editor quiso tener en seguida una secuela, pero no fue hasta 1954 que apareció el primer volumen de la obra maestra de Tolkien, El Señor de los Anillos, con un éxito inmediato.",
+    "image": "aut-5.jpeg"
+  },
+  {
+    "_id": "6390973594845ad46c565c99",
+    "name": "asimov, isaac",
+    "slug": "asimov-isaac",
+    "bio": "Isaac Asimov (1920-1992) es uno de los grandes autores del género de ciencia ficción ('Fundación', 'Yo robot'...), a la vez que un gran divulgador científico e histórico. Su viva inquietud intelectual, su vitalismo y su soltura para moverse entre distintos campos de actividad han hecho de él uno de los más populares autores modernos.",
+    "image": "aut-6.jpeg"
+  },
+  {
+    "_id": "6390976d94845ad46c565c9b",
+    "name": "redondo, dolores",
+    "slug": "redondo-dolores",
+    "bio": "Dolores Redondo (Donostia-San Sebastián, 1969) es la autora de la Trilogía del Baztán, el fenómeno literario en castellano más importante de los últimos años. Las tres entregas, El guardián invisible, Legado en los huesos y Ofrenda a la tormenta, han llegado a tres millones de fieles lectores; y entre 2017 y 2020 se estrenaron con éxito las tres adaptaciones cinematográficas, actualmente disponibles en Netflix. A la trilogía le siguió Todo esto te daré (Premio Planeta 2016), la novela ganadora de dicho galardón más vendida de los últimos tiempos. En 2019 publicó La cara norte del corazón y regresó al universo del Baztán, cuya adaptación está en vías de desarrollo como serie televisiva en Hollywood, lo que constituye un hito de la ficción española contemporánea.",
+    "image": "aut-9.jpeg"
+  },
+  {
+    "_id": "639097e894845ad46c565c9d",
+    "name": "radden keefe, patrick",
+    "slug": "radden-keefe-patrick",
+    "bio": "Patrick Radden Keefe es redactor de The New Yorker y autor de The Snakehead y Chatter. Ha escrito para The New York Times Magazine, Slate y The New York Review of Books, entre otras publicaciones. En 2014 obtuvo el National Magazine Award de artículo de fondo por el artículo «A Loaded Gun», y en 2015 y 2016 fue finalista del National Magazine Award de reportaje. Ha recibido varias becas, entre otras de la New America Foundation y de la fundación Guggenheim. No digas nada ganó el premio Orwell de no ficción política 2019 y fue considerado uno de los mejores libros del año y, entre los de no ficción, uno de los mejores de la década.",
+    "image": "aut-10.jpeg"
+  },
+  {
+    "_id": "63a32d4d597867980d39989f",
+    "name": "vv.aa",
+    "slug": "vv.aa",
+    "image": "default-author.jpeg"
+  },
+  {
+    "_id": "63b859e506ed90098ac87886",
+    "name": "judt, tony",
+    "bio": "Born in 1948, Tony Judt was raised in the East End of London by a mother whose parents had immigrated from Russia and a Belgian father who descended from a line of Lithuanian rabbis. Judt was educated at Emanuel School, before receiving a BA (1969) and PhD (1972) in history from the University of Cambridge.",
+    "image": "ada02454-ed26-473e-bf4e-cd936141b089.jpeg",
+    "slug": "judt-tony"
+  },
+  {
+    "_id": "63b85c4306ed90098ac878ef",
+    "name": "manara, milo",
+    "bio": "Maurilio Manara – known professionally as Milo Manara – is an Italian comic book writer and artist, best known for his erotic approach to the medium.",
+    "image": "10950f96-681d-4bd0-a90f-0962c4a234b7.jpeg",
+    "slug": "manara-milo"
+  },
+  {
+    "_id": "63b85c6b06ed90098ac878f3",
+    "name": "jodorowsky, alejandro",
+    "bio": "Better known for his surreal films El Topo and The Holy Mountain filmed in the early 1970s, Alejandro Jodorowsky is also an accomplished writer of graphic novels and a psychotherapist. He developed Psychomagic, a combination of psychotherapy and shamanic magic. His fans have included John Lennon and Marilyn Manson.",
+    "image": "28d6be9f-0a5e-47bd-8f31-2f473739cdf5.jpeg",
+    "slug": "jodorowsky-alejandro"
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "_id": "63650bf9884e0dc3ae9207fc",
+    "version": "tapa dura",
+    "name": "la frontera",
+    "slug": "tapa-dura",
+    "book": "6359372e59c543ea8603012c",
+    "image": "lafrontera.jpeg",
+    "pages": 891,
+    "shelf": "639c7c42e276a1f05240faa6"
+  },
+  {
+    "_id": "63650c6b5b839c840dcf60b8",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el silmarillion",
+    "book": "6359372e59c543ea8603012a",
+    "image": "icon10.jpeg",
+    "pages": 891,
+    "shelf": "639c7c45e276a1f05240faaf"
+  },
+  {
+    "_id": "63650c6b5b839c840dcf60b4",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el cartel",
+    "book": "639db33929065a1a37f016f7",
+    "image": "cartel.jpeg",
+    "pages": 891,
+    "shelf": "639c7c45e276a1f05240faaf"
+  },
+  {
+    "_id": "63650c835b839c840dcf60cb",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "salvajes",
+    "book": "6359372e59c543ea8603012e",
+    "image": "icon6.jpeg",
+    "pages": 891,
+    "shelf": "639c7c49e276a1f05240fab8"
+  },
+  {
+    "_id": "63650c965b839c840dcf60db",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "corrupción policial",
+    "book": "6359372e59c543ea8603012f",
+    "image": "corrupcion.jpeg",
+    "pages": 891,
+    "shelf": "639c7c60e276a1f05240fad0"
+  },
+  {
+    "_id": "63650cae5b839c840dcf60e8",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "rotos",
+    "book": "6359372e59c543ea86030130",
+    "image": "rotos.jpeg",
+    "pages": 891,
+    "shelf": "639c7c65e276a1f05240fad9"
+  },
+  {
+    "_id": "63650cc35b839c840dcf60f5",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el hobbit",
+    "book": "6359372e59c543ea86030131",
+    "image": "icon9.jpeg",
+    "pages": 891,
+    "shelf": "639c7c42e276a1f05240faa6"
+  },
+  {
+    "_id": "63650cd05b839c840dcf6108",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "las dos torres",
+    "book": "6359372e59c543ea86030133",
+    "image": "torres.jpeg",
+    "pages": 891,
+    "shelf": "639c7c68e276a1f05240fae2"
+  },
+  {
+    "_id": "63650cdd5b839c840dcf611e",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el retorno del rey",
+    "book": "6359372e59c543ea86030134",
+    "image": "retorno.jpeg",
+    "pages": 891,
+    "shelf": "639c7c42e276a1f05240faa6"
+  },
+  {
+    "_id": "63650cf65b839c840dcf6134",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el poder del perro",
+    "book": "6359372e59c543ea8603012b",
+    "image": "icon1.jpeg",
+    "pages": 891,
+    "shelf": "639c7c42e276a1f05240faa6"
+  },
+  {
+    "_id": "63650d045b839c840dcf6144",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "yo, robot",
+    "book": "6359372e59c543ea86030137",
+    "image": "icon3.jpeg",
+    "pages": 891,
+    "shelf": "639c7c68e276a1f05240fae2"
+  },
+  {
+    "_id": "63650d135b839c840dcf6151",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "el guardián invisible",
+    "book": "6359372e59c543ea86030138",
+    "image": "icon5.jpeg",
+    "pages": 891,
+    "shelf": "639c7c68e276a1f05240fae2"
+  },
+  {
+    "_id": "63650d1f5b839c840dcf6161",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "los reyes de lo cool ",
+    "book": "6359372e59c543ea8603012d",
+    "image": "reyescool.jpeg",
+    "pages": 891,
+    "shelf": "639c7c65e276a1f05240fad9"
+  },
+  {
+    "_id": "63650d2f5b839c840dcf6171",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "El Imperio del Dolor",
+    "book": "6359372e59c543ea8603013a",
+    "image": "port.jpeg",
+    "pages": 891,
+    "shelf": "639c7c65e276a1f05240fad9"
+  },
+  {
+    "_id": "63650d465b839c840dcf617e",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "apéndices",
+    "book": "6359372e59c543ea86030135",
+    "image": "",
+    "pages": 891,
+    "shelf": "639c7c60e276a1f05240fad0"
+  },
+  {
+    "_id": "63650d625b839c840dcf6194",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "book": "6359372e59c543ea86030139",
+    "name": "En lo Más Profundo de la Meseta Solitaria",
+    "image": "icon7.jpeg",
+    "pages": 891,
+    "shelf": "639c7c60e276a1f05240fad0"
+  },
+  {
+    "_id": "63650d6d5b839c840dcf61a1",
+    "version": "tapa dura",
+    "slug": "tapa-dura",
+    "name": "la comunidad del anillo",
+    "book": "6359372e59c543ea86030132",
+    "image": "icon2.jpeg",
+    "pages": 891,
+    "shelf": "639c7c49e276a1f05240fab8"
+  },
+  {
+    "_id": "636666138d3643e66d91b8c4",
+    "version": "tapa dura2",
+    "slug": "tapa-dura2",
+    "name": "la frontera",
+    "book": "6359372e59c543ea8603012c",
+    "image": "41953668.jpeg",
+    "pages": 591,
+    "shelf": "639c7c49e276a1f05240fab8"
+  },
+  {
+    "_id": "6366661a8d3643e66d91b8d6",
+    "version": "tapa dura3",
+    "slug": "tapa-dura3",
+    "name": "la frontera",
+    "book": "6359372e59c543ea8603012c",
+    "image": "44148191.jpeg",
+    "pages": 691,
+    "shelf": "639c7c68e276a1f05240fae2"
+  },
+  {
+    "_id": "636666218d3643e66d91b8e8",
+    "version": "tapa dura4",
+    "slug": "tapa-dura4",
+    "name": "la frontera",
+    "book": "6359372e59c543ea8603012c",
+    "image": "49885361.jpeg",
+    "pages": 791,
+    "shelf": "639c7c45e276a1f05240faaf"
+  }
+]

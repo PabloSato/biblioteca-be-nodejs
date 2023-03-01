@@ -1,13 +1,17 @@
 const express = require('express');
 const tagController = require('./../controllers/tagController');
+const filter = require('./../controllers/filtersController');
 const router = express.Router();
 // ---------------------- SPECIAL ROUTES -----------------------------
-router.route('/slug/:slug').get(tagController.getBySlug, tagController.getTag);
+// -- ABSOLUTE ALL --
+router.route('/abs').get(tagController.getAbsTags);
+// -- BY SLUG --
+router.route('/slug/:slug').get(filter.getBySlug, tagController.getTag);
 // ---------------------- CRUD ROUTES --------------------------------
 router
   .route('/')
-  .get(tagController.setOrder, tagController.getAllTags)
-  .post(tagController.createTag);
+  .get(filter.setOrderName, tagController.getAllTags)
+  .post(tagController.formData, tagController.createTag);
 
 router
   .route('/:id')
