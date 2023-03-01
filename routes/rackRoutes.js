@@ -8,7 +8,9 @@ const router = express.Router();
 // -- ABSOLUTE ALL --
 router.route('/abs').get(rackController.getAbsRacks);
 // -- SEARCH BY SLUG --
-router.route('/slug/:slug').get(filter.getBySlug, rackController.getRack);
+router
+  .route('/location/:locationId/slug/:slug')
+  .get(rackController.getBySlug, rackController.getRack);
 // -- SEARCH BY LOCATION
 router
   .route('/location/:locationId')

@@ -3,6 +3,7 @@ const slugify = require('slugify');
 
 const Rack = require('./rackModel');
 const AppError = require('./../utils/appError');
+const setUpSlug = require('./../utils/setUpSlug');
 
 shelfSchema = new mongoose.Schema(
   {
@@ -33,7 +34,8 @@ shelfSchema = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 shelfSchema.pre('save', async function (next) {
   // ---- SLUG -----
-  this.slug = slugify(this.name, { lower: true });
+  const tmp_name = setUpSlug(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   // ---- CONTROL ----
   const already_shelfs = await Shelf.find({ name: this.name, rack: this.rack });
   if (already_shelfs.length > 0) {

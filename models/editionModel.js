@@ -23,8 +23,10 @@ const editionSchema = new mongoose.Schema(
     },
     name: {
       type: String,
+      lowercase: true,
+      trim: true,
       maxlength: [
-        50,
+        250,
         'El nombre de la edición no debe ser mayor a 50 caracteres',
       ],
     },
@@ -61,13 +63,10 @@ const editionSchema = new mongoose.Schema(
 
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
-editionSchema.pre('save', function (next) {
-  const tmp_name = setUpName(this.version);
-  this.slug = slugify(tmp_name, { lower: true });
-  next();
-});
+
 // --- CONTROL ---
 editionSchema.pre('save', async function (next) {
+  let tmp_name = '';
   const book = await Book.findById(this.book);
   if (book) {
     const already_editions = book.editions;
@@ -78,8 +77,18 @@ editionSchema.pre('save', async function (next) {
     });
 
     if (!this.name) {
-      const tmp_name = setUpName(book.name);
-      this.name = tmp_name.trim();
+      tmp_name = setUpName(book.name).trim();
+      this.name = tmp_name;
+      tmp_name = tmp_name.replace(',', '');
+      tmp_name = tmp_name.replace('.', '');
+      tmp_name = tmp_name.replace(':', '');
+      this.slug = book.slug;
+    } else {
+      tmp_name = setUpName(this.name).trim();
+      tmp_name = tmp_name.replace(',', '');
+      tmp_name = tmp_name.replace('.', '');
+      tmp_name = tmp_name.replace(':', '');
+      this.slug = book.slug;
     }
   }
   next();
@@ -108,6 +117,10 @@ editionSchema.pre(/^find/, function (next) {
     })
     .populate({
       path: 'location',
+      select: 'name slug',
+    })
+    .populate({
+      path: 'colection',
       select: 'name slug',
     });
   next();

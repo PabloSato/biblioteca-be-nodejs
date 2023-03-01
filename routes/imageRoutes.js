@@ -5,6 +5,9 @@ const router = express.Router();
 
 router.route('/').post(imageController.uploadImage);
 
-router.route('/:name').get(imageController.getImage);
+router
+  .route('/:name')
+  .get(imageController.getImage)
+  .delete(imageController.deleteImage);
 
 module.exports = router;

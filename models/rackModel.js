@@ -4,6 +4,8 @@ const slugify = require('slugify');
 const AppError = require('./../utils/appError');
 const Location = require('./locationModel');
 
+const setUpSlug = require('./../utils/setUpSlug');
+
 rackSchema = new mongoose.Schema(
   {
     name: {
@@ -33,7 +35,8 @@ rackSchema = new mongoose.Schema(
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 rackSchema.pre('save', async function (next) {
   // ---- SLUG ----
-  this.slug = slugify(this.name, { lower: true });
+  const tmp_name = setUpSlug(this.name);
+  this.slug = slugify(tmp_name, { lower: true });
   // --- CONTROL ---
   const already_racks = await Rack.find({ name: this.name, rack: this.rack });
   if (already_racks.length > 0) {
@@ -50,13 +53,13 @@ rackSchema.post('save', async function (doc, next) {
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------
 rackSchema.pre(/^find/, function (next) {
-  this.populate({
-    path: 'shelfs',
-    select: 'name',
-  }).populate({
-    path: 'location',
-    select: 'name slug',
-  });
+  // this.populate({
+  //   path: 'shelfs',
+  //   select: 'name',
+  // }).populate({
+  //   path: 'location',
+  //   select: 'name slug',
+  // });
   next();
 });
 // --------------------------------------------- 0 - EXPORT --------------------------------

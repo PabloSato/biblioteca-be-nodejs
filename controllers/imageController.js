@@ -1,5 +1,7 @@
 const sharp = require('sharp');
 const crypto = require('crypto');
+const path = require('path');
+const fs = require('fs');
 
 const { uploadImage } = require('./../middleware/upload');
 
@@ -24,7 +26,7 @@ exports.uploadImage = async (req, res) => {
     });
   } catch (err) {
     if (err.code == 'LIMIT_FILE_SIZE') {
-      return res.status(500).send({
+      return res.status(403).send({
         message: 'Image size cannot be larger than 2MB!',
       });
     }
@@ -38,4 +40,38 @@ exports.uploadImage = async (req, res) => {
 exports.getImage = (req, res) => {
   const { name } = req.params;
   res.sendFile(`${__basedir}/public/images/${name}`);
+};
+
+exports.deleteImage = (req, res) => {
+  const { name } = req.params;
+  if (!name || name == '' || name.length == 0) {
+    return res
+      .status(400)
+      .send({ message: "Please send an image's name to delete" });
+  }
+  const image = name.trim();
+  if (image.length == 0) {
+    return res
+      .status(400)
+      .send({ message: "Please send an image's name to delete" });
+  }
+  const del_image = path.join(__basedir, 'public', 'images', image);
+  let statusCode = 204;
+  let status = 'success';
+  let message = 'OK delete image';
+  if (fs.existsSync(del_image)) {
+    fs.unlink(del_image, (err) => {
+      if (err) {
+        console.error(err);
+        status = 'failed';
+        statusCode = err.statusCode || 500;
+        message = `Can't delete image ${image}`;
+      }
+    });
+  }
+  res.status(statusCode).json({
+    status: status,
+    data: null,
+    message: message,
+  });
 };
