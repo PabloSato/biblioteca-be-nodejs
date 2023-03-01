@@ -4,6 +4,9 @@
 ## CONFIG ##
 *.env
 
+## IMAGES
+images/*
+
 # Folder view configuration files
 .DS_Store
 Desktop.ini
