@@ -59,9 +59,27 @@ exports.getBySaga = (req, res, next) => {
 exports.getByUniverse = (req, res, next) => {
   const filter = { universe: req.params.universeId };
   req.query.filter = filter;
-  req.query.sort = 'name';
   next();
 };
+// -- BY ABSOLUTE --
+exports.getAbsBooks = catchAsync(async (req, res, next) => {
+  const data = await Book.aggregate([
+    { $project: { name: 1, slug: 1, authors: 1 } },
+    { $addFields: { id: '$_id' } },
+    { $sort: { name: 1 } },
+  ]);
+
+  const opts = [{ path: 'authors', select: 'name' }];
+  const result = await Book.populate(data, opts);
+
+  res.status(200).json({
+    status: 'success',
+    data: {
+      data: result,
+    },
+  });
+});
+
 // ---------------------- CRUD METHODS --------------------------------
 // ----- DELETE -----
 exports.deleteBook = catchAsync(async (req, res, next) => {
@@ -107,8 +125,27 @@ exports.deleteBook = catchAsync(async (req, res, next) => {
     message: message,
   });
 });
+// ---------------------- FIX --------------------------------
+exports.fixEditions = catchAsync(async (req, res, next) => {
+  const books = await Book.find();
+  books.forEach(async (book) => {
+    const name_book = book.name;
+    const slug = book.slug;
+    const edition = book.editions[0];
+    const id_edit = edition._id;
+    edition.name = name_book;
+    edition.slug = slug;
+    const update = { name: name_book, slug: slug };
+    const upt = await Edition.updateOne({ _id: edition._id }, update);
+  });
+  res.status(200).json({
+    status: 'success',
+    data: null,
+  });
+});
 // ---------------------- BASIC CRUD --------------------------------
-exports.getAbsBooks = factory.getAbsolute(Book);
+// exports.getAbsBooks = factory.getAbsolute(Book);
+exports.getBysAbs = factory.getBysAbs(Book);
 exports.getAllBooks = factory.getAll(Book);
 exports.getBook = factory.getOne(Book);
 exports.createBook = factory.createOne(Book);
