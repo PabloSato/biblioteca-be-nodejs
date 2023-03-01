@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
 
+const setUpSlugAuhor = require('../utils/setUpSlug');
+
 const authorSchema = new mongoose.Schema(
   {
     name: {
@@ -49,7 +51,9 @@ const authorSchema = new mongoose.Schema(
 authorSchema.index({ name: 'text' }, { default_language: 'none' });
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 authorSchema.pre('save', function (next) {
-  this.slug = slugify(this.name, { lower: true });
+  // Como viene el nombre maqueado, hay que trabajar antes de hacer el slug... Lo sacamos a una función
+  const tmp = setUpSlugAuhor(this.name);
+  this.slug = slugify(tmp, { lower: true });
   next();
 });
 // --------------------------------------------- 3 - POPULATE ------------------------------

@@ -6,6 +6,11 @@ const { formData } = require('./../middleware/upload');
 const Rack = require('./../models/rackModel');
 
 // ---------------------- SPECIAL METHODS ----------------------
+exports.getBySlug = (req, res, next) => {
+  const filter = { location: req.params.locationId, slug: req.params.slug };
+  req.query.filter = filter;
+  next();
+};
 // ---------------------- BASIC CRUD ---------------------------
 exports.getAbsRacks = factory.getAbsolute(Rack);
 exports.getAllRacks = factory.getAll(Rack);

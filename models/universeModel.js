@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const slugify = require('slugify');
-const setUpName = require('./../utils/setUpName');
+const setUpSlug = require('./../utils/setUpSlug');
 
 const universeSchema = new mongoose.Schema(
   {
@@ -26,7 +26,7 @@ const universeSchema = new mongoose.Schema(
 // --------------------------------------------- 1 - ORDER ---------------------------------
 // --------------------------------------------- 2 - MIDDLEWARE ----------------------------
 universeSchema.pre('save', function (next) {
-  const tmp_name = setUpName(this.name);
+  const tmp_name = setUpSlug(this.name);
   this.slug = slugify(tmp_name, { lower: true });
   next();
 });

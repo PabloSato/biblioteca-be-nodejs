@@ -2,11 +2,8 @@ const util = require('util');
 const multer = require('multer');
 
 const AppError = require('./../utils/appError');
-const catchAsync = require('./../utils/catchAsync');
 
 const maxSize = 2 * 1024 * 1024;
-
-// TODO: If works, change to memory
 const storage = multer.memoryStorage();
 
 const config = (req, file, cb) => {

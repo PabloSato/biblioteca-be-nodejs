@@ -24,6 +24,10 @@ router
 router
   .route('/language/:languageId')
   .get(editionController.getByLanguage, editionController.getAllEditions);
+// -- BY COLLECTION --
+router
+  .route('/collection/:collectionId')
+  .get(editionController.getByCollection, editionController.getAllEditions);
 // ---------------------- CRUD ROUTES ---------------------------
 router
   .route('/')

@@ -10,7 +10,7 @@ const handlerCastErrorDB = (err) => {
 const handlerDuplicateFieldsDB = (err) => {
   const value = err.keyValue.name;
   const message = `Duplicate field value: "${value}". Please use another value`;
-  return new AppError(message, 400);
+  return new AppError(message, 409);
 };
 
 // Handler mongoose validation error
@@ -18,7 +18,7 @@ const handlerValidationErrorDB = (err) => {
   // Loop over the object
   const errors = Object.values(err.errors).map((ele) => ele.message);
   const message = `Invalid input data: ${errors.join('. ')}`;
-  return new AppError(message, 400);
+  return new AppError(message, 406);
 };
 
 // Error to Dev
@@ -57,17 +57,18 @@ module.exports = (err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
   err.status = err.status || 'error';
 
-  if (process.env.NODE_ENV === 'development') {
+  /*if (process.env.NODE_ENV === 'development') {
     sendErrorDev(err, req, res);
-  } else if (process.env.NODE_ENV === 'production') {
-    let error = { ...err };
-    error.message = err.message;
+  } else if (process.env.NODE_ENV === 'production') {*/
+  // let error = { ...err };
+  // error.message = err.message;
+  let error = Object.create(err);
+  console.log('------------------');
+  console.log(err);
+  if (err.name === 'CastError') error = handlerCastErrorDB(error);
+  if (err.code === 11000) error = handlerDuplicateFieldsDB(error);
+  if (err.name === 'ValidationError') error = handlerValidationErrorDB(error);
 
-    if (error.name === 'CastError') error = handlerCastErrorDB(error);
-    if (error.code === 1100) error = handlerDuplicateFieldsDB(error);
-    if (error.name === 'ValidationError')
-      error = handlerValidationErrorDB(error);
-
-    sendErrorProd(error, req, res);
-  }
+  sendErrorProd(error, req, res);
+  //}
 };
