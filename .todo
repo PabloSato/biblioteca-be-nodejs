@@ -5,6 +5,7 @@ TODO:
 1 - TODO: Remove all logic from the models and move it to controllers => https://www.youtube.com/watch?v=2DOkiQFB5ic
 
 2 - TODO: Complete a script to fill the json
+3 - TODO: Add validators to models
 
 # ---- RELEASE v2 ----
 
