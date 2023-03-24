@@ -2231,5 +2231,99 @@
     ],
     "editions": ["63d51a05a372f06ae0d9f114"],
     "slug": "v-de-vendetta"
+  },
+  {
+    "_id": "63d243d1f7d03809514eaf77",
+    "name": "nocturno berlinés",
+    "subtitle": "inspirado en la obra de hugo pratt",
+    "argument": "Alemania, 1924. Corto Maltés deambula por las calles de Berlín junto al escritor Joseph Roth cuando descubre la muerte de un viejo amigo. El marino seguirá la pista al asesino sobre el telón de fondo de un país convulsionado por la bancarrota, la guerra, el asesinato político, los golpes de estado y la amenaza incipiente del nazismo. El guionista Juan Díaz Canales (Blacksad) y el dibujante Rubén Pellejero (Dieter Lumpen)royectan las luces y las sombras de la Alemania de entreguerras sobre la mítica silueta delarinero creado por Hugo Pratt.",
+    "compilation": false,
+    "booksInside": [],
+    "authors": ["63d2362a33bac0bf6becff6d", "63d2367f33bac0bf6becff71"],
+    "tags": [
+      "63c7ae06536c5791b39b8d84",
+      "63cbd4028e644c31346a247a",
+      "63d2372d33bac0bf6becffa5",
+      "63c7ad8d536c5791b39b8d7e",
+      "63d236e633bac0bf6becff8b",
+      "63c8409b1125eea6396a4c1d"
+    ],
+    "saga": "63d236fb33bac0bf6becff8e",
+    "number": "16",
+    "editions": ["63d243d1f7d03809514eaf7f"],
+    "slug": "nocturno-berlines"
+  },
+  {
+    "_id": "63d237d333bac0bf6becffb4",
+    "name": "equatoria",
+    "subtitle": "inspirado en la obra de Hugo Pratt",
+    "argument": "Corto Maltés se encuentra en su amada Venecia tras los pasos del espejo del Preste Juan, legendario monarca cuyo reino se hallaba en algún lugar impreciso entre África y la India. Según la leyenda, sus vastos dominios estaban poblados de amazonas, unicornios y toda clase de prodigios. Sin embargo, su mayor tesoro era un espejo a través del cual podía observar cualquier parte del reino. La búsqueda de este objeto mágico llevará a Corto a recorrer un continente africano agitado por el colonialismo europeo de comienzos del siglo XX.",
+    "compilation": false,
+    "booksInside": [],
+    "authors": ["63d2362a33bac0bf6becff6d", "63d2367f33bac0bf6becff71"],
+    "tags": [
+      "63c7ae06536c5791b39b8d84",
+      "63cbd4028e644c31346a247a",
+      "63d2372d33bac0bf6becffa5",
+      "63c7ad8d536c5791b39b8d7e",
+      "63d236e633bac0bf6becff8b"
+    ],
+    "saga": "63d236fb33bac0bf6becff8e",
+    "number": "14",
+    "editions": ["63d237d333bac0bf6becffbe"],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1674718476932"
+      }
+    },
+    "slug": "equatoria"
+  },
+  {
+    "_id": "63d2412133bac0bf6bed004f",
+    "name": "bajo el sol de medianoche",
+    "subtitle": "inspirado en la obra de Hugo Pratt",
+    "argument": "1915, Corto Maltés atraviesa las vastas extensiones heladas del Gran Norte, entre Estados Unidos y Canadá. Consigo lleva un mensaje de su amigo, el célebre escritor Jack London, autor de Colmillo Blanco. La carta está destinada a un amor de juventud. A cambio de hacérsela llegar, London le promete a Corto una nueva aventura en la que está envuelto un misterioso tesoro.",
+    "compilation": false,
+    "booksInside": [],
+    "authors": ["63d2362a33bac0bf6becff6d", "63d2367f33bac0bf6becff71"],
+    "tags": [
+      "63c7ae06536c5791b39b8d84",
+      "63cbd4028e644c31346a247a",
+      "63d2372d33bac0bf6becffa5",
+      "63c7ad8d536c5791b39b8d7e",
+      "63d236e633bac0bf6becff8b",
+      "63c8409b1125eea6396a4c1d"
+    ],
+    "saga": "63d236fb33bac0bf6becff8e",
+    "number": "13",
+    "editions": ["63d2412133bac0bf6bed0057"],
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1674718476932"
+      }
+    },
+    "slug": "bajo-el-sol-de-medianoche"
+  },
+  {
+    "_id": "63d242d133bac0bf6bed018c",
+    "name": "día de tarowean, el",
+    "argument": "Desde la publicación de La balada del mar salado, millones de lectores de todo el mundo se han preguntado bajo qué circunstancias Corto Maltés acabó atado a una balsa a la deriva cerca de la isla La Escondida. ¿Qué crimen pudo cometer para encontrarse en esa situación? ¿Qué papel juegan El Monje y Rasputín en esta aventura? El día de Tarowean desvela por fin el misterio más célebre del Pacífico.\n\nJuan Díaz Canales (Premio Nacional del Cómic 2014 por Blacksad. Amarillo) y Rubén Pellejero (Dieter Lumpen) nos desvelan en esta nueva aventura uno de los mayores enigmas del carismático marinero creado en 1967 por Hugo Pratt.",
+    "compilation": false,
+    "booksInside": [],
+    "authors": ["63d2362a33bac0bf6becff6d", "63d2367f33bac0bf6becff71"],
+    "tags": [
+      "63c7ae06536c5791b39b8d84",
+      "63cbd4028e644c31346a247a",
+      "63d2372d33bac0bf6becffa5",
+      "63c7ad8d536c5791b39b8d7e",
+      "63c83bc11125eea6396a4918",
+      "63d236e633bac0bf6becff8b",
+      "63c8409b1125eea6396a4c1d"
+    ],
+    "saga": "63d236fb33bac0bf6becff8e",
+    "number": "15",
+    "editions": ["63d242d133bac0bf6bed0194"],
+    "slug": "el-dia-de-tarowean",
+    "subtitle": "inspirado en la obra de Hugo Pratt"
   }
 ]
