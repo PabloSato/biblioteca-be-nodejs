@@ -1,91 +1,65 @@
-[{
-  "_id": {
-    "$oid": "63c7af9c536c5791b39b8d90"
+[
+  {
+    "_id": "63c7af9c536c5791b39b8d90",
+    "name": "dragonlance",
+    "createdAt": "2023-01-18T08:05:25.511Z",
+    "slug": "dragonlance",
+    "__v": 0
   },
-  "name": "dragonlance",
-  "createdAt": {
-    "$date": "2023-01-18T08:05:25.511Z"
+  {
+    "_id": "63c7baf1536c5791b39b91ae",
+    "name": "legendarium",
+    "createdAt": "2023-01-18T08:05:25.511Z",
+    "slug": "legendarium",
+    "__v": 0
   },
-  "slug": "dragonlance",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7baf1536c5791b39b91ae"
+  {
+    "_id": "63c7c4d67279c709908806c7",
+    "name": "mundo de hielo y fuego, el",
+    "createdAt": "2023-01-18T09:32:01.085Z",
+    "slug": "el-mundo-de-hielo-y-fuego",
+    "__v": 0
   },
-  "name": "legendarium",
-  "createdAt": {
-    "$date": "2023-01-18T08:05:25.511Z"
+  {
+    "_id": "63d3f1b91b6d5f4c20281f71",
+    "name": "bibliografía básica en castellano sobre la alemania nazi y el holocausto",
+    "createdAt": "2023-01-27T15:35:52.564Z",
+    "slug": "bibliografia-basica-en-castellano-sobre-la-alemania-nazi-y-el-holocausto",
+    "__v": 0
   },
-  "slug": "legendarium",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7c4d67279c709908806c7"
+  {
+    "_id": "63d653e4bd205c49ff931e74",
+    "name": "witchblade",
+    "createdAt": "2023-01-29T10:36:49.396Z",
+    "slug": "witchblade",
+    "__v": 0
   },
-  "name": "mundo de hielo y fuego, el",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.085Z"
+  {
+    "_id": "63d65851bd205c49ff93225d",
+    "name": "darkness, the",
+    "createdAt": "2023-01-29T10:36:49.396Z",
+    "slug": "the-darkness",
+    "__v": 0
   },
-  "slug": "el-mundo-de-hielo-y-fuego",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d3f1b91b6d5f4c20281f71"
+  {
+    "_id": "63d664d1bd205c49ff932c3f",
+    "name": "crimson",
+    "createdAt": "2023-01-29T10:36:49.396Z",
+    "slug": "crimson",
+    "__v": 0
   },
-  "name": "bibliografía básica en castellano sobre la alemania nazi y el holocausto",
-  "createdAt": {
-    "$date": "2023-01-27T15:35:52.564Z"
+  {
+    "_id": "63de2738c87e435ed4faa0d5",
+    "name": "eljueves",
+    "createdAt": "2023-02-04T09:23:42.552Z",
+    "slug": "eljueves",
+    "__v": 0
   },
-  "slug": "bibliografia-basica-en-castellano-sobre-la-alemania-nazi-y-el-holocausto",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d653e4bd205c49ff931e74"
-  },
-  "name": "witchblade",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.396Z"
-  },
-  "slug": "witchblade",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d65851bd205c49ff93225d"
-  },
-  "name": "darkness, the",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.396Z"
-  },
-  "slug": "the-darkness",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d664d1bd205c49ff932c3f"
-  },
-  "name": "crimson",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.396Z"
-  },
-  "slug": "crimson",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2738c87e435ed4faa0d5"
-  },
-  "name": "eljueves",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.552Z"
-  },
-  "slug": "eljueves",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ecf37454d16d6bbab0eccc"
-  },
-  "name": "episodios nacionales",
-  "createdAt": {
-    "$date": "2023-02-15T14:55:17.943Z"
-  },
-  "slug": "episodios-nacionales",
-  "__v": 0
-}]
+  {
+    "_id": "63ecf37454d16d6bbab0eccc",
+    "name": "episodios nacionales",
+    "createdAt": "2023-02-15T14:55:17.943Z",
+    "slug": "episodios-nacionales",
+    "__v": 0
+  }
+]

@@ -1,141 +1,86 @@
-[{
-  "_id": {
-    "$oid": "63c7dfde7279c709908816a6"
+[
+  {
+    "_id": "63c7dfde7279c709908816a6",
+    "name": "elpais - aventura",
+    "createdAt": "2023-01-18T09:32:01.093Z",
+    "slug": "elpais-aventura"
   },
-  "name": "elpais - aventura",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.093Z"
+  {
+    "_id": "63c81338d74299e7351be2e4",
+    "name": "elpais - serie negra",
+    "createdAt": "2023-01-18T12:26:05.493Z",
+    "slug": "elpais-serie-negra"
   },
-  "slug": "elpais-aventura",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c81338d74299e7351be2e4"
+  {
+    "_id": "63c834621125eea6396a44a6",
+    "name": "elpais - novela histórica",
+    "createdAt": "2023-01-18T17:59:30.328Z",
+    "slug": "elpais-novela-historica"
   },
-  "name": "elpais - serie negra",
-  "createdAt": {
-    "$date": "2023-01-18T12:26:05.493Z"
+  {
+    "_id": "63cbd4b38e644c31346a248e",
+    "name": "todo pratt",
+    "createdAt": "2023-01-21T11:32:03.467Z",
+    "slug": "todo-pratt"
   },
-  "slug": "elpais-serie-negra",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c834621125eea6396a44a6"
+  {
+    "_id": "63d5181fa372f06ae0d9efe2",
+    "name": "colección manara",
+    "createdAt": "2023-01-28T12:24:38.340Z",
+    "slug": "coleccion-manara"
   },
-  "name": "elpais - novela histórica",
-  "createdAt": {
-    "$date": "2023-01-18T17:59:30.328Z"
+  {
+    "_id": "63da4092a1b18d4e6624aecd",
+    "name": "grandes obras de la cultura",
+    "createdAt": "2023-02-01T10:24:01.935Z",
+    "slug": "grandes-obras-de-la-cultura"
   },
-  "slug": "elpais-novela-historica",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbd4b38e644c31346a248e"
+  {
+    "_id": "63dc197466a5f29d9cd9ee2e",
+    "name": "elpais - comics",
+    "createdAt": "2023-02-02T19:57:02.190Z",
+    "slug": "elpais-comics"
   },
-  "name": "todo pratt",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.467Z"
+  {
+    "_id": "63dd14afd8f9cd877add42af",
+    "name": "corto maltés cofre 3",
+    "createdAt": "2023-02-03T07:43:21.822Z",
+    "slug": "corto-maltes-cofre-3"
   },
-  "slug": "todo-pratt",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d5181fa372f06ae0d9efe2"
+  {
+    "_id": "63dd1e744978ae476f56dc91",
+    "name": "corto maltés cofre 2",
+    "createdAt": "2023-02-03T14:25:00.689Z",
+    "slug": "corto-maltes-cofre-2"
   },
-  "name": "colección manara",
-  "createdAt": {
-    "$date": "2023-01-28T12:24:38.340Z"
+  {
+    "_id": "63de272dc87e435ed4faa0d2",
+    "name": "pendones del humor",
+    "createdAt": "2023-02-04T09:23:42.578Z",
+    "slug": "pendones-del-humor"
   },
-  "slug": "coleccion-manara",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63da4092a1b18d4e6624aecd"
+  {
+    "_id": "63e35016616e15d6ac3e6cd1",
+    "name": "elmundo - los clásicos del pensamiento libre",
+    "createdAt": "2023-02-08T07:22:33.325Z",
+    "slug": "elmundo-los-clasicos-del-pensamiento-libre"
   },
-  "name": "grandes obras de la cultura",
-  "createdAt": {
-    "$date": "2023-02-01T10:24:01.935Z"
+  {
+    "_id": "63e3a8cf1021af2c570f34fe",
+    "name": "grandes espacios - turismo activo",
+    "createdAt": "2023-02-08T12:04:25.708Z",
+    "slug": "grandes-espacios-turismo-activo"
   },
-  "slug": "grandes-obras-de-la-cultura",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc197466a5f29d9cd9ee2e"
+  {
+    "_id": "63e3b2b11021af2c570f3a2c",
+    "name": "millenium - elmundo",
+    "createdAt": "2023-02-08T12:04:25.708Z",
+    "slug": "millenium-elmundo"
   },
-  "name": "elpais - comics",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.190Z"
-  },
-  "slug": "elpais-comics",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dd14afd8f9cd877add42af"
-  },
-  "name": "corto maltés cofre 3",
-  "createdAt": {
-    "$date": "2023-02-03T07:43:21.822Z"
-  },
-  "slug": "corto-maltes-cofre-3",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dd1e744978ae476f56dc91"
-  },
-  "name": "corto maltés cofre 2",
-  "createdAt": {
-    "$date": "2023-02-03T14:25:00.689Z"
-  },
-  "slug": "corto-maltes-cofre-2",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de272dc87e435ed4faa0d2"
-  },
-  "name": "pendones del humor",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.578Z"
-  },
-  "slug": "pendones-del-humor",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e35016616e15d6ac3e6cd1"
-  },
-  "name": "elmundo - los clásicos del pensamiento libre",
-  "createdAt": {
-    "$date": "2023-02-08T07:22:33.325Z"
-  },
-  "slug": "elmundo-los-clasicos-del-pensamiento-libre",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e3a8cf1021af2c570f34fe"
-  },
-  "name": "grandes espacios - turismo activo",
-  "createdAt": {
-    "$date": "2023-02-08T12:04:25.708Z"
-  },
-  "slug": "grandes-espacios-turismo-activo",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e3b2b11021af2c570f3a2c"
-  },
-  "name": "millenium - elmundo",
-  "createdAt": {
-    "$date": "2023-02-08T12:04:25.708Z"
-  },
-  "slug": "millenium-elmundo",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ece59dfe3f5ab14a9799c0"
-  },
-  "name": "elmundo - las mejores novelas de la literatura universal contemporánea",
-  "createdAt": {
-    "$date": "2023-02-15T14:00:31.083Z"
-  },
-  "slug": "elmundo-las-mejores-novelas-de-la-literatura-universal-contemporanea",
-  "__v": 0
-}]
+  {
+    "_id": "63ece59dfe3f5ab14a9799c0",
+    "name": "elmundo - las mejores novelas de la literatura universal contemporánea",
+    "createdAt": "2023-02-15T14:00:31.083Z",
+    "slug": "elmundo-las-mejores-novelas-de-la-literatura-universal-contemporanea"
+  }
+]

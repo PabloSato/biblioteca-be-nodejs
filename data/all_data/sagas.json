@@ -1,1121 +1,786 @@
-[{
-  "_id": {
-    "$oid": "63c7af8c536c5791b39b8d8d"
-  },
-  "name": "crónicas de la dragonlance",
-  "createdAt": {
-    "$date": "2023-01-18T08:05:25.512Z"
-  },
-  "slug": "cronicas-de-la-dragonlance",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7b725536c5791b39b8f14"
-  },
-  "name": "ocaso de los dragones, el",
-  "createdAt": {
-    "$date": "2023-01-18T08:05:25.512Z"
-  },
-  "slug": "el-ocaso-de-los-dragones",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7b8f8536c5791b39b8fe1"
-  },
-  "name": "guerra de los espíritus, la",
-  "createdAt": {
-    "$date": "2023-01-18T08:05:25.512Z"
-  },
-  "slug": "la-guerra-de-los-espiritus",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7be2a7279c7099088029f"
-  },
-  "name": "señor de los anillos, el",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "el-senor-de-los-anillos",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7c0af7279c7099088048a"
-  },
-  "name": "historia de la tierra-media, la",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "la-historia-de-la-tierra-media",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7c2687279c70990880612"
-  },
-  "name": "historia de el señor de los anillos, la",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "la-historia-de-el-senor-de-los-anillos",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7c4c57279c709908806c4"
-  },
-  "name": "fuego y sangre",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "fuego-y-sangre",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7c7477279c70990880889"
-  },
-  "name": "cuentos de la dragonlance, segunda trilogía",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "cuentos-de-la-dragonlance-segunda-trilogia",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7ca237279c70990880a0b"
-  },
-  "name": "cuentos de la dragonlance",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "cuentos-de-la-dragonlance",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7cce77279c70990880bcc"
-  },
-  "name": "preludios de la dragonlance, segunda trilogía",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "preludios-de-la-dragonlance-segunda-trilogia",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7cf657279c70990880e42"
-  },
-  "name": "héroes de la dragonlance",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "heroes-de-la-dragonlance",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c7d2347279c70990881180"
-  },
-  "name": "leyendas de la dragonlance",
-  "createdAt": {
-    "$date": "2023-01-18T09:32:01.087Z"
-  },
-  "slug": "leyendas-de-la-dragonlance",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c82757156400930519f96b"
-  },
-  "name": "canción de hielo y fuego",
-  "createdAt": {
-    "$date": "2023-01-18T16:40:23.460Z"
-  },
-  "slug": "cancion-de-hielo-y-fuego",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c8341d1125eea6396a44a3"
-  },
-  "name": "hijos de la tierra, los",
-  "createdAt": {
-    "$date": "2023-01-18T17:59:30.306Z"
-  },
-  "slug": "los-hijos-de-la-tierra",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c838981125eea6396a46bb"
-  },
-  "name": "claudio",
-  "createdAt": {
-    "$date": "2023-01-18T17:59:30.306Z"
-  },
-  "slug": "claudio",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c83a641125eea6396a47c9"
-  },
-  "name": "hijos del grial, los",
-  "createdAt": {
-    "$date": "2023-01-18T17:59:30.306Z"
-  },
-  "slug": "los-hijos-del-grial",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c83be81125eea6396a491e"
-  },
-  "name": "aubrey & maturin",
-  "createdAt": {
-    "$date": "2023-01-18T17:59:30.306Z"
-  },
-  "slug": "aubrey-and-maturin",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c8efdb4395f53f02c755af"
-  },
-  "name": "ciudad en llamas",
-  "createdAt": {
-    "$date": "2023-01-19T07:18:33.944Z"
-  },
-  "slug": "ciudad-en-llamas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c8f1364395f53f02c75680"
-  },
-  "name": "salvajes",
-  "createdAt": {
-    "$date": "2023-01-19T07:18:33.944Z"
-  },
-  "slug": "salvajes",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c8f1e74395f53f02c75759"
-  },
-  "name": "cártel, el",
-  "createdAt": {
-    "$date": "2023-01-19T07:18:33.944Z"
-  },
-  "slug": "el-cartel",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c9173e6058cd5261d09134"
-  },
-  "name": "trilogía del baztán",
-  "createdAt": {
-    "$date": "2023-01-19T08:48:49.559Z"
-  },
-  "slug": "trilogia-del-baztan",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c929306058cd5261d0927b"
-  },
-  "name": "trilogía martín ojo de plata",
-  "createdAt": {
-    "$date": "2023-01-19T08:48:49.559Z"
-  },
-  "slug": "trilogia-martin-ojo-de-plata",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c92b0b6058cd5261d09383"
-  },
-  "name": "atto melani",
-  "createdAt": {
-    "$date": "2023-01-19T08:48:49.559Z"
-  },
-  "slug": "atto-melani",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c9385a2686201f03dcb4c9"
-  },
-  "name": "iacobus",
-  "createdAt": {
-    "$date": "2023-01-19T11:41:21.802Z"
-  },
-  "slug": "iacobus",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63c93a6d2686201f03dcb63f"
-  },
-  "name": "catón",
-  "createdAt": {
-    "$date": "2023-01-19T11:41:21.802Z"
-  },
-  "slug": "caton",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ca4a2f7695f65c1c4a8305"
-  },
-  "name": "aléxandros",
-  "createdAt": {
-    "$date": "2023-01-20T07:51:57.771Z"
-  },
-  "slug": "alexandros",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ca67d07695f65c1c4a89ce"
-  },
-  "name": "cuentos de dunk y egg, los",
-  "createdAt": {
-    "$date": "2023-01-20T07:51:57.771Z"
-  },
-  "slug": "los-cuentos-de-dunk-y-egg",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbd0668e644c31346a2387"
-  },
-  "name": "piratas",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.457Z"
-  },
-  "slug": "piratas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbd1008e644c31346a23ec"
-  },
-  "name": "versos, canciones y trocitos de carne",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.457Z"
-  },
-  "slug": "versos-canciones-y-trocitos-de-carne",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbd4468e644c31346a2483"
-  },
-  "name": "sgt. kirk",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.457Z"
-  },
-  "slug": "sgt.-kirk",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbe70c8e644c31346a2c72"
-  },
-  "name": "as de picas, el",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.457Z"
-  },
-  "slug": "el-as-de-picas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cbe7fb8e644c31346a2d44"
-  },
-  "name": "cacique blanco, el",
-  "createdAt": {
-    "$date": "2023-01-21T11:32:03.457Z"
-  },
-  "slug": "el-cacique-blanco",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ce3d7407c3693faed5fc87"
-  },
-  "name": "historia de españa (istmo)",
-  "createdAt": {
-    "$date": "2023-01-23T07:50:31.732Z"
-  },
-  "slug": "historia-de-espana-(istmo)",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ce444407c3693faed5fe4d"
-  },
-  "name": "médico, el",
-  "createdAt": {
-    "$date": "2023-01-23T07:50:31.732Z"
-  },
-  "slug": "el-medico",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cfe48300df5bf19748d55a"
-  },
-  "name": "trilogía de trajano",
-  "createdAt": {
-    "$date": "2023-01-24T13:44:43.334Z"
-  },
-  "slug": "trilogia-de-trajano",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cfeac200df5bf19748da5c"
-  },
-  "name": "publio cornelio escipión",
-  "createdAt": {
-    "$date": "2023-01-24T13:44:43.334Z"
-  },
-  "slug": "publio-cornelio-escipion",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cfedc300df5bf19748dcb9"
-  },
-  "name": "pilares de la tierra, los",
-  "createdAt": {
-    "$date": "2023-01-24T13:44:43.334Z"
-  },
-  "slug": "los-pilares-de-la-tierra",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63cfeeec00df5bf19748ddd3"
-  },
-  "name": "julia domna",
-  "createdAt": {
-    "$date": "2023-01-24T13:44:43.334Z"
-  },
-  "slug": "julia-domna",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d236fb33bac0bf6becff8e"
-  },
-  "name": "corto maltés",
-  "createdAt": {
-    "$date": "2023-01-26T07:34:36.944Z"
-  },
-  "slug": "corto-maltes",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d25cd2cbe8c60359942c3a"
-  },
-  "name": "fort wheeling",
-  "createdAt": {
-    "$date": "2023-01-26T09:50:02.207Z"
-  },
-  "slug": "fort-wheeling",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d25eeacbe8c60359942dfa"
-  },
-  "name": "escorpiones del desierto, los",
-  "createdAt": {
-    "$date": "2023-01-26T09:50:02.207Z"
-  },
-  "slug": "los-escorpiones-del-desierto",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d260fecbe8c603599430fd"
-  },
-  "name": "hombre una aventura, un",
-  "createdAt": {
-    "$date": "2023-01-26T09:50:02.207Z"
-  },
-  "slug": "hombre-una-aventura-un",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d26265cbe8c603599431f0"
-  },
-  "name": "koinsky relata...",
-  "createdAt": {
-    "$date": "2023-01-26T09:50:02.207Z"
-  },
-  "slug": "koinsky-relata...",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d2648529740031d1f333dd"
-  },
-  "name": "ana de la jungla",
-  "createdAt": {
-    "$date": "2023-01-26T11:25:00.488Z"
-  },
-  "slug": "ana-de-la-jungla",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d2657729740031d1f334ac"
-  },
-  "name": "ernie pike",
-  "createdAt": {
-    "$date": "2023-01-26T11:25:00.488Z"
-  },
-  "slug": "ernie-pike",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d26b28d677eb3eb948d98c"
-  },
-  "name": "ticonderoga",
-  "createdAt": {
-    "$date": "2023-01-26T11:46:27.747Z"
-  },
-  "slug": "ticonderoga",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d26ca9d677eb3eb948dbdc"
-  },
-  "name": "wwii",
-  "createdAt": {
-    "$date": "2023-01-26T11:46:27.747Z"
-  },
-  "slug": "wwii",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d283e4d677eb3eb948e92b"
-  },
-  "name": "vida de los doce césares",
-  "createdAt": {
-    "$date": "2023-01-26T11:46:27.747Z"
-  },
-  "slug": "vida-de-los-doce-cesares",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d288d4d677eb3eb948ed22"
-  },
-  "name": "mitos griegos, los",
-  "createdAt": {
-    "$date": "2023-01-26T11:46:27.747Z"
-  },
-  "slug": "los-mitos-griegos",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d2981ad677eb3eb948f34d"
-  },
-  "name": "guerra de las galias",
-  "createdAt": {
-    "$date": "2023-01-26T11:46:27.747Z"
-  },
-  "slug": "guerra-de-las-galias",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d37d122c8786d3064f99fd"
-  },
-  "name": "inventario: poesía completa",
-  "createdAt": {
-    "$date": "2023-01-27T07:26:17.804Z"
-  },
-  "slug": "inventario:-poesia-completa",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d39b002c8786d3064fa6e0"
-  },
-  "name": "ceguera",
-  "createdAt": {
-    "$date": "2023-01-27T07:26:17.804Z"
-  },
-  "slug": "ceguera",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d3d7c07f9394901a12def9"
-  },
-  "name": "cantos de hyperion",
-  "createdAt": {
-    "$date": "2023-01-27T12:28:31.878Z"
-  },
-  "slug": "cantos-de-hyperion",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d3d8df7f9394901a12df7e"
-  },
-  "name": "crónicas vampíricas",
-  "createdAt": {
-    "$date": "2023-01-27T12:28:31.878Z"
-  },
-  "slug": "cronicas-vampiricas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d3efe41b6d5f4c20281ee4"
-  },
-  "name": "dresden files, the",
-  "createdAt": {
-    "$date": "2023-01-27T15:35:52.570Z"
-  },
-  "slug": "the-dresden-files",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d3f8bc1b6d5f4c20282406"
-  },
-  "name": "leyendas",
-  "createdAt": {
-    "$date": "2023-01-27T15:35:52.570Z"
-  },
-  "slug": "leyendas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d43ee61edce59cbe8a4adf"
-  },
-  "name": "ilión-olimpo",
-  "createdAt": {
-    "$date": "2023-01-27T21:12:48.476Z"
-  },
-  "slug": "ilion-olimpo",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d43fe01edce59cbe8a4b74"
-  },
-  "name": "corsarios, piratas y negreros españoles",
-  "createdAt": {
-    "$date": "2023-01-27T21:12:48.476Z"
-  },
-  "slug": "corsarios-piratas-y-negreros-espanoles",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d446ae1edce59cbe8a5083"
-  },
-  "name": "hannibal lecter",
-  "createdAt": {
-    "$date": "2023-01-27T21:12:48.476Z"
-  },
-  "slug": "hannibal-lecter",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d51c9fa372f06ae0d9f284"
-  },
-  "name": "señor de los panchitos (lord of the matutano's), el",
-  "createdAt": {
-    "$date": "2023-01-28T12:24:38.329Z"
-  },
-  "slug": "el-senor-de-los-panchitos-(lord-of-the-matutano's)",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d6564fbd205c49ff9320ff"
-  },
-  "name": "lazos familiares",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "lazos-familiares",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d65f85bd205c49ff932774"
-  },
-  "name": "spear of destiny",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "spear-of-destiny",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d66617bd205c49ff932d82"
-  },
-  "name": "children of judas, the",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "the-children-of-judas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d66e33bd205c49ff933323"
-  },
-  "name": "asterix",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "asterix",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d67181bd205c49ff9334dc"
-  },
-  "name": "mercenario, el",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "el-mercenario",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d67834bd205c49ff93384a"
-  },
-  "name": "conquistador",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "conquistador",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d67944bd205c49ff9338d4"
-  },
-  "name": "paracuellos",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "paracuellos",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d67a62bd205c49ff9339c1"
-  },
-  "name": "caravaggio",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "caravaggio",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d67ce4bd205c49ff933b6b"
-  },
-  "name": "profesionales, los",
-  "createdAt": {
-    "$date": "2023-01-29T10:36:49.398Z"
-  },
-  "slug": "los-profesionales",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d7b53d2cb17b806a405e75"
-  },
-  "name": "sus fatigas, de",
-  "createdAt": {
-    "$date": "2023-01-30T11:52:11.022Z"
-  },
-  "slug": "de-sus-fatigas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d7b8dd2cb17b806a405f60"
-  },
-  "name": "trilogía de la frontera",
-  "createdAt": {
-    "$date": "2023-01-30T11:52:11.022Z"
-  },
-  "slug": "trilogia-de-la-frontera",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d7ca592cb17b806a406438"
-  },
-  "name": "historia del rock",
-  "createdAt": {
-    "$date": "2023-01-30T11:52:11.022Z"
-  },
-  "slug": "historia-del-rock",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d7cb462cb17b806a4064bd"
-  },
-  "name": "millenium",
-  "createdAt": {
-    "$date": "2023-01-30T11:52:11.022Z"
-  },
-  "slug": "millenium",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d9273f47a1ceede8b89c3c"
-  },
-  "name": "sherlock holmes",
-  "createdAt": {
-    "$date": "2023-01-31T14:19:27.212Z"
-  },
-  "slug": "sherlock-holmes",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63d92a3347a1ceede8b89d63"
-  },
-  "name": "cementerio de los libros olvidados, el",
-  "createdAt": {
-    "$date": "2023-01-31T14:19:27.212Z"
-  },
-  "slug": "el-cementerio-de-los-libros-olvidados",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63da4057a1b18d4e6624aeaa"
-  },
-  "name": "grandes obras de la cultura",
-  "createdAt": {
-    "$date": "2023-02-01T10:24:01.928Z"
-  },
-  "slug": "grandes-obras-de-la-cultura",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc162366a5f29d9cd9eb8b"
-  },
-  "name": "sin city",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "sin-city",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc174866a5f29d9cd9ec8d"
-  },
-  "name": "hombre",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "hombre",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc19ef66a5f29d9cd9ee48"
-  },
-  "name": "hellboy",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "hellboy",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc1ea766a5f29d9cd9f14c"
-  },
-  "name": "rip kirby",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "rip-kirby",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc1ec166a5f29d9cd9f164"
-  },
-  "name": "spirit, the",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "the-spirit",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc1f9066a5f29d9cd9f21c"
-  },
-  "name": "príncipe valiente",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "principe-valiente",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc203a66a5f29d9cd9f277"
-  },
-  "name": "roco vargas",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "roco-vargas",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc20d166a5f29d9cd9f2cf"
-  },
-  "name": "flash gordon",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "flash-gordon",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dc221b66a5f29d9cd9f3ae"
-  },
-  "name": "mandrake: el mago",
-  "createdAt": {
-    "$date": "2023-02-02T19:57:02.170Z"
-  },
-  "slug": "mandrake-el-mago",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcb8e0e8332c3414fcb4d5"
-  },
-  "name": "blake & mortimer",
-  "createdAt": {
-    "$date": "2023-02-03T07:23:47.157Z"
-  },
-  "slug": "blake-and-mortimer",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcb9c9e8332c3414fcb5cd"
-  },
-  "name": "hombre enmascarado, el",
-  "createdAt": {
-    "$date": "2023-02-03T07:23:47.157Z"
-  },
-  "slug": "el-hombre-enmascarado",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcba2ce8332c3414fcb61e"
-  },
-  "name": "mortadelo y filemón",
-  "createdAt": {
-    "$date": "2023-02-03T07:23:47.157Z"
-  },
-  "slug": "mortadelo-y-filemon",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcbae1e8332c3414fcb6f9"
-  },
-  "name": "aventuras de max fridman, las",
-  "createdAt": {
-    "$date": "2023-02-03T07:23:47.157Z"
-  },
-  "slug": "las-aventuras-de-max-fridman",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcbdd8d8f9cd877add3a4a"
-  },
-  "name": "capitán trueno, el",
-  "createdAt": {
-    "$date": "2023-02-03T07:43:21.814Z"
-  },
-  "slug": "el-capitan-trueno",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dcbe59d8f9cd877add3ae2"
-  },
-  "name": "blueberry",
-  "createdAt": {
-    "$date": "2023-02-03T07:43:21.814Z"
-  },
-  "slug": "blueberry",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63dd254e4978ae476f56e2fe"
-  },
-  "name": "calvin & hobbes",
-  "createdAt": {
-    "$date": "2023-02-03T14:25:00.682Z"
-  },
-  "slug": "calvin-and-hobbes",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2811c87e435ed4faa18f"
-  },
-  "name": "martínez el facha",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "martinez-el-facha",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de286ac87e435ed4faa1e2"
-  },
-  "name": "profesor cojonciano presenta, el",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "el-profesor-cojonciano-presenta",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de28b7c87e435ed4faa235"
-  },
-  "name": "pascual, mayordomo real",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "pascual-mayordomo-real",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2985c87e435ed4faa31d"
-  },
-  "name": "clara de noche",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "clara-de-noche",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de29c8c87e435ed4faa372"
-  },
-  "name": "pedro pico y pico vena",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "pedro-pico-y-pico-vena",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2b48c87e435ed4faa4e0"
-  },
-  "name": "maki navaja",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "maki-navaja",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2bc2c87e435ed4faa56d"
-  },
-  "name": "historias de la puta mili",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "historias-de-la-puta-mili",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63de2c2ec87e435ed4faa5f7"
-  },
-  "name": "puticlub",
-  "createdAt": {
-    "$date": "2023-02-04T09:23:42.556Z"
-  },
-  "slug": "puticlub",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e0ab0071b0a4ff585e004f"
-  },
-  "name": "civilizations rise and fall",
-  "createdAt": {
-    "$date": "2023-02-06T07:15:13.876Z"
-  },
-  "slug": "civilizations-rise-and-fall",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e3548e616e15d6ac3e6f25"
-  },
-  "name": "historia universal siglo xxi",
-  "createdAt": {
-    "$date": "2023-02-08T07:22:33.314Z"
-  },
-  "slug": "historia-universal-siglo-xxi",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e4a1aee6457076e81e57f2"
-  },
-  "name": "juegos del hambre, los",
-  "createdAt": {
-    "$date": "2023-02-09T07:27:05.106Z"
-  },
-  "slug": "los-juegos-del-hambre",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e4a625e6457076e81e5954"
-  },
-  "name": "breve historia de...",
-  "createdAt": {
-    "$date": "2023-02-09T07:27:05.106Z"
-  },
-  "slug": "breve-historia-de...",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e5f6f0ed5face83b786e4e"
-  },
-  "name": "memorias del águila y del jaguar",
-  "createdAt": {
-    "$date": "2023-02-10T07:41:28.379Z"
-  },
-  "slug": "memorias-del-aguila-y-del-jaguar",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63e5f8e5ed5face83b786f4c"
-  },
-  "name": "aventuras del capitán alatriste, las",
-  "createdAt": {
-    "$date": "2023-02-10T07:41:28.379Z"
-  },
-  "slug": "las-aventuras-del-capitan-alatriste",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ece28b147cf549f0b5defb"
-  },
-  "name": "trilogía de alejandro magno",
-  "createdAt": {
-    "$date": "2023-02-15T12:35:33.173Z"
-  },
-  "slug": "trilogia-de-alejandro-magno",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ece4b4147cf549f0b5dfb7"
-  },
-  "name": "dune",
-  "createdAt": {
-    "$date": "2023-02-15T12:35:33.173Z"
-  },
-  "slug": "dune",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ecf37d54d16d6bbab0eccf"
-  },
-  "name": "primera serie",
-  "createdAt": {
-    "$date": "2023-02-15T14:55:17.945Z"
-  },
-  "slug": "primera-serie",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ef3440e403eb197df41cca"
-  },
-  "name": "odisea espacial",
-  "createdAt": {
-    "$date": "2023-02-17T07:41:57.998Z"
-  },
-  "slug": "odisea-espacial",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ef5889e403eb197df42c91"
-  },
-  "name": "fundación",
-  "createdAt": {
-    "$date": "2023-02-17T07:41:57.998Z"
-  },
-  "slug": "fundacion",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63ef5b3be403eb197df42e62"
-  },
-  "name": "jurassic park",
-  "createdAt": {
-    "$date": "2023-02-17T07:41:57.998Z"
-  },
-  "slug": "jurassic-park",
-  "__v": 0
-}]
+[
+  {
+    "_id": "63c7af8c536c5791b39b8d8d",
+    "name": "crónicas de la dragonlance",
+    "createdAt": "2023-01-18T08:05:25.512Z",
+    "slug": "cronicas-de-la-dragonlance",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b725536c5791b39b8f14",
+    "name": "ocaso de los dragones, el",
+    "createdAt": "2023-01-18T08:05:25.512Z",
+    "slug": "el-ocaso-de-los-dragones",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b8f8536c5791b39b8fe1",
+    "name": "guerra de los espíritus, la",
+    "createdAt": "2023-01-18T08:05:25.512Z",
+    "slug": "la-guerra-de-los-espiritus",
+    "__v": 0
+  },
+  {
+    "_id": "63c7be2a7279c7099088029f",
+    "name": "señor de los anillos, el",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "el-senor-de-los-anillos",
+    "__v": 0
+  },
+  {
+    "_id": "63c7c0af7279c7099088048a",
+    "name": "historia de la tierra-media, la",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "la-historia-de-la-tierra-media",
+    "__v": 0
+  },
+  {
+    "_id": "63c7c2687279c70990880612",
+    "name": "historia de el señor de los anillos, la",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "la-historia-de-el-senor-de-los-anillos",
+    "__v": 0
+  },
+  {
+    "_id": "63c7c4c57279c709908806c4",
+    "name": "fuego y sangre",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "fuego-y-sangre",
+    "__v": 0
+  },
+  {
+    "_id": "63c7c7477279c70990880889",
+    "name": "cuentos de la dragonlance, segunda trilogía",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "cuentos-de-la-dragonlance-segunda-trilogia",
+    "__v": 0
+  },
+  {
+    "_id": "63c7ca237279c70990880a0b",
+    "name": "cuentos de la dragonlance",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "cuentos-de-la-dragonlance",
+    "__v": 0
+  },
+  {
+    "_id": "63c7cce77279c70990880bcc",
+    "name": "preludios de la dragonlance, segunda trilogía",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "preludios-de-la-dragonlance-segunda-trilogia",
+    "__v": 0
+  },
+  {
+    "_id": "63c7cf657279c70990880e42",
+    "name": "héroes de la dragonlance",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "heroes-de-la-dragonlance",
+    "__v": 0
+  },
+  {
+    "_id": "63c7d2347279c70990881180",
+    "name": "leyendas de la dragonlance",
+    "createdAt": "2023-01-18T09:32:01.087Z",
+    "slug": "leyendas-de-la-dragonlance",
+    "__v": 0
+  },
+  {
+    "_id": "63c82757156400930519f96b",
+    "name": "canción de hielo y fuego",
+    "createdAt": "2023-01-18T16:40:23.460Z",
+    "slug": "cancion-de-hielo-y-fuego",
+    "__v": 0
+  },
+  {
+    "_id": "63c8341d1125eea6396a44a3",
+    "name": "hijos de la tierra, los",
+    "createdAt": "2023-01-18T17:59:30.306Z",
+    "slug": "los-hijos-de-la-tierra",
+    "__v": 0
+  },
+  {
+    "_id": "63c838981125eea6396a46bb",
+    "name": "claudio",
+    "createdAt": "2023-01-18T17:59:30.306Z",
+    "slug": "claudio",
+    "__v": 0
+  },
+  {
+    "_id": "63c83a641125eea6396a47c9",
+    "name": "hijos del grial, los",
+    "createdAt": "2023-01-18T17:59:30.306Z",
+    "slug": "los-hijos-del-grial",
+    "__v": 0
+  },
+  {
+    "_id": "63c83be81125eea6396a491e",
+    "name": "aubrey & maturin",
+    "createdAt": "2023-01-18T17:59:30.306Z",
+    "slug": "aubrey-and-maturin",
+    "__v": 0
+  },
+  {
+    "_id": "63c8efdb4395f53f02c755af",
+    "name": "ciudad en llamas",
+    "createdAt": "2023-01-19T07:18:33.944Z",
+    "slug": "ciudad-en-llamas",
+    "__v": 0
+  },
+  {
+    "_id": "63c8f1364395f53f02c75680",
+    "name": "salvajes",
+    "createdAt": "2023-01-19T07:18:33.944Z",
+    "slug": "salvajes",
+    "__v": 0
+  },
+  {
+    "_id": "63c8f1e74395f53f02c75759",
+    "name": "cártel, el",
+    "createdAt": "2023-01-19T07:18:33.944Z",
+    "slug": "el-cartel",
+    "__v": 0
+  },
+  {
+    "_id": "63c9173e6058cd5261d09134",
+    "name": "trilogía del baztán",
+    "createdAt": "2023-01-19T08:48:49.559Z",
+    "slug": "trilogia-del-baztan",
+    "__v": 0
+  },
+  {
+    "_id": "63c929306058cd5261d0927b",
+    "name": "trilogía martín ojo de plata",
+    "createdAt": "2023-01-19T08:48:49.559Z",
+    "slug": "trilogia-martin-ojo-de-plata",
+    "__v": 0
+  },
+  {
+    "_id": "63c92b0b6058cd5261d09383",
+    "name": "atto melani",
+    "createdAt": "2023-01-19T08:48:49.559Z",
+    "slug": "atto-melani",
+    "__v": 0
+  },
+  {
+    "_id": "63c9385a2686201f03dcb4c9",
+    "name": "iacobus",
+    "createdAt": "2023-01-19T11:41:21.802Z",
+    "slug": "iacobus",
+    "__v": 0
+  },
+  {
+    "_id": "63c93a6d2686201f03dcb63f",
+    "name": "catón",
+    "createdAt": "2023-01-19T11:41:21.802Z",
+    "slug": "caton",
+    "__v": 0
+  },
+  {
+    "_id": "63ca4a2f7695f65c1c4a8305",
+    "name": "aléxandros",
+    "createdAt": "2023-01-20T07:51:57.771Z",
+    "slug": "alexandros",
+    "__v": 0
+  },
+  {
+    "_id": "63ca67d07695f65c1c4a89ce",
+    "name": "cuentos de dunk y egg, los",
+    "createdAt": "2023-01-20T07:51:57.771Z",
+    "slug": "los-cuentos-de-dunk-y-egg",
+    "__v": 0
+  },
+  {
+    "_id": "63cbd0668e644c31346a2387",
+    "name": "piratas",
+    "createdAt": "2023-01-21T11:32:03.457Z",
+    "slug": "piratas",
+    "__v": 0
+  },
+  {
+    "_id": "63cbd1008e644c31346a23ec",
+    "name": "versos, canciones y trocitos de carne",
+    "createdAt": "2023-01-21T11:32:03.457Z",
+    "slug": "versos-canciones-y-trocitos-de-carne",
+    "__v": 0
+  },
+  {
+    "_id": "63cbd4468e644c31346a2483",
+    "name": "sgt. kirk",
+    "createdAt": "2023-01-21T11:32:03.457Z",
+    "slug": "sgt.-kirk",
+    "__v": 0
+  },
+  {
+    "_id": "63cbe70c8e644c31346a2c72",
+    "name": "as de picas, el",
+    "createdAt": "2023-01-21T11:32:03.457Z",
+    "slug": "el-as-de-picas",
+    "__v": 0
+  },
+  {
+    "_id": "63cbe7fb8e644c31346a2d44",
+    "name": "cacique blanco, el",
+    "createdAt": "2023-01-21T11:32:03.457Z",
+    "slug": "el-cacique-blanco",
+    "__v": 0
+  },
+  {
+    "_id": "63ce3d7407c3693faed5fc87",
+    "name": "historia de españa (istmo)",
+    "createdAt": "2023-01-23T07:50:31.732Z",
+    "slug": "historia-de-espana-(istmo)",
+    "__v": 0
+  },
+  {
+    "_id": "63ce444407c3693faed5fe4d",
+    "name": "médico, el",
+    "createdAt": "2023-01-23T07:50:31.732Z",
+    "slug": "el-medico",
+    "__v": 0
+  },
+  {
+    "_id": "63cfe48300df5bf19748d55a",
+    "name": "trilogía de trajano",
+    "createdAt": "2023-01-24T13:44:43.334Z",
+    "slug": "trilogia-de-trajano",
+    "__v": 0
+  },
+  {
+    "_id": "63cfeac200df5bf19748da5c",
+    "name": "publio cornelio escipión",
+    "createdAt": "2023-01-24T13:44:43.334Z",
+    "slug": "publio-cornelio-escipion",
+    "__v": 0
+  },
+  {
+    "_id": "63cfedc300df5bf19748dcb9",
+    "name": "pilares de la tierra, los",
+    "createdAt": "2023-01-24T13:44:43.334Z",
+    "slug": "los-pilares-de-la-tierra",
+    "__v": 0
+  },
+  {
+    "_id": "63cfeeec00df5bf19748ddd3",
+    "name": "julia domna",
+    "createdAt": "2023-01-24T13:44:43.334Z",
+    "slug": "julia-domna",
+    "__v": 0
+  },
+  {
+    "_id": "63d236fb33bac0bf6becff8e",
+    "name": "corto maltés",
+    "createdAt": "2023-01-26T07:34:36.944Z",
+    "slug": "corto-maltes",
+    "__v": 0
+  },
+  {
+    "_id": "63d25cd2cbe8c60359942c3a",
+    "name": "fort wheeling",
+    "createdAt": "2023-01-26T09:50:02.207Z",
+    "slug": "fort-wheeling",
+    "__v": 0
+  },
+  {
+    "_id": "63d25eeacbe8c60359942dfa",
+    "name": "escorpiones del desierto, los",
+    "createdAt": "2023-01-26T09:50:02.207Z",
+    "slug": "los-escorpiones-del-desierto",
+    "__v": 0
+  },
+  {
+    "_id": "63d260fecbe8c603599430fd",
+    "name": "hombre una aventura, un",
+    "createdAt": "2023-01-26T09:50:02.207Z",
+    "slug": "hombre-una-aventura-un",
+    "__v": 0
+  },
+  {
+    "_id": "63d26265cbe8c603599431f0",
+    "name": "koinsky relata...",
+    "createdAt": "2023-01-26T09:50:02.207Z",
+    "slug": "koinsky-relata...",
+    "__v": 0
+  },
+  {
+    "_id": "63d2648529740031d1f333dd",
+    "name": "ana de la jungla",
+    "createdAt": "2023-01-26T11:25:00.488Z",
+    "slug": "ana-de-la-jungla",
+    "__v": 0
+  },
+  {
+    "_id": "63d2657729740031d1f334ac",
+    "name": "ernie pike",
+    "createdAt": "2023-01-26T11:25:00.488Z",
+    "slug": "ernie-pike",
+    "__v": 0
+  },
+  {
+    "_id": "63d26b28d677eb3eb948d98c",
+    "name": "ticonderoga",
+    "createdAt": "2023-01-26T11:46:27.747Z",
+    "slug": "ticonderoga",
+    "__v": 0
+  },
+  {
+    "_id": "63d26ca9d677eb3eb948dbdc",
+    "name": "wwii",
+    "createdAt": "2023-01-26T11:46:27.747Z",
+    "slug": "wwii",
+    "__v": 0
+  },
+  {
+    "_id": "63d283e4d677eb3eb948e92b",
+    "name": "vida de los doce césares",
+    "createdAt": "2023-01-26T11:46:27.747Z",
+    "slug": "vida-de-los-doce-cesares",
+    "__v": 0
+  },
+  {
+    "_id": "63d288d4d677eb3eb948ed22",
+    "name": "mitos griegos, los",
+    "createdAt": "2023-01-26T11:46:27.747Z",
+    "slug": "los-mitos-griegos",
+    "__v": 0
+  },
+  {
+    "_id": "63d2981ad677eb3eb948f34d",
+    "name": "guerra de las galias",
+    "createdAt": "2023-01-26T11:46:27.747Z",
+    "slug": "guerra-de-las-galias",
+    "__v": 0
+  },
+  {
+    "_id": "63d37d122c8786d3064f99fd",
+    "name": "inventario: poesía completa",
+    "createdAt": "2023-01-27T07:26:17.804Z",
+    "slug": "inventario:-poesia-completa",
+    "__v": 0
+  },
+  {
+    "_id": "63d39b002c8786d3064fa6e0",
+    "name": "ceguera",
+    "createdAt": "2023-01-27T07:26:17.804Z",
+    "slug": "ceguera",
+    "__v": 0
+  },
+  {
+    "_id": "63d3d7c07f9394901a12def9",
+    "name": "cantos de hyperion",
+    "createdAt": "2023-01-27T12:28:31.878Z",
+    "slug": "cantos-de-hyperion",
+    "__v": 0
+  },
+  {
+    "_id": "63d3d8df7f9394901a12df7e",
+    "name": "crónicas vampíricas",
+    "createdAt": "2023-01-27T12:28:31.878Z",
+    "slug": "cronicas-vampiricas",
+    "__v": 0
+  },
+  {
+    "_id": "63d3efe41b6d5f4c20281ee4",
+    "name": "dresden files, the",
+    "createdAt": "2023-01-27T15:35:52.570Z",
+    "slug": "the-dresden-files",
+    "__v": 0
+  },
+  {
+    "_id": "63d3f8bc1b6d5f4c20282406",
+    "name": "leyendas",
+    "createdAt": "2023-01-27T15:35:52.570Z",
+    "slug": "leyendas",
+    "__v": 0
+  },
+  {
+    "_id": "63d43ee61edce59cbe8a4adf",
+    "name": "ilión-olimpo",
+    "createdAt": "2023-01-27T21:12:48.476Z",
+    "slug": "ilion-olimpo",
+    "__v": 0
+  },
+  {
+    "_id": "63d43fe01edce59cbe8a4b74",
+    "name": "corsarios, piratas y negreros españoles",
+    "createdAt": "2023-01-27T21:12:48.476Z",
+    "slug": "corsarios-piratas-y-negreros-espanoles",
+    "__v": 0
+  },
+  {
+    "_id": "63d446ae1edce59cbe8a5083",
+    "name": "hannibal lecter",
+    "createdAt": "2023-01-27T21:12:48.476Z",
+    "slug": "hannibal-lecter",
+    "__v": 0
+  },
+  {
+    "_id": "63d51c9fa372f06ae0d9f284",
+    "name": "señor de los panchitos (lord of the matutano's), el",
+    "createdAt": "2023-01-28T12:24:38.329Z",
+    "slug": "el-senor-de-los-panchitos-(lord-of-the-matutano's)",
+    "__v": 0
+  },
+  {
+    "_id": "63d6564fbd205c49ff9320ff",
+    "name": "lazos familiares",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "lazos-familiares",
+    "__v": 0
+  },
+  {
+    "_id": "63d65f85bd205c49ff932774",
+    "name": "spear of destiny",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "spear-of-destiny",
+    "__v": 0
+  },
+  {
+    "_id": "63d66617bd205c49ff932d82",
+    "name": "children of judas, the",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "the-children-of-judas",
+    "__v": 0
+  },
+  {
+    "_id": "63d66e33bd205c49ff933323",
+    "name": "asterix",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "asterix",
+    "__v": 0
+  },
+  {
+    "_id": "63d67181bd205c49ff9334dc",
+    "name": "mercenario, el",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "el-mercenario",
+    "__v": 0
+  },
+  {
+    "_id": "63d67834bd205c49ff93384a",
+    "name": "conquistador",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "conquistador",
+    "__v": 0
+  },
+  {
+    "_id": "63d67944bd205c49ff9338d4",
+    "name": "paracuellos",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "paracuellos",
+    "__v": 0
+  },
+  {
+    "_id": "63d67a62bd205c49ff9339c1",
+    "name": "caravaggio",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "caravaggio",
+    "__v": 0
+  },
+  {
+    "_id": "63d67ce4bd205c49ff933b6b",
+    "name": "profesionales, los",
+    "createdAt": "2023-01-29T10:36:49.398Z",
+    "slug": "los-profesionales",
+    "__v": 0
+  },
+  {
+    "_id": "63d7b53d2cb17b806a405e75",
+    "name": "sus fatigas, de",
+    "createdAt": "2023-01-30T11:52:11.022Z",
+    "slug": "de-sus-fatigas",
+    "__v": 0
+  },
+  {
+    "_id": "63d7b8dd2cb17b806a405f60",
+    "name": "trilogía de la frontera",
+    "createdAt": "2023-01-30T11:52:11.022Z",
+    "slug": "trilogia-de-la-frontera",
+    "__v": 0
+  },
+  {
+    "_id": "63d7ca592cb17b806a406438",
+    "name": "historia del rock",
+    "createdAt": "2023-01-30T11:52:11.022Z",
+    "slug": "historia-del-rock",
+    "__v": 0
+  },
+  {
+    "_id": "63d7cb462cb17b806a4064bd",
+    "name": "millenium",
+    "createdAt": "2023-01-30T11:52:11.022Z",
+    "slug": "millenium",
+    "__v": 0
+  },
+  {
+    "_id": "63d9273f47a1ceede8b89c3c",
+    "name": "sherlock holmes",
+    "createdAt": "2023-01-31T14:19:27.212Z",
+    "slug": "sherlock-holmes",
+    "__v": 0
+  },
+  {
+    "_id": "63d92a3347a1ceede8b89d63",
+    "name": "cementerio de los libros olvidados, el",
+    "createdAt": "2023-01-31T14:19:27.212Z",
+    "slug": "el-cementerio-de-los-libros-olvidados",
+    "__v": 0
+  },
+  {
+    "_id": "63da4057a1b18d4e6624aeaa",
+    "name": "grandes obras de la cultura",
+    "createdAt": "2023-02-01T10:24:01.928Z",
+    "slug": "grandes-obras-de-la-cultura",
+    "__v": 0
+  },
+  {
+    "_id": "63dc162366a5f29d9cd9eb8b",
+    "name": "sin city",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "sin-city",
+    "__v": 0
+  },
+  {
+    "_id": "63dc174866a5f29d9cd9ec8d",
+    "name": "hombre",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "hombre",
+    "__v": 0
+  },
+  {
+    "_id": "63dc19ef66a5f29d9cd9ee48",
+    "name": "hellboy",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "hellboy",
+    "__v": 0
+  },
+  {
+    "_id": "63dc1ea766a5f29d9cd9f14c",
+    "name": "rip kirby",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "rip-kirby",
+    "__v": 0
+  },
+  {
+    "_id": "63dc1ec166a5f29d9cd9f164",
+    "name": "spirit, the",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "the-spirit",
+    "__v": 0
+  },
+  {
+    "_id": "63dc1f9066a5f29d9cd9f21c",
+    "name": "príncipe valiente",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "principe-valiente",
+    "__v": 0
+  },
+  {
+    "_id": "63dc203a66a5f29d9cd9f277",
+    "name": "roco vargas",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "roco-vargas",
+    "__v": 0
+  },
+  {
+    "_id": "63dc20d166a5f29d9cd9f2cf",
+    "name": "flash gordon",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "flash-gordon",
+    "__v": 0
+  },
+  {
+    "_id": "63dc221b66a5f29d9cd9f3ae",
+    "name": "mandrake: el mago",
+    "createdAt": "2023-02-02T19:57:02.170Z",
+    "slug": "mandrake-el-mago",
+    "__v": 0
+  },
+  {
+    "_id": "63dcb8e0e8332c3414fcb4d5",
+    "name": "blake & mortimer",
+    "createdAt": "2023-02-03T07:23:47.157Z",
+    "slug": "blake-and-mortimer",
+    "__v": 0
+  },
+  {
+    "_id": "63dcb9c9e8332c3414fcb5cd",
+    "name": "hombre enmascarado, el",
+    "createdAt": "2023-02-03T07:23:47.157Z",
+    "slug": "el-hombre-enmascarado",
+    "__v": 0
+  },
+  {
+    "_id": "63dcba2ce8332c3414fcb61e",
+    "name": "mortadelo y filemón",
+    "createdAt": "2023-02-03T07:23:47.157Z",
+    "slug": "mortadelo-y-filemon",
+    "__v": 0
+  },
+  {
+    "_id": "63dcbae1e8332c3414fcb6f9",
+    "name": "aventuras de max fridman, las",
+    "createdAt": "2023-02-03T07:23:47.157Z",
+    "slug": "las-aventuras-de-max-fridman",
+    "__v": 0
+  },
+  {
+    "_id": "63dcbdd8d8f9cd877add3a4a",
+    "name": "capitán trueno, el",
+    "createdAt": "2023-02-03T07:43:21.814Z",
+    "slug": "el-capitan-trueno",
+    "__v": 0
+  },
+  {
+    "_id": "63dcbe59d8f9cd877add3ae2",
+    "name": "blueberry",
+    "createdAt": "2023-02-03T07:43:21.814Z",
+    "slug": "blueberry",
+    "__v": 0
+  },
+  {
+    "_id": "63dd254e4978ae476f56e2fe",
+    "name": "calvin & hobbes",
+    "createdAt": "2023-02-03T14:25:00.682Z",
+    "slug": "calvin-and-hobbes",
+    "__v": 0
+  },
+  {
+    "_id": "63de2811c87e435ed4faa18f",
+    "name": "martínez el facha",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "martinez-el-facha",
+    "__v": 0
+  },
+  {
+    "_id": "63de286ac87e435ed4faa1e2",
+    "name": "profesor cojonciano presenta, el",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "el-profesor-cojonciano-presenta",
+    "__v": 0
+  },
+  {
+    "_id": "63de28b7c87e435ed4faa235",
+    "name": "pascual, mayordomo real",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "pascual-mayordomo-real",
+    "__v": 0
+  },
+  {
+    "_id": "63de2985c87e435ed4faa31d",
+    "name": "clara de noche",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "clara-de-noche",
+    "__v": 0
+  },
+  {
+    "_id": "63de29c8c87e435ed4faa372",
+    "name": "pedro pico y pico vena",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "pedro-pico-y-pico-vena",
+    "__v": 0
+  },
+  {
+    "_id": "63de2b48c87e435ed4faa4e0",
+    "name": "maki navaja",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "maki-navaja",
+    "__v": 0
+  },
+  {
+    "_id": "63de2bc2c87e435ed4faa56d",
+    "name": "historias de la puta mili",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "historias-de-la-puta-mili",
+    "__v": 0
+  },
+  {
+    "_id": "63de2c2ec87e435ed4faa5f7",
+    "name": "puticlub",
+    "createdAt": "2023-02-04T09:23:42.556Z",
+    "slug": "puticlub",
+    "__v": 0
+  },
+  {
+    "_id": "63e0ab0071b0a4ff585e004f",
+    "name": "civilizations rise and fall",
+    "createdAt": "2023-02-06T07:15:13.876Z",
+    "slug": "civilizations-rise-and-fall",
+    "__v": 0
+  },
+  {
+    "_id": "63e3548e616e15d6ac3e6f25",
+    "name": "historia universal siglo xxi",
+    "createdAt": "2023-02-08T07:22:33.314Z",
+    "slug": "historia-universal-siglo-xxi",
+    "__v": 0
+  },
+  {
+    "_id": "63e4a1aee6457076e81e57f2",
+    "name": "juegos del hambre, los",
+    "createdAt": "2023-02-09T07:27:05.106Z",
+    "slug": "los-juegos-del-hambre",
+    "__v": 0
+  },
+  {
+    "_id": "63e4a625e6457076e81e5954",
+    "name": "breve historia de...",
+    "createdAt": "2023-02-09T07:27:05.106Z",
+    "slug": "breve-historia-de...",
+    "__v": 0
+  },
+  {
+    "_id": "63e5f6f0ed5face83b786e4e",
+    "name": "memorias del águila y del jaguar",
+    "createdAt": "2023-02-10T07:41:28.379Z",
+    "slug": "memorias-del-aguila-y-del-jaguar",
+    "__v": 0
+  },
+  {
+    "_id": "63e5f8e5ed5face83b786f4c",
+    "name": "aventuras del capitán alatriste, las",
+    "createdAt": "2023-02-10T07:41:28.379Z",
+    "slug": "las-aventuras-del-capitan-alatriste",
+    "__v": 0
+  },
+  {
+    "_id": "63ece28b147cf549f0b5defb",
+    "name": "trilogía de alejandro magno",
+    "createdAt": "2023-02-15T12:35:33.173Z",
+    "slug": "trilogia-de-alejandro-magno",
+    "__v": 0
+  },
+  {
+    "_id": "63ece4b4147cf549f0b5dfb7",
+    "name": "dune",
+    "createdAt": "2023-02-15T12:35:33.173Z",
+    "slug": "dune",
+    "__v": 0
+  },
+  {
+    "_id": "63ecf37d54d16d6bbab0eccf",
+    "name": "primera serie",
+    "createdAt": "2023-02-15T14:55:17.945Z",
+    "slug": "primera-serie",
+    "__v": 0
+  },
+  {
+    "_id": "63ef3440e403eb197df41cca",
+    "name": "odisea espacial",
+    "createdAt": "2023-02-17T07:41:57.998Z",
+    "slug": "odisea-espacial",
+    "__v": 0
+  },
+  {
+    "_id": "63ef5889e403eb197df42c91",
+    "name": "fundación",
+    "createdAt": "2023-02-17T07:41:57.998Z",
+    "slug": "fundacion",
+    "__v": 0
+  },
+  {
+    "_id": "63ef5b3be403eb197df42e62",
+    "name": "jurassic park",
+    "createdAt": "2023-02-17T07:41:57.998Z",
+    "slug": "jurassic-park",
+    "__v": 0
+  }
+]
