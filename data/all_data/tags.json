@@ -1,0 +1,1288 @@
+[{
+  "_id": {
+    "$oid": "63c7ad86536c5791b39b8d7b"
+  },
+  "name": "fantasía épica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "fantasia-epica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ad8d536c5791b39b8d7e"
+  },
+  "name": "ficción",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "ficcion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ad92536c5791b39b8d81"
+  },
+  "name": "novela",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "novela",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ae06536c5791b39b8d84"
+  },
+  "name": "aventuras",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "aventuras",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ae38536c5791b39b8d87"
+  },
+  "name": "antología",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "antologia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ae44536c5791b39b8d8a"
+  },
+  "name": "compilación",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "compilacion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7badf536c5791b39b91ab"
+  },
+  "name": "guía de lectura",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.509Z"
+  },
+  "slug": "guia-de-lectura",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7bd1a7279c7099088019a"
+  },
+  "name": "mitología ficticia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T09:32:01.083Z"
+  },
+  "slug": "mitologia-ficticia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7c71e7279c70990880883"
+  },
+  "name": "cuentos",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T09:32:01.083Z"
+  },
+  "slug": "cuentos",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7c7257279c70990880886"
+  },
+  "name": "relatos breves",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T09:32:01.083Z"
+  },
+  "slug": "relatos-breves",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7e9abd74299e7351bda6b"
+  },
+  "name": "misterio",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "misterio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ea17d74299e7351bdac1"
+  },
+  "name": "humor",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "humor",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7eaaed74299e7351bdb36"
+  },
+  "name": "ciencia ficción",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "ciencia-ficcion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ebead74299e7351bdc54"
+  },
+  "name": "gótico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "gotico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ed05d74299e7351bdd23"
+  },
+  "name": "novela histórica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "novela-historica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7ed08d74299e7351bdd26"
+  },
+  "name": "romance",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "romance",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7f862d74299e7351bdee9"
+  },
+  "name": "fantasía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "fantasia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7f908d74299e7351bdf34"
+  },
+  "name": "revolución francesa",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "revolucion-francesa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7fa58d74299e7351be030"
+  },
+  "name": "piratas",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "piratas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c7fb04d74299e7351be069"
+  },
+  "name": "bélica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "belica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c812a4d74299e7351be2a8"
+  },
+  "name": "drama",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "drama",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c81302d74299e7351be2de"
+  },
+  "name": "thriller",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "thriller",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8130ad74299e7351be2e1"
+  },
+  "name": "novela negra",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T12:26:05.483Z"
+  },
+  "slug": "novela-negra",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8340c1125eea6396a44a0"
+  },
+  "name": "prehistoria",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "prehistoria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c836401125eea6396a4595"
+  },
+  "name": "antigua roma",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "antigua-roma",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c836b51125eea6396a45d0"
+  },
+  "name": "edad media",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "edad-media",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8378b1125eea6396a4656"
+  },
+  "name": "antiguo egipto",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "antiguo-egipto",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c83bc11125eea6396a4918"
+  },
+  "name": "naval",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "naval",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c83bc61125eea6396a491b"
+  },
+  "name": "edad moderna",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "edad-moderna",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c83f641125eea6396a4b93"
+  },
+  "name": "grecia clásica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "grecia-clasica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8408f1125eea6396a4c17"
+  },
+  "name": "ensayo",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "ensayo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c840951125eea6396a4c1a"
+  },
+  "name": "ensayo social",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "ensayo-social",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8409b1125eea6396a4c1d"
+  },
+  "name": "siglo xx",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-18T17:59:30.293Z"
+  },
+  "slug": "siglo-xx",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8efaf4395f53f02c755a9"
+  },
+  "name": "actual",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-19T07:18:33.937Z"
+  },
+  "slug": "actual",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c8efb44395f53f02c755ac"
+  },
+  "name": "crimen",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-19T07:18:33.937Z"
+  },
+  "slug": "crimen",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63c917146058cd5261d09131"
+  },
+  "name": "mitología",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-19T08:48:49.556Z"
+  },
+  "slug": "mitologia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca4b4b7695f65c1c4a8351"
+  },
+  "name": "memorias",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "memorias",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca4b507695f65c1c4a8354"
+  },
+  "name": "biografía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "biografia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca4b587695f65c1c4a8357"
+  },
+  "name": "wwii",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "wwii",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca4dbd7695f65c1c4a8415"
+  },
+  "name": "artículos de prensa",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "articulos-de-prensa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca4ddb7695f65c1c4a8418"
+  },
+  "name": "no-ficción",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "no-ficcion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca5c7e7695f65c1c4a881d"
+  },
+  "name": "teatro",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "teatro",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca5d037695f65c1c4a8856"
+  },
+  "name": "investigación",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "investigacion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca68957695f65c1c4a8a63"
+  },
+  "name": "horror",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "horror",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca69167695f65c1c4a8ab5"
+  },
+  "name": "poesía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "poesia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca691d7695f65c1c4a8ab8"
+  },
+  "name": "religión",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "religion",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca69277695f65c1c4a8abb"
+  },
+  "name": "clásicos",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "clasicos",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca69e07695f65c1c4a8b09"
+  },
+  "name": "japón",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "japon",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca69e67695f65c1c4a8b0c"
+  },
+  "name": "realismo mágico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "realismo-magico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca69f87695f65c1c4a8b0f"
+  },
+  "name": "contemporáneo",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "contemporaneo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca6b2d7695f65c1c4a8bde"
+  },
+  "name": "obra medieval",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "obra-medieval",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ca6b347695f65c1c4a8be1"
+  },
+  "name": "ciclo artúrico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-20T07:51:57.765Z"
+  },
+  "slug": "ciclo-arturico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbcf5e8e644c31346a231b"
+  },
+  "name": "música",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "musica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbcf628e644c31346a231e"
+  },
+  "name": "músicos",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "musicos",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbd4028e644c31346a247a"
+  },
+  "name": "comic",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "comic",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbd40e8e644c31346a247d"
+  },
+  "name": "western",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "western",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbd41d8e644c31346a2480"
+  },
+  "name": "siglo xix",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "siglo-xix",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbe0cb8e644c31346a275d"
+  },
+  "name": "wwi",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "wwi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbe2ae8e644c31346a27dc"
+  },
+  "name": "africa",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "africa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cbe8cc8e644c31346a2e27"
+  },
+  "name": "arabia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T11:32:03.452Z"
+  },
+  "slug": "arabia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cc0200cdfd6d92ce94a477"
+  },
+  "name": "ensayo histórico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-21T15:13:27.341Z"
+  },
+  "slug": "ensayo-historico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3c6a07c3693faed5fc2c"
+  },
+  "name": "diccionario",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "diccionario",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3cfe07c3693faed5fc7e"
+  },
+  "name": "manual de estudio",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "manual-de-estudio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3d0607c3693faed5fc81"
+  },
+  "name": "unv.historia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "unv.historia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3d1c07c3693faed5fc84"
+  },
+  "name": "historia antigua",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "historia-antigua",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3e8607c3693faed5fd0c"
+  },
+  "name": "historia contemporánea",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "historia-contemporanea",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce3e9b07c3693faed5fd0f"
+  },
+  "name": "política",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "politica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce430a07c3693faed5fdd2"
+  },
+  "name": "filosofía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "filosofia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce431107c3693faed5fdd5"
+  },
+  "name": "sociología",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "sociologia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce44df07c3693faed5fec3"
+  },
+  "name": "curiosidades",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "curiosidades",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ce44e307c3693faed5fec6"
+  },
+  "name": "saber",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-23T07:50:31.729Z"
+  },
+  "slug": "saber",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63cfe93000df5bf19748d994"
+  },
+  "name": "literatura",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-24T13:44:43.330Z"
+  },
+  "slug": "literatura",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d236e633bac0bf6becff8b"
+  },
+  "name": "novela gráfica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T07:34:36.939Z"
+  },
+  "slug": "novela-grafica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d2372d33bac0bf6becffa5"
+  },
+  "name": "comic europeo",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T07:34:36.939Z"
+  },
+  "slug": "comic-europeo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d246a7f7d03809514eb0ea"
+  },
+  "name": "latinoamérica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T09:08:43.944Z"
+  },
+  "slug": "latinoamerica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d277ccd677eb3eb948e370"
+  },
+  "name": "diarios",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "diarios",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d281cdd677eb3eb948e6ec"
+  },
+  "name": "manuales",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "manuales",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d283ccd677eb3eb948e928"
+  },
+  "name": "obra clásica",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "obra-clasica",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d287fed677eb3eb948eca7"
+  },
+  "name": "atlas",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "atlas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d289dcd677eb3eb948eda9"
+  },
+  "name": "civilizaciones",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "civilizaciones",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d28a70d677eb3eb948ede3"
+  },
+  "name": "mesopotamia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "mesopotamia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d28b3ad677eb3eb948ee4d"
+  },
+  "name": "sonido",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "sonido",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d28d42d677eb3eb948efe5"
+  },
+  "name": "fábulas",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-26T11:46:27.744Z"
+  },
+  "slug": "fabulas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d384b42c8786d3064f9fc4"
+  },
+  "name": "narrativa",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "narrativa",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d384c02c8786d3064f9fc7"
+  },
+  "name": "siglo de oro",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "siglo-de-oro",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d388472c8786d3064fa189"
+  },
+  "name": "teoría",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "teoria",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d39ad72c8786d3064fa6dd"
+  },
+  "name": "distopía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "distopia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d39dab2c8786d3064fa90a"
+  },
+  "name": "infantil",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "infantil",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d39e062c8786d3064fa93f"
+  },
+  "name": "viajes",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "viajes",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d39e712c8786d3064fa974"
+  },
+  "name": "india",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T07:26:17.797Z"
+  },
+  "slug": "india",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3cbec7f9394901a12d95e"
+  },
+  "name": "rusia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T12:28:31.875Z"
+  },
+  "slug": "rusia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3db7c7f9394901a12e0ba"
+  },
+  "name": "periodismo",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T12:28:31.875Z"
+  },
+  "slug": "periodismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f0c61b6d5f4c20281f4b"
+  },
+  "name": "holocausto",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "holocausto",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f0d41b6d5f4c20281f4e"
+  },
+  "name": "ensayo político",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "ensayo-politico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f4831b6d5f4c20282139"
+  },
+  "name": "guerra civil española",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "guerra-civil-espanola",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f6801b6d5f4c2028227b"
+  },
+  "name": "apocalíptico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "apocaliptico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f6891b6d5f4c2028227e"
+  },
+  "name": "post-apocalíptico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "post-apocaliptico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f8331b6d5f4c20282396"
+  },
+  "name": "surrealismo",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "surrealismo",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d3f8ab1b6d5f4c20282403"
+  },
+  "name": "leyendas",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-27T15:35:52.557Z"
+  },
+  "slug": "leyendas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d516b1a372f06ae0d9ef00"
+  },
+  "name": "erótico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-28T12:24:38.323Z"
+  },
+  "slug": "erotico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d519b0a372f06ae0d9f0e7"
+  },
+  "name": "comic americano",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-28T12:24:38.323Z"
+  },
+  "slug": "comic-americano",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d51c85a372f06ae0d9f281"
+  },
+  "name": "paródia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-28T12:24:38.323Z"
+  },
+  "slug": "parodia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d51da1a372f06ae0d9f333"
+  },
+  "name": "libro de fotografías",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-28T12:24:38.323Z"
+  },
+  "slug": "libro-de-fotografias",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d67019bd205c49ff93341e"
+  },
+  "name": "arte",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-29T10:36:49.391Z"
+  },
+  "slug": "arte",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d7cb072cb17b806a406488"
+  },
+  "name": "deporte",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-30T11:52:11.016Z"
+  },
+  "slug": "deporte",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d8c18ddd52defdf34bdbb2"
+  },
+  "name": "escalada",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-31T07:19:35.963Z"
+  },
+  "slug": "escalada",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d8c1a4dd52defdf34bdbb5"
+  },
+  "name": "guía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-31T07:19:35.963Z"
+  },
+  "slug": "guia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d8c4f7dd52defdf34bdd32"
+  },
+  "name": "cocina",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-31T07:19:35.963Z"
+  },
+  "slug": "cocina",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63d8c54bdd52defdf34bdd83"
+  },
+  "name": "manuales software",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-01-31T07:19:35.963Z"
+  },
+  "slug": "manuales-software",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63da6d4e6782eee7bd4df84b"
+  },
+  "name": "ensayo económico",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-01T13:28:59.772Z"
+  },
+  "slug": "ensayo-economico",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63da6d536782eee7bd4df84e"
+  },
+  "name": "economía",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-01T13:28:59.772Z"
+  },
+  "slug": "economia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e34e78616e15d6ac3e6c18"
+  },
+  "name": "canciones",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-08T07:22:33.308Z"
+  },
+  "slug": "canciones",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e358af616e15d6ac3e7218"
+  },
+  "name": "referencia",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-08T07:22:33.308Z"
+  },
+  "slug": "referencia",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e3a8501021af2c570f34ba"
+  },
+  "name": "revistas",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-08T12:04:25.698Z"
+  },
+  "slug": "revistas",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e3b30a1021af2c570f3a4a"
+  },
+  "name": "cine",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-08T12:04:25.698Z"
+  },
+  "slug": "cine",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63e4a710e6457076e81e596d"
+  },
+  "name": "protohistoria europea",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-09T07:27:05.094Z"
+  },
+  "slug": "protohistoria-europea",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63ecd870147cf549f0b5dda1"
+  },
+  "name": "suspense",
+  "image": "default-tag.jpeg",
+  "createdAt": {
+    "$date": "2023-02-15T12:35:33.167Z"
+  },
+  "slug": "suspense",
+  "__v": 0
+}]

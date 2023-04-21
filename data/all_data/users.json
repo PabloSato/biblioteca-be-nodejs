@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "641d8e20d0fdba8bd5ced50f"
+  },
+  "name": "pablo",
+  "email": "test4@pablo.io",
+  "role": "admin",
+  "password": "$2a$12$RBQ2ARcgZljLq0NGmsVYU.sdSmhN2qQFBwcIS.jQbU8lhXoQwpoNm",
+  "hash_email": "821b0b7772463d2af515c1d226ec367e",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "641d987bf4d77d42acb25299"
+  },
+  "name": "pablo",
+  "email": "test1@pablo.io",
+  "role": "user",
+  "password": "$2a$12$WKPG7mEvnmZIlOdMO0IDoOAttsxHhcHOxvWGRixt.gM3q93jYC5mq",
+  "hash_email": "5c2f3e6edcebccc64f2872bba6c3ee7a",
+  "__v": 0
+}]

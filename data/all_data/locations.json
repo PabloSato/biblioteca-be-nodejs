@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "63c7afe8536c5791b39b8d9f"
+  },
+  "name": "habitación pablo",
+  "racks": [
+    {
+      "$oid": "63c7b011536c5791b39b8da6"
+    },
+    {
+      "$oid": "63c7b017536c5791b39b8daf"
+    },
+    {
+      "$oid": "63c7b01e536c5791b39b8db7"
+    },
+    {
+      "$oid": "63c7b023536c5791b39b8dbf"
+    },
+    {
+      "$oid": "63c7b027536c5791b39b8dc7"
+    },
+    {
+      "$oid": "63c7b02b536c5791b39b8dcf"
+    }
+  ],
+  "createdAt": {
+    "$date": "2023-01-18T08:05:25.514Z"
+  },
+  "slug": "habitacion-pablo",
+  "__v": 0
+}]
