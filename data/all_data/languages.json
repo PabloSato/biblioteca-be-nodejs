@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "63c7afbc536c5791b39b8d93",
+    "name": "castellano",
+    "createdAt": "2023-01-18T08:05:25.550Z",
+    "slug": "castellano",
+    "__v": 0
+  },
+  {
+    "_id": "63c7afc1536c5791b39b8d97",
+    "name": "inglés",
+    "createdAt": "2023-01-18T08:05:25.550Z",
+    "slug": "ingles",
+    "__v": 0
+  },
+  {
+    "_id": "63c7afc8536c5791b39b8d9b",
+    "name": "francés",
+    "createdAt": "2023-01-18T08:05:25.550Z",
+    "slug": "frances",
+    "__v": 0
+  },
+  {
+    "_id": "63c8420f1125eea6396a4ced",
+    "name": "catalán",
+    "createdAt": "2023-01-18T17:59:30.588Z",
+    "slug": "catalan",
+    "__v": 0
+  },
+  {
+    "_id": "63d29871d677eb3eb948f365",
+    "name": "latín",
+    "createdAt": "2023-01-26T11:46:27.788Z",
+    "slug": "latin",
+    "__v": 0
+  }
+]

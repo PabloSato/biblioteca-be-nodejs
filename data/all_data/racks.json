@@ -1,0 +1,97 @@
+[
+  {
+    "_id": "63c7b011536c5791b39b8da6",
+    "name": "estantería a",
+    "shelfs": [
+      "63e5f611ed5face83b786dd6",
+      "63e5f615ed5face83b786dde",
+      "63ee33a55d4aec7591282931",
+      "63ee33aa5d4aec7591282938"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-a",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b017536c5791b39b8daf",
+    "name": "estantería b",
+    "shelfs": [
+      "63d51617a372f06ae0d9ee8d",
+      "63d5161ca372f06ae0d9ee97",
+      "63d7b8b12cb17b806a405f3f",
+      "63d8c1c8dd52defdf34bdbc4",
+      "63da3eeba1b18d4e6624ad85",
+      "63dc165b66a5f29d9cd9eb9a"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-b",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b01e536c5791b39b8db7",
+    "name": "estantería c",
+    "shelfs": [
+      "63cfe4db00df5bf19748d569",
+      "63cfe4df00df5bf19748d573",
+      "63cfe4e300df5bf19748d57f",
+      "63cfe4e800df5bf19748d58b",
+      "63cfe4ed00df5bf19748d597",
+      "63cfe4f100df5bf19748d5a3",
+      "63cfe4f500df5bf19748d5af"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-c",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b023536c5791b39b8dbf",
+    "name": "estantería d",
+    "shelfs": [
+      "63c7b038536c5791b39b8dd9",
+      "63c7b0de536c5791b39b8dfd",
+      "63c7dfd37279c7099088169a",
+      "63c8346f1125eea6396a44b5",
+      "63c8f0404395f53f02c755be",
+      "63ca5e567695f65c1c4a88dd",
+      "63cbd4c38e644c31346a249d"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-d",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b027536c5791b39b8dc7",
+    "name": "estantería e",
+    "shelfs": [
+      "63e38e99d870d2c13c961092",
+      "63e38ea1d870d2c13c96109a",
+      "63e3ae3f1021af2c570f377a",
+      "63e3ae451021af2c570f3781",
+      "63e4a206e6457076e81e5812"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-e",
+    "__v": 0
+  },
+  {
+    "_id": "63c7b02b536c5791b39b8dcf",
+    "name": "estantería f",
+    "shelfs": [
+      "63da69a96782eee7bd4df55d",
+      "63da69ad6782eee7bd4df567",
+      "63da69b36782eee7bd4df573",
+      "63da6c896782eee7bd4df785",
+      "63e0a9ac71b0a4ff585dffae",
+      "63e34e9f616e15d6ac3e6c23"
+    ],
+    "location": "63c7afe8536c5791b39b8d9f",
+    "createdAt": "2023-01-18T08:05:25.515Z",
+    "slug": "estanteria-f",
+    "__v": 0
+  }
+]
